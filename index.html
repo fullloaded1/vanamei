@@ -3,7 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muda Eksportindo Raya - Your Trusted Export Partner from Indonesia</title>
+    <title>PT Muda Eksportindo Raya - Premium Vanamei Shrimp Exporter Indonesia</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PT Muda Eksportindo Raya adalah produsen dan eksportir udang vanamei premium berkualitas tinggi dari Indonesia. Melayani pasar global dengan produk HOSO, HLOP, dan PTO terbaik.">
+    <meta name="keywords" content="udang vanamei, shrimp export, Indonesia shrimp, HOSO, HLOP, PTO, premium shrimp, seafood export, vanamei shrimp, Indonesian seafood">
+    <meta name="author" content="PT Muda Eksportindo Raya">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mudaeksportindoraya.com/">
+    <meta property="og:title" content="PT Muda Eksportindo Raya - Premium Vanamei Shrimp Exporter">
+    <meta property="og:description" content="Produsen dan eksportir udang vanamei premium berkualitas tinggi dari Indonesia. Melayani pasar global dengan standar internasional.">
+    <meta property="og:image" content="https://mudaeksportindoraya.com/image/udang%20vaname.jpg">
+    <meta property="og:site_name" content="PT Muda Eksportindo Raya">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mudaeksportindoraya.com/">
+    <meta property="twitter:title" content="PT Muda Eksportindo Raya - Premium Vanamei Shrimp Exporter">
+    <meta property="twitter:description" content="Produsen dan eksportir udang vanamei premium berkualitas tinggi dari Indonesia.">
+    <meta property="twitter:image" content="https://mudaeksportindoraya.com/image/udang%20vaname.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mudaeksportindoraya.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/logo/logo.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo/logo.jpg">
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="/logo/logo.jpg">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="/logo/logo.jpg">
+    <link rel="icon" type="image/jpeg" sizes="96x96" href="/logo/logo.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PT Muda Eksportindo Raya",
+        "alternateName": "Muda Eksportindo Raya",
+        "url": "https://mudaeksportindoraya.com",
+        "logo": "https://mudaeksportindoraya.com/logo/logo.jpg",
+        "description": "Produsen dan eksportir udang vanamei premium berkualitas tinggi dari Indonesia",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Keadilan Ujung No. 74",
+            "addressLocality": "Bakti Jaya, Sukmajaya",
+            "addressRegion": "Depok",
+            "addressCountry": "Indonesia"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-858-1199-2995",
+            "contactType": "customer service",
+            "email": "mudaekportindoraya@gmail.com"
+        },
+        "sameAs": [
+            "https://wa.me/6285811992995"
+        ]
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1e40af">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PT Muda Eksportindo">
+    <link rel="apple-touch-icon" href="/logo/logo.jpg">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -191,38 +263,193 @@
             opacity: 1 !important;
             transform: scale(1.2);
         }
+        
+        /* Micro-animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .scale-on-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .scale-on-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse-glow {
+            from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
+            to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+        }
+        
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .bounce-in {
+            animation: bounce-in 1s ease-out;
+        }
+        
+        @keyframes bounce-in {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        /* Enhanced text shadows for hero section */
+        .text-shadow-xl {
+            text-shadow: 
+                0 0 10px rgba(0, 0, 0, 0.8),
+                0 0 20px rgba(0, 0, 0, 0.6),
+                0 0 30px rgba(0, 0, 0, 0.4),
+                2px 2px 4px rgba(0, 0, 0, 0.9),
+                4px 4px 8px rgba(0, 0, 0, 0.7);
+        }
+        
+        .text-shadow-lg {
+            text-shadow: 
+                0 0 8px rgba(0, 0, 0, 0.7),
+                0 0 16px rgba(0, 0, 0, 0.5),
+                2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Enhanced hero text styling */
+        .hero-title {
+            background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: brightness(1.2) contrast(1.1);
+        }
+        
+        .hero-description {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
     </style>
 </head>
 <body>
     <div class="w-full">
         <!-- Navigation -->
-        <nav class="bg-white shadow-lg fixed w-full z-50">
+        <nav class="bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 backdrop-blur-md bg-opacity-95 shadow-2xl fixed w-full z-50 border-b border-slate-600/30">
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center py-4">
-                    <div class="flex items-center">
-                        <img src="logo/logo.jpg" alt="Muda Eksportindo Raya" class="h-12 w-auto">
-                        <span class="ml-3 text-xl font-bold text-primary">Muda Eksportindo Raya</span>
+                <div class="flex justify-between items-center py-3">
+                    <!-- Logo Section -->
+                    <div class="flex items-center group">
+                        <div class="relative">
+                            <img src="logo/logo.jpg" alt="Muda Eksportindo Raya" class="h-14 w-auto rounded-lg shadow-lg border-2 border-white/20 group-hover:border-blue-400/50 transition-all duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-amber-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="ml-4">
+                            <span class="text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent drop-shadow-lg">PT Muda Eksportindo Raya</span>
+                            <div class="text-xs text-blue-200/80 font-medium tracking-wide">Premium Shrimp Exporter</div>
+                        </div>
                     </div>
                     
-                    <div class="hidden md:flex items-center space-x-8">
-                        <a href="#home" class="text-primary hover:text-secondary transition-colors">Beranda</a>
-                        <a href="#about" class="text-primary hover:text-secondary transition-colors">Tentang Kami</a>
-                        <a href="#products" class="text-primary hover:text-secondary transition-colors">Produk</a>
-                        <a href="#gallery" class="text-primary hover:text-secondary transition-colors">Galeri</a>
-                        <a href="#contact" class="text-primary hover:text-secondary transition-colors">Kontak</a>
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#home" class="nav-link px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium relative group">
+                            <span class="relative z-10">Beranda</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <a href="#about" class="nav-link px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium relative group">
+                            <span class="relative z-10">Tentang Kami</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <a href="#products" class="nav-link px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium relative group">
+                            <span class="relative z-10">Produk</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <a href="#gallery" class="nav-link px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium relative group">
+                            <span class="relative z-10">Galeri</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <a href="#contact" class="nav-link px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium relative group">
+                            <span class="relative z-10">Kontak</span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        
+                        <!-- Divider -->
+                        <div class="w-px h-6 bg-white/20 mx-3"></div>
                         
                         <!-- Language Toggle -->
-                        <div class="language-toggle flex items-center space-x-2 p-2 rounded-lg transition-all duration-300">
-                            <span id="flag-indonesia" class="flag-active text-2xl">🇮🇩</span>
-                            <span id="flag-english" class="flag-inactive text-2xl">🇺🇸</span>
+                        <div class="language-toggle flex items-center bg-white/10 backdrop-blur-sm rounded-xl p-2 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                            <span id="flag-indonesia" class="flag-active text-2xl cursor-pointer hover:scale-110 transition-transform duration-200 px-1">🇮🇩</span>
+                            <div class="w-px h-4 bg-white/30 mx-1"></div>
+                            <span id="flag-english" class="flag-inactive text-2xl cursor-pointer hover:scale-110 transition-transform duration-200 px-1">🇺🇸</span>
                         </div>
                     </div>
                     
                     <!-- Mobile menu button -->
                     <div class="md:hidden">
-                        <button class="text-primary hover:text-secondary">
+                        <button id="mobile-menu-btn" class="text-white/90 hover:text-white hover:bg-white/10 p-2 rounded-lg transition-all duration-300">
                             <i data-lucide="menu" class="w-6 h-6"></i>
                         </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Navigation -->
+                <div id="mobile-menu" class="md:hidden hidden border-t border-white/20 bg-slate-800/95 backdrop-blur-md">
+                    <div class="px-4 py-4 space-y-2">
+                        <a href="#home" class="mobile-nav-link block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium">Beranda</a>
+                        <a href="#about" class="mobile-nav-link block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium">Tentang Kami</a>
+                        <a href="#products" class="mobile-nav-link block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium">Produk</a>
+                        <a href="#gallery" class="mobile-nav-link block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium">Galeri</a>
+                        <a href="#contact" class="mobile-nav-link block px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-300 font-medium">Kontak</a>
+                        
+                        <!-- Mobile Language Toggle -->
+                        <div class="flex items-center justify-center pt-4 border-t border-white/20 mt-4">
+                            <div class="language-toggle flex items-center bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/20">
+                                <span id="flag-indonesia-mobile" class="flag-active text-3xl cursor-pointer hover:scale-110 transition-transform duration-200 px-2">🇮🇩</span>
+                                <div class="w-px h-6 bg-white/30 mx-2"></div>
+                                <span id="flag-english-mobile" class="flag-inactive text-3xl cursor-pointer hover:scale-110 transition-transform duration-200 px-2">🇺🇸</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,25 +472,24 @@
                     <div class="swiper-button-prev"></div>
                 </div>
             </div>
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
             
             <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-                <div class="max-w-2xl mx-auto">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-6xl md:text-8xl font-black mb-8 text-white">
                         Nusa Shrimp
                     </h1>
-                    </h2>
-                    <p class="text-base md:text-lg mb-7 max-w-xl mx-auto leading-relaxed drop-shadow-lg">
+                    <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed font-medium text-white">
                         Kami adalah produsen dan eksportir udang vanamei premium berkualitas tinggi dari Indonesia. 
                         Dengan pengalaman lebih dari 10 tahun, kami telah melayani pasar global dengan produk terbaik.
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row gap-2 justify-center" style="margin-bottom: 0;">
-                        <button class="bg-primary hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
-                            <i class="ri-shopping-bag-3-line text-lg"></i> Jelajahi Produk
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+                        <button class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/50 border-2 border-blue-400/30 backdrop-blur-sm flex items-center justify-center gap-3 pulse-glow">
+                            <i class="ri-shopping-bag-3-line text-xl"></i> Jelajahi Produk
                         </button>
-                        <button class="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-lg text-sm hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
-                            <i class="ri-contacts-line text-lg"></i> Hubungi Kami
+                        <button class="bg-white/10 backdrop-blur-md border-2 border-white/50 text-white font-bold py-4 px-8 rounded-xl text-lg hover:bg-white hover:text-gray-800 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-white/30 flex items-center justify-center gap-3">
+                            <i class="ri-contacts-line text-xl"></i> Hubungi Kami
                         </button>
                     </div>
                 </div>
@@ -273,9 +499,9 @@
         <!-- About Section -->
         <section id="about" class="py-20 bg-blue-900">
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+                <div class="text-center mb-16 fade-in">
                     <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
-                        Tentang Muda Eksportindo Raya
+                        Tentang PT Muda Eksportindo Raya
                     </h2>
                     <div class="max-w-4xl mx-auto space-y-6 text-white text-lg leading-relaxed">
                         <p>
@@ -287,7 +513,7 @@
                     </div>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
                     <div class="bg-white p-8 rounded-xl shadow-lg">
                         <div class="flex items-start space-x-4">
                             <div class="flex-shrink-0">
@@ -384,7 +610,7 @@
         <!-- Products Section -->
         <section id="products" class="py-20">
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
+                <div class="text-center mb-16 fade-in">
                     <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">
                         Produk Unggulan Kami
                     </h2>
@@ -534,7 +760,7 @@
                                 <i class="ri-map-pin-line text-secondary mr-3"></i>
                                 <h4 class="text-lg font-semibold text-primary">Alamat</h4>
                             </div>
-                            <p class="text-gray-600">Jl. Raya Jakarta-Surabaya KM 45, Gresik, Jawa Timur, Indonesia</p>
+                            <p class="text-gray-600">Jl. Keadilan Ujung No. 74, Kel. Bakti Jaya, Kec. Sukmajaya, Kota Depok</p>
                         </div>
                         
                         <div class="bg-white p-6 rounded-xl shadow-lg">
@@ -542,7 +768,7 @@
                                 <i class="ri-phone-line text-secondary mr-3"></i>
                                 <h4 class="text-lg font-semibold text-primary">Telepon</h4>
                             </div>
-                            <p class="text-gray-600">+62 31 1234 5678</p>
+                            <p class="text-gray-600">+62 858-1199-2995</p>
                         </div>
                         
                         <div class="bg-white p-6 rounded-xl shadow-lg">
@@ -550,7 +776,7 @@
                                 <i class="ri-mail-line text-secondary mr-3"></i>
                                 <h4 class="text-lg font-semibold text-primary">Email</h4>
                             </div>
-                            <p class="text-gray-600">info@mudaeksportindoraya.com</p>
+                            <p class="text-gray-600">mudaekportindoraya@gmail.com</p>
                         </div>
                         
                         <div class="bg-green-500 p-6 rounded-xl shadow-lg text-white">
@@ -558,7 +784,7 @@
                                 <i class="ri-whatsapp-line mr-3"></i>
                                 <h4 class="text-lg font-semibold">WhatsApp</h4>
                             </div>
-                            <p class="mb-4">+62 812 3456 7890</p>
+                            <p class="mb-4">+62 858-1199-2995</p>
                             <button class="bg-white text-green-500 font-semibold py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2">
                                 <i class="ri-whatsapp-line"></i> Chat WhatsApp
                             </button>
@@ -573,7 +799,7 @@
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
-                        <h3 class="text-xl font-semibold mb-4">Muda Eksportindo Raya</h3>
+                        <h3 class="text-xl font-semibold mb-4">PT Muda Eksportindo Raya</h3>
                         <p class="text-gray-300 mb-4">
                             Produsen dan eksportir udang vanamei premium berkualitas tinggi dari Indonesia.
                         </p>
@@ -604,10 +830,10 @@
                     <div>
                         <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
                         <div class="space-y-2 text-gray-300">
-                            <p>Jl. Raya Jakarta-Surabaya KM 45, Gresik, Jawa Timur, Indonesia</p>
-                            <p>Phone: +62 31 1234 5678</p>
-                            <p>Email: info@mudaeksportindoraya.com</p>
-                            <p>WhatsApp: +62 812 3456 7890</p>
+                            <p>Jl. Keadilan Ujung No. 74, Kel. Bakti Jaya, Kec. Sukmajaya, Kota Depok</p>
+                            <p>Phone: +62 858-1199-2995</p>
+                            <p>Email: mudaekportindoraya@gmail.com</p>
+                            <p>WhatsApp: +62 858-1199-2995</p>
                         </div>
                     </div>
                 </div>
@@ -622,8 +848,7 @@
         </footer>
     </div>
 
-    <!-- React App Container -->
-    <div id="react-app"></div>
+        <!-- React App Removed -->
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -649,20 +874,71 @@
                     cta2: 'Hubungi Kami'
                 },
                 about: {
-                    title: 'Tentang Muda Eksportindo Raya',
-                    subtitle: 'Produsen Udang Vanamei Premium Indonesia'
+                    title: 'Tentang PT Muda Eksportindo Raya',
+                    subtitle: 'Produsen Udang Vanamei Premium Indonesia',
+                    description1: 'PT Muda Eksportindo Raya adalah produsen dan eksportir udang vanamei premium berkualitas tinggi yang berkomitmen untuk menyediakan produk terbaik bagi pelanggan kami di seluruh dunia. Dengan pengalaman ekspor ke lebih dari 20 negara, kami telah membangun reputasi sebagai mitra terpercaya dalam industri perikanan.',
+                    description2: 'Produk unggulan kami mencakup berbagai jenis udang vanamei seperti HOSO, HLOP, dan PTO yang semuanya diproduksi dengan standar kualitas tertinggi. Kami menawarkan berbagai pilihan produk yang dirancang untuk memenuhi kebutuhan pelanggan, mulai dari restoran premium hingga industri pengolahan makanan.',
+                    features: {
+                        quality: 'Produk berkualitas tinggi dengan standar internasional, memastikan performa optimal dan rasa yang konsisten untuk setiap pengiriman.',
+                        partnership: 'Dukungan dan kolaborasi dengan mitra terpercaya, memastikan setiap tahap produksi hingga pengiriman dikelola secara profesional.',
+                        global: 'Pengalaman luas dengan transaksi di lebih dari 20 negara, memberikan kami wawasan global dalam memenuhi kebutuhan pelanggan internasional.',
+                        variety: 'Beragam pilihan produk udang vanamei yang dirancang untuk berbagai keperluan, dari restoran premium hingga kebutuhan industri pengolahan.',
+                        sustainability: 'Fokus pada keberlanjutan dengan praktik budidaya yang ramah lingkungan, mendukung upaya pelestarian ekosistem laut.',
+                        quality_control: 'Proses produksi yang diawasi secara ketat dengan kontrol kualitas (QC) yang terjamin, memberikan kepercayaan dan kepuasan bagi pelanggan.'
+                    }
                 },
                 products: {
                     title: 'Produk Unggulan Kami',
-                    subtitle: 'Udang Vanamei Premium Berkualitas Tinggi'
+                    subtitle: 'Udang Vanamei Premium Berkualitas Tinggi',
+                    hoso: {
+                        title: 'HOSO (Head On Shell On)',
+                        description: 'Udang utuh dengan kepala dan kulit, ideal untuk restoran premium'
+                    },
+                    hlop: {
+                        title: 'HLOP (Head Less On Peeled)',
+                        description: 'Udang tanpa kepala dengan kulit, populer untuk masakan Asia'
+                    },
+                    pto: {
+                        title: 'PTO (Peeled Tail On)',
+                        description: 'Udang kupas dengan ekor, siap untuk berbagai masakan'
+                    }
                 },
                 gallery: {
                     title: 'Galeri Produk',
-                    subtitle: 'Lihat Kualitas Produk Kami'
+                    subtitle: 'Lihat Kualitas Produk Kami',
+                    items: {
+                        fresh: {
+                            title: 'Produk Segar',
+                            description: 'Udang vanamei segar langsung dari tambak'
+                        },
+                        processing: {
+                            title: 'Pengolahan Modern',
+                            description: 'Fasilitas pengolahan dengan teknologi terkini'
+                        },
+                        export: {
+                            title: 'Ekspor Global',
+                            description: 'Pengiriman ke berbagai negara di seluruh dunia'
+                        }
+                    }
                 },
                 contact: {
                     title: 'Hubungi Kami',
-                    subtitle: 'Siap Melayani Kebutuhan Anda'
+                    subtitle: 'Siap Melayani Kebutuhan Anda',
+                    form: {
+                        title: 'Kirim Pesan',
+                        name: 'Nama Lengkap',
+                        email: 'Email',
+                        phone: 'Telepon',
+                        company: 'Perusahaan',
+                        message: 'Pesan',
+                        submit: 'Kirim Pesan via WhatsApp'
+                    },
+                    info: {
+                        address: 'Alamat',
+                        phone: 'Telepon',
+                        email: 'Email',
+                        whatsapp: 'WhatsApp'
+                    }
                 }
             },
             en: {
@@ -681,25 +957,173 @@
                     cta2: 'Contact Us'
                 },
                 about: {
-                    title: 'About Muda Eksportindo Raya',
-                    subtitle: 'Premium Indonesian Vanamei Shrimp Producer'
+                    title: 'About PT Muda Eksportindo Raya',
+                    subtitle: 'Premium Indonesian Vanamei Shrimp Producer',
+                    description1: 'PT Muda Eksportindo Raya is a premium quality vanamei shrimp producer and exporter committed to providing the best products for our customers worldwide. With export experience to more than 20 countries, we have built a reputation as a trusted partner in the fisheries industry.',
+                    description2: 'Our flagship products include various types of vanamei shrimp such as HOSO, HLOP, and PTO, all produced with the highest quality standards. We offer a variety of product options designed to meet customer needs, from premium restaurants to food processing industries.',
+                    features: {
+                        quality: 'High quality products with international standards, ensuring optimal performance and consistent taste for every shipment.',
+                        partnership: 'Support and collaboration with trusted partners, ensuring every stage from production to delivery is managed professionally.',
+                        global: 'Extensive experience with transactions in more than 20 countries, giving us global insights in meeting international customer needs.',
+                        variety: 'Various vanamei shrimp product options designed for various purposes, from premium restaurants to processing industry needs.',
+                        sustainability: 'Focus on sustainability with environmentally friendly farming practices, supporting marine ecosystem conservation efforts.',
+                        quality_control: 'Strictly supervised production processes with guaranteed quality control (QC), providing trust and satisfaction for customers.'
+                    }
                 },
                 products: {
                     title: 'Our Premium Products',
-                    subtitle: 'High-Quality Vanamei Shrimp'
+                    subtitle: 'High-Quality Vanamei Shrimp',
+                    hoso: {
+                        title: 'HOSO (Head On Shell On)',
+                        description: 'Whole shrimp with head and shell, ideal for premium restaurants'
+                    },
+                    hlop: {
+                        title: 'HLOP (Head Less On Peeled)',
+                        description: 'Headless shrimp with shell, popular for Asian cuisine'
+                    },
+                    pto: {
+                        title: 'PTO (Peeled Tail On)',
+                        description: 'Peeled shrimp with tail, ready for various dishes'
+                    }
                 },
                 gallery: {
                     title: 'Product Gallery',
-                    subtitle: 'See Our Product Quality'
+                    subtitle: 'See Our Product Quality',
+                    items: {
+                        fresh: {
+                            title: 'Fresh Products',
+                            description: 'Fresh vanamei shrimp directly from the farm'
+                        },
+                        processing: {
+                            title: 'Modern Processing',
+                            description: 'Processing facilities with the latest technology'
+                        },
+                        export: {
+                            title: 'Global Export',
+                            description: 'Shipping to various countries worldwide'
+                        }
+                    }
                 },
                 contact: {
                     title: 'Contact Us',
-                    subtitle: 'Ready to Serve Your Needs'
+                    subtitle: 'Ready to Serve Your Needs',
+                    form: {
+                        title: 'Send Message',
+                        name: 'Full Name',
+                        email: 'Email',
+                        phone: 'Phone',
+                        company: 'Company',
+                        message: 'Message',
+                        submit: 'Send Message via WhatsApp'
+                    },
+                    info: {
+                        address: 'Address',
+                        phone: 'Phone',
+                        email: 'Email',
+                        whatsapp: 'WhatsApp'
+                    }
                 }
             }
         };
         
-        let currentLanguage = localStorage.getItem('language') || 'id';
+        // Auto-detect language based on location and browser
+        async function detectUserLanguage() {
+            try {
+                // First check if user has a saved preference
+                const savedLanguage = localStorage.getItem('language');
+                if (savedLanguage) {
+                    return savedLanguage;
+                }
+                
+                // Try to detect location using IP geolocation API
+                try {
+                    const response = await fetch('https://ipapi.co/json/');
+                    const data = await response.json();
+                    
+                    // If user is from Indonesia, use Indonesian
+                    if (data.country_code === 'ID') {
+                        console.log('User detected from Indonesia - using Indonesian');
+                        return 'id';
+                    } else {
+                        console.log(`User detected from ${data.country} - using English`);
+                        return 'en';
+                    }
+                } catch (ipError) {
+                    console.log('IP geolocation failed, trying browser language detection');
+                    
+                    // Fallback to browser language detection
+                    const browserLang = navigator.language || navigator.languages[0];
+                    
+                    // Check if browser language is Indonesian
+                    if (browserLang.startsWith('id')) {
+                        console.log('Browser language detected as Indonesian');
+                        return 'id';
+                    } else {
+                        console.log('Browser language not Indonesian - using English');
+                        return 'en';
+                    }
+                }
+            } catch (error) {
+                console.log('Language detection failed, defaulting to Indonesian');
+                return 'id'; // Default fallback
+            }
+        }
+        
+        // Language toggle functionality
+        let currentLanguage = 'id'; // Will be initialized by detectUserLanguage()
+        
+        // Initialize language detection
+        async function initializeLanguage() {
+            currentLanguage = await detectUserLanguage();
+            updateLanguage(languageData[currentLanguage]);
+            updateLanguageFlags();
+        }
+        
+        // Update language flags visual state
+        function updateLanguageFlags() {
+            const flagIndonesia = document.getElementById('flag-indonesia');
+            const flagEnglish = document.getElementById('flag-english');
+            const flagIndonesiaMobile = document.getElementById('flag-indonesia-mobile');
+            const flagEnglishMobile = document.getElementById('flag-english-mobile');
+            
+            if (currentLanguage === 'id') {
+                // Indonesian active
+                if (flagIndonesia) {
+                    flagIndonesia.classList.remove('flag-inactive');
+                    flagIndonesia.classList.add('flag-active');
+                }
+                if (flagEnglish) {
+                    flagEnglish.classList.remove('flag-active');
+                    flagEnglish.classList.add('flag-inactive');
+                }
+                if (flagIndonesiaMobile) {
+                    flagIndonesiaMobile.classList.remove('flag-inactive');
+                    flagIndonesiaMobile.classList.add('flag-active');
+                }
+                if (flagEnglishMobile) {
+                    flagEnglishMobile.classList.remove('flag-active');
+                    flagEnglishMobile.classList.add('flag-inactive');
+                }
+            } else {
+                // English active
+                if (flagIndonesia) {
+                    flagIndonesia.classList.remove('flag-active');
+                    flagIndonesia.classList.add('flag-inactive');
+                }
+                if (flagEnglish) {
+                    flagEnglish.classList.remove('flag-inactive');
+                    flagEnglish.classList.add('flag-active');
+                }
+                if (flagIndonesiaMobile) {
+                    flagIndonesiaMobile.classList.remove('flag-active');
+                    flagIndonesiaMobile.classList.add('flag-inactive');
+                }
+                if (flagEnglishMobile) {
+                    flagEnglishMobile.classList.remove('flag-inactive');
+                    flagEnglishMobile.classList.add('flag-active');
+                }
+            }
+        }
         
         // Language toggle functionality
         const flagIndonesia = document.getElementById('flag-indonesia');
@@ -716,37 +1140,180 @@
             document.querySelectorAll('a[href="#contact"]').forEach(el => el.textContent = data.nav.contact);
             
             // Update hero section
-            document.querySelector('#home h1').textContent = data.hero.title;
-            document.querySelector('#home h2').textContent = data.hero.subtitle;
-            document.querySelector('#home p').textContent = data.hero.description;
-            document.querySelector('#home button:first-of-type').textContent = data.hero.cta;
-            document.querySelector('#home button:last-of-type').textContent = data.hero.cta2;
+            const heroTitle = document.querySelector('#home h1');
+            const heroSubtitle = document.querySelector('#home h2');
+            const heroDescription = document.querySelector('#home p');
+            const heroButton1 = document.querySelector('#home button:first-of-type');
+            const heroButton2 = document.querySelector('#home button:last-of-type');
             
-            // Update section titles
-            document.querySelector('#about h2').textContent = data.about.title;
-            document.querySelector('#about p').textContent = data.about.subtitle;
-            document.querySelector('#products h2').textContent = data.products.title;
-            document.querySelector('#products p').textContent = data.products.subtitle;
-            document.querySelector('#gallery h2').textContent = data.gallery.title;
-            document.querySelector('#gallery p').textContent = data.gallery.subtitle;
-            document.querySelector('#contact h2').textContent = data.contact.title;
-            document.querySelector('#contact p').textContent = data.contact.subtitle;
+            if (heroTitle) heroTitle.textContent = data.hero.title;
+            if (heroSubtitle) heroSubtitle.textContent = data.hero.subtitle;
+            if (heroDescription) heroDescription.textContent = data.hero.description;
+            if (heroButton1) heroButton1.innerHTML = `<i class="ri-shopping-bag-3-line text-lg"></i> ${data.hero.cta}`;
+            if (heroButton2) heroButton2.innerHTML = `<i class="ri-contacts-line text-lg"></i> ${data.hero.cta2}`;
+            
+            // Update about section
+            const aboutTitle = document.querySelector('#about h2');
+            const aboutSubtitle = document.querySelector('#about .max-w-4xl p:first-of-type');
+            const aboutDesc1 = document.querySelector('#about .max-w-4xl p:nth-of-type(2)');
+            const aboutDesc2 = document.querySelector('#about .max-w-4xl p:nth-of-type(3)');
+            
+            if (aboutTitle) aboutTitle.textContent = data.about.title;
+            if (aboutSubtitle) aboutSubtitle.textContent = data.about.subtitle;
+            if (aboutDesc1) aboutDesc1.textContent = data.about.description1;
+            if (aboutDesc2) aboutDesc2.textContent = data.about.description2;
+            
+            // Update about features
+            const aboutFeatures = document.querySelectorAll('#about .grid .bg-white p');
+            const featureTexts = [
+                data.about.features.quality,
+                data.about.features.partnership,
+                data.about.features.global,
+                data.about.features.variety,
+                data.about.features.sustainability,
+                data.about.features.quality_control
+            ];
+            
+            aboutFeatures.forEach((feature, index) => {
+                if (featureTexts[index]) {
+                    feature.textContent = featureTexts[index];
+                }
+            });
+            
+            // Update products section
+            const productsTitle = document.querySelector('#products h2');
+            const productsSubtitle = document.querySelector('#products .text-center p');
+            
+            if (productsTitle) productsTitle.textContent = data.products.title;
+            if (productsSubtitle) productsSubtitle.textContent = data.products.subtitle;
+            
+            // Update product items
+            const productTitles = document.querySelectorAll('#products .grid h3');
+            const productDescs = document.querySelectorAll('#products .grid .text-gray-600');
+            
+            if (productTitles[0]) productTitles[0].textContent = data.products.hoso.title;
+            if (productTitles[1]) productTitles[1].textContent = data.products.hlop.title;
+            if (productTitles[2]) productTitles[2].textContent = data.products.pto.title;
+            
+            if (productDescs[0]) productDescs[0].textContent = data.products.hoso.description;
+            if (productDescs[1]) productDescs[1].textContent = data.products.hlop.description;
+            if (productDescs[2]) productDescs[2].textContent = data.products.pto.description;
+            
+            // Update gallery section
+            const galleryTitle = document.querySelector('#gallery h2');
+            const gallerySubtitle = document.querySelector('#gallery .text-center p');
+            
+            if (galleryTitle) galleryTitle.textContent = data.gallery.title;
+            if (gallerySubtitle) gallerySubtitle.textContent = data.gallery.subtitle;
+            
+            // Update gallery items
+            const galleryItemTitles = document.querySelectorAll('#gallery .swiper-slide h3');
+            const galleryItemDescs = document.querySelectorAll('#gallery .swiper-slide .text-gray-600');
+            
+            if (galleryItemTitles[0]) galleryItemTitles[0].textContent = data.gallery.items.fresh.title;
+            if (galleryItemTitles[1]) galleryItemTitles[1].textContent = data.gallery.items.processing.title;
+            if (galleryItemTitles[2]) galleryItemTitles[2].textContent = data.gallery.items.export.title;
+            
+            if (galleryItemDescs[0]) galleryItemDescs[0].textContent = data.gallery.items.fresh.description;
+            if (galleryItemDescs[1]) galleryItemDescs[1].textContent = data.gallery.items.processing.description;
+            if (galleryItemDescs[2]) galleryItemDescs[2].textContent = data.gallery.items.export.description;
+            
+            // Update contact section
+            const contactTitle = document.querySelector('#contact h2');
+            const contactSubtitle = document.querySelector('#contact .text-center p');
+            
+            if (contactTitle) contactTitle.textContent = data.contact.title;
+            if (contactSubtitle) contactSubtitle.textContent = data.contact.subtitle;
+            
+            // Update contact form
+            const formTitle = document.querySelector('#contact h3');
+            const formInputs = document.querySelectorAll('#contact input, #contact textarea');
+            const formButton = document.querySelector('#contact button[type="submit"]');
+            
+            if (formTitle) formTitle.textContent = data.contact.form.title;
+            if (formInputs[0]) formInputs[0].placeholder = data.contact.form.name;
+            if (formInputs[1]) formInputs[1].placeholder = data.contact.form.email;
+            if (formInputs[2]) formInputs[2].placeholder = data.contact.form.phone;
+            if (formInputs[3]) formInputs[3].placeholder = data.contact.form.company;
+            if (formInputs[4]) formInputs[4].placeholder = data.contact.form.message;
+            if (formButton) formButton.innerHTML = `<i class="ri-whatsapp-line text-lg"></i> ${data.contact.form.submit}`;
+            
+            // Update contact info labels
+            const infoLabels = document.querySelectorAll('#contact .space-y-6 h4');
+            if (infoLabels[0]) infoLabels[0].textContent = data.contact.info.address;
+            if (infoLabels[1]) infoLabels[1].textContent = data.contact.info.phone;
+            if (infoLabels[2]) infoLabels[2].textContent = data.contact.info.email;
+            if (infoLabels[3]) infoLabels[3].textContent = data.contact.info.whatsapp;
+            
+            // Update footer quick links
+            const footerLinks = document.querySelectorAll('footer a[href^="#"]');
+            if (footerLinks[0]) footerLinks[0].textContent = data.nav.home;
+            if (footerLinks[1]) footerLinks[1].textContent = data.nav.about;
+            if (footerLinks[2]) footerLinks[2].textContent = data.nav.products;
+            if (footerLinks[3]) footerLinks[3].textContent = data.nav.gallery;
+            if (footerLinks[4]) footerLinks[4].textContent = data.nav.contact;
         }
         
         function updateLanguageIndicator() {
+            const flagIndonesiaMobile = document.getElementById('flag-indonesia-mobile');
+            const flagEnglishMobile = document.getElementById('flag-english-mobile');
+            
             if (currentLanguage === 'id') {
+                // Desktop flags
                 flagIndonesia.classList.add('flag-active');
                 flagIndonesia.classList.remove('flag-inactive');
                 flagEnglish.classList.add('flag-inactive');
                 flagEnglish.classList.remove('flag-active');
+                
+                // Mobile flags
+                if (flagIndonesiaMobile) {
+                    flagIndonesiaMobile.classList.add('flag-active');
+                    flagIndonesiaMobile.classList.remove('flag-inactive');
+                }
+                if (flagEnglishMobile) {
+                    flagEnglishMobile.classList.add('flag-inactive');
+                    flagEnglishMobile.classList.remove('flag-active');
+                }
             } else {
+                // Desktop flags
                 flagEnglish.classList.add('flag-active');
                 flagEnglish.classList.remove('flag-inactive');
                 flagIndonesia.classList.add('flag-inactive');
                 flagIndonesia.classList.remove('flag-active');
+                
+                // Mobile flags
+                if (flagEnglishMobile) {
+                    flagEnglishMobile.classList.add('flag-active');
+                    flagEnglishMobile.classList.remove('flag-inactive');
+                }
+                if (flagIndonesiaMobile) {
+                    flagIndonesiaMobile.classList.add('flag-inactive');
+                    flagIndonesiaMobile.classList.remove('flag-active');
+                }
             }
         }
         
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const flagIndonesiaMobile = document.getElementById('flag-indonesia-mobile');
+        const flagEnglishMobile = document.getElementById('flag-english-mobile');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when clicking on nav links
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+        
+        // Desktop language toggle
         flagIndonesia.addEventListener('click', () => {
             currentLanguage = 'id';
             localStorage.setItem('language', currentLanguage);
@@ -761,12 +1328,30 @@
             updateLanguageIndicator();
         });
         
-        // Initialize language
-        updateLanguage();
-        updateLanguageIndicator();
+        // Mobile language toggle
+        if (flagIndonesiaMobile) {
+            flagIndonesiaMobile.addEventListener('click', () => {
+                currentLanguage = 'id';
+                localStorage.setItem('language', currentLanguage);
+                updateLanguage();
+                updateLanguageIndicator();
+            });
+        }
+        
+        if (flagEnglishMobile) {
+            flagEnglishMobile.addEventListener('click', () => {
+                currentLanguage = 'en';
+                localStorage.setItem('language', currentLanguage);
+                updateLanguage();
+                updateLanguageIndicator();
+            });
+        }
         
         // Initialize Swiper after everything is loaded
         window.addEventListener('load', function() {
+            // Initialize language detection first
+            initializeLanguage();
+            
             setTimeout(function() {
                 try {
                     // Initialize Swiper for Hero Section
@@ -838,6 +1423,145 @@
                     });
                 }
             });
+        });
+        
+        // Micro-animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Add bounce-in animation to buttons on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelectorAll('button, .bg-primary, .bg-secondary').forEach(el => {
+                    el.classList.add('bounce-in');
+                });
+            }, 500);
+        });
+        
+        // Add floating animation to logo
+        const logo = document.querySelector('nav img');
+        if (logo) {
+            logo.classList.add('float-animation');
+        }
+    </script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // PWA Install Prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install button or banner
+            const installBanner = document.createElement('div');
+            installBanner.innerHTML = `
+                <div class="fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg z-50 max-w-sm">
+                    <p class="text-sm mb-2">Install PT Muda Eksportindo app for better experience!</p>
+                    <div class="flex gap-2">
+                        <button id="install-btn" class="bg-white text-blue-600 px-3 py-1 rounded text-sm font-medium">Install</button>
+                        <button id="dismiss-btn" class="bg-blue-700 text-white px-3 py-1 rounded text-sm">Later</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(installBanner);
+            
+            document.getElementById('install-btn').addEventListener('click', () => {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    deferredPrompt = null;
+                    installBanner.remove();
+                });
+            });
+            
+            document.getElementById('dismiss-btn').addEventListener('click', () => {
+                installBanner.remove();
+            });
+        });
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        // Replace GA_MEASUREMENT_ID with your actual Google Analytics ID
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'PT Muda Eksportindo Raya',
+            page_location: window.location.href,
+            content_group1: 'Shrimp Export Business'
+        });
+        
+        // Track custom events
+        function trackEvent(eventName, parameters = {}) {
+            gtag('event', eventName, parameters);
+        }
+        
+        // Track button clicks
+        document.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON' || e.target.closest('button')) {
+                const button = e.target.tagName === 'BUTTON' ? e.target : e.target.closest('button');
+                trackEvent('button_click', {
+                    button_text: button.textContent.trim(),
+                    page_section: button.closest('section')?.id || 'unknown'
+                });
+            }
+            
+            // Track WhatsApp clicks
+            if (e.target.closest('a[href*="wa.me"]') || e.target.textContent.includes('WhatsApp')) {
+                trackEvent('whatsapp_click', {
+                    contact_method: 'whatsapp'
+                });
+            }
+            
+            // Track language toggle
+            if (e.target.id?.includes('flag-')) {
+                const language = e.target.id.includes('indonesia') ? 'Indonesian' : 'English';
+                trackEvent('language_change', {
+                    new_language: language
+                });
+            }
+        });
+        
+        // Track scroll depth
+        let maxScroll = 0;
+        window.addEventListener('scroll', () => {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
+                maxScroll = scrollPercent;
+                trackEvent('scroll_depth', {
+                    scroll_percentage: scrollPercent
+                });
+            }
         });
     </script>
     
