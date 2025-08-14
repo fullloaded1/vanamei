@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Toggle Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; margin: 10px; cursor: pointer; }
+        #about-subtitle { color: blue; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Language Toggle Test</h1>
+    
+    <div class="test-section">
+        <h2>Test Navigation</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Our Products</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test About Section</h2>
+        <h3 id="about-title">Tentang Global Vanabric</h3>
+        <p id="about-description">Deskripsi dalam bahasa Indonesia</p>
+        <h3 id="about-subtitle">Mengapa Memilih Kami?</h3>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Language Toggle</h2>
+        <button onclick="toggleLanguage()">Toggle Language (ID ↔ EN)</button>
+        <p>Current Language: <span id="current-lang">ID</span></p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Debug Console</h2>
+        <p>Open Developer Tools (F12) and check the console for debugging information.</p>
+    </div>
+
+    <script>
+        // Language toggle functionality with localStorage - DECLARE FIRST
+        let currentLanguage = localStorage.getItem('language') || 'id';
+        console.log('Script loaded, currentLanguage initialized as:', currentLanguage);
+        
+        // Language data - DECLARE BEFORE FUNCTIONS
+        const languageData = {
+            // Indonesian translations
+            id: {
+                nav: {
+                    home: 'Beranda',
+                    about: 'Tentang Kami',
+                    products: 'Produk Kami'
+                },
+                about: {
+                    title: 'Tentang Global Vanabric',
+                    description: 'Deskripsi dalam bahasa Indonesia',
+                    subtitle: 'Mengapa Memilih Kami?'
+                }
+            },
+            en: {
+                nav: {
+                    home: 'Home',
+                    about: 'About Us',
+                    products: 'Our Products'
+                },
+                about: {
+                    title: 'About Global Vanabric',
+                    description: 'Description in English',
+                    subtitle: 'Why Choose Us?'
+                }
+            }
+        };
+        
+        console.log('Language data loaded successfully:', Object.keys(languageData));
+
+        function toggleLanguage() {
+            try {
+                console.log('=== TOGGLE LANGUAGE FUNCTION CALLED ===');
+                console.log('Toggle button clicked!');
+                console.log('Current language before toggle:', currentLanguage);
+                
+                currentLanguage = currentLanguage === 'id' ? 'en' : 'id';
+                localStorage.setItem('language', currentLanguage);
+                
+                console.log('Language changed to:', currentLanguage);
+                console.log('localStorage saved:', localStorage.getItem('language'));
+                
+                // Update UI immediately
+                updateLanguage();
+                updateLanguageIndicator();
+                
+                console.log('=== TOGGLE LANGUAGE FUNCTION COMPLETED SUCCESSFULLY ===');
+            } catch (error) {
+                console.error('Error in toggleLanguage function:', error);
+                alert('Error switching language: ' + error.message);
+            }
+        }
+
+        function updateLanguageIndicator() {
+            const currentLangSpan = document.getElementById('current-lang');
+            if (currentLangSpan) {
+                currentLangSpan.textContent = currentLanguage.toUpperCase();
+            }
+        }
+
+        function updateLanguage() {
+            try {
+                console.log('=== UPDATE LANGUAGE FUNCTION CALLED ===');
+                console.log('Updating language to:', currentLanguage);
+                console.log('Language data available:', typeof languageData);
+                console.log('Available languages:', Object.keys(languageData));
+                
+                // Debug: Check if about-subtitle element exists
+                const aboutSubtitleElement = document.querySelector('#about-subtitle');
+                console.log('About subtitle element found:', aboutSubtitleElement);
+                if (aboutSubtitleElement) {
+                    console.log('About subtitle current text:', aboutSubtitleElement.textContent);
+                }
+            
+                // Update navigation
+                const navLinks = document.querySelectorAll('nav ul li a[href^="#"]');
+                console.log('Found nav links:', navLinks.length);
+                
+                if (languageData && languageData[currentLanguage] && languageData[currentLanguage].nav) {
+                    navLinks.forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === '#home') {
+                            link.textContent = languageData[currentLanguage].nav.home;
+                            console.log('Updated home to:', languageData[currentLanguage].nav.home);
+                        }
+                        if (href === '#about') {
+                            link.textContent = languageData[currentLanguage].nav.about;
+                            console.log('Updated about to:', languageData[currentLanguage].nav.about);
+                        }
+                        if (href === '#products') {
+                            link.textContent = languageData[currentLanguage].nav.products;
+                            console.log('Updated products to:', languageData[currentLanguage].nav.products);
+                        }
+                    });
+                }
+
+                // Update About section content
+                const aboutTitle = document.querySelector('#about-title');
+                const aboutDescription = document.querySelector('#about-description');
+                const aboutSubtitle = document.querySelector('#about-subtitle');
+                
+                if (aboutTitle) {
+                    aboutTitle.textContent = languageData[currentLanguage].about.title;
+                    console.log('Updated about title to:', languageData[currentLanguage].about.title);
+                }
+                if (aboutDescription) {
+                    aboutDescription.textContent = languageData[currentLanguage].about.description;
+                    console.log('Updated about description to:', languageData[currentLanguage].about.description);
+                }
+                if (aboutSubtitle) {
+                    aboutSubtitle.textContent = languageData[currentLanguage].about.subtitle;
+                    console.log('Updated about subtitle to:', languageData[currentLanguage].about.subtitle);
+                } else {
+                    console.log('About subtitle element not found!');
+                }
+                
+                console.log('=== UPDATE LANGUAGE COMPLETED SUCCESSFULLY ===');
+            } catch (error) {
+                console.error('Error in updateLanguage:', error);
+            }
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('=== DOM LOADED ===');
+            console.log('Initial language from localStorage:', localStorage.getItem('language'));
+            console.log('Current language variable:', currentLanguage);
+            
+            // Ensure currentLanguage is set
+            if (!localStorage.getItem('language')) {
+                localStorage.setItem('language', 'id');
+                currentLanguage = 'id';
+            }
+            
+            updateLanguage();
+            updateLanguageIndicator();
+            
+            console.log('=== INITIALIZATION COMPLETE ===');
+        });
+    </script>
+</body>
+</html> 
