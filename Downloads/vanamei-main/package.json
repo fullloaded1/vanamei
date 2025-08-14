@@ -1,8 +1,8 @@
 {
-  "name": "global-vanabric-website",
+  "name": "nusa-brikket-website",
   "version": "1.0.0",
   "type": "module",
-  "description": "Global Vanabric - Premium Vanamei Shrimp Export Website",
+  "description": "Nusa Brikket - Premium Charcoal Briquette Export Website",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -28,11 +28,11 @@
   "keywords": [
     "react",
     "material-ui",
-    "vanamei",
-    "shrimp",
+    "charcoal",
+    "briquette",
     "export",
     "website"
   ],
-  "author": "Global Vanabric",
+  "author": "Nusa Brikket",
   "license": "MIT"
 } 
