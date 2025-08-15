@@ -243,7 +243,7 @@
                         </div>
                         
                         <!-- CTA Button -->
-                        <button class="ml-4 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center space-x-2">
+                        <button onclick="openWhatsApp()" class="ml-4 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center space-x-2">
                             <i class="ri-phone-line text-sm"></i>
                             <span data-key="nav.cta">Hubungi Kami</span>
                         </button>
@@ -282,7 +282,7 @@
                             <i class="ri-contacts-line mr-3"></i><span data-key="nav.contact">Kontak</span>
                         </a>
                         <div class="pt-4 border-t border-gray-200">
-                            <button class="w-full bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+                            <button onclick="openWhatsApp()" class="w-full bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
                                 <i class="ri-phone-line"></i>
                                 <span data-key="nav.cta">Hubungi Kami</span>
                             </button>
@@ -325,10 +325,10 @@
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-2 justify-center" style="margin-bottom: 0;">
-                        <button class="bg-primary hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
+                        <button onclick="scrollToProducts()" class="bg-primary hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
                             <i class="ri-shopping-bag-3-line text-lg"></i> <span data-key="hero.cta">Jelajahi Produk</span>
                         </button>
-                        <button class="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-lg text-sm hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
+                        <button onclick="openWhatsApp()" class="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-lg text-sm hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
                             <i class="ri-contacts-line text-lg"></i> <span data-key="hero.cta2">Hubungi Kami</span>
                         </button>
                     </div>
@@ -527,16 +527,16 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div class="bg-white p-8 rounded-xl shadow-lg">
                         <h3 class="text-2xl font-semibold text-primary mb-6" data-key="contact.form.title">Kirim Pesan</h3>
-                        <form class="space-y-6">
+                        <form id="contact-form" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="text" placeholder="Nama Lengkap" data-key="contact.form.name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
-                                <input type="email" placeholder="Email" data-key="contact.form.email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
+                                <input type="text" id="contact-name" placeholder="Nama Lengkap" data-key="contact.form.name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
+                                <input type="email" id="contact-email" placeholder="Email" data-key="contact.form.email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="tel" placeholder="Telepon" data-key="contact.form.phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
-                                <input type="text" placeholder="Perusahaan" data-key="contact.form.company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
+                                <input type="tel" id="contact-phone" placeholder="Telepon" data-key="contact.form.phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
+                                <input type="text" id="contact-company" placeholder="Perusahaan" data-key="contact.form.company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent">
                             </div>
-                            <textarea rows="4" placeholder="Pesan" data-key="contact.form.message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"></textarea>
+                            <textarea rows="4" id="contact-message" placeholder="Pesan" data-key="contact.form.message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"></textarea>
                             <button type="submit" class="w-full bg-secondary hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2">
                                 <i class="ri-whatsapp-line text-lg"></i> <span data-key="contact.form.submit">Kirim Pesan via WhatsApp</span>
                             </button>
@@ -1094,6 +1094,61 @@
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(whatsappURL, '_blank');
         }
+        
+        // WhatsApp function with custom message from contact form
+        function sendWhatsAppMessage() {
+            const phoneNumber = '6285811992995';
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const phone = document.getElementById('contact-phone').value;
+            const company = document.getElementById('contact-company').value;
+            const message = document.getElementById('contact-message').value;
+            
+            let whatsappMessage = '';
+            
+            if (currentLanguage === 'en') {
+                whatsappMessage = `Hello, I would like to inquire about Nusa Brikket products.\n\n`;
+                whatsappMessage += `Name: ${name || 'Not provided'}\n`;
+                whatsappMessage += `Email: ${email || 'Not provided'}\n`;
+                whatsappMessage += `Phone: ${phone || 'Not provided'}\n`;
+                whatsappMessage += `Company: ${company || 'Not provided'}\n`;
+                whatsappMessage += `Message: ${message || 'General inquiry about charcoal briquette products'}`;
+            } else {
+                whatsappMessage = `Halo, saya ingin menanyakan tentang produk Nusa Brikket.\n\n`;
+                whatsappMessage += `Nama: ${name || 'Tidak diisi'}\n`;
+                whatsappMessage += `Email: ${email || 'Tidak diisi'}\n`;
+                whatsappMessage += `Telepon: ${phone || 'Tidak diisi'}\n`;
+                whatsappMessage += `Perusahaan: ${company || 'Tidak diisi'}\n`;
+                whatsappMessage += `Pesan: ${message || 'Pertanyaan umum tentang produk arang brikket'}`;
+            }
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.open(whatsappURL, '_blank');
+        }
+        
+        // Scroll to products section
+        function scrollToProducts() {
+            const productsSection = document.getElementById('products');
+            if (productsSection) {
+                const offsetTop = productsSection.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Contact form submission handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    sendWhatsAppMessage();
+                });
+            }
+        });
     </script>
     
 
