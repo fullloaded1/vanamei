@@ -1329,34 +1329,48 @@
             window.open(whatsappURL, '_blank');
         }
         
-        // Download catalog function
-        function downloadCatalog() {
-            const catalogPath = 'public/Katalog_Arang_Briket.pdf';
+        // Download catalog function (tries multiple paths for different hosts)
+        async function downloadCatalog() {
+            const candidatePaths = [
+                '/Katalog_Arang_Briket.pdf',
+                './Katalog_Arang_Briket.pdf',
+                'public/Katalog_Arang_Briket.pdf',
+                'assest/Katalog_Arang Briket.pdf'
+            ];
             
-            // Create a temporary link element
+            let resolvedPath = null;
+            for (const path of candidatePaths) {
+                try {
+                    const res = await fetch(path, { method: 'HEAD' });
+                    if (res.ok) {
+                        resolvedPath = path;
+                        break;
+                    }
+                } catch (_) {
+                    // ignore and try next
+                }
+            }
+            
+            if (!resolvedPath) {
+                alert(currentLanguage === 'en' ? 'Catalog file is not available at the moment.' : 'File katalog tidak tersedia saat ini.');
+                return;
+            }
+            
             const link = document.createElement('a');
-            link.href = catalogPath;
+            link.href = resolvedPath;
             link.download = 'Katalog_Arang_Briket_Nusa_Brikket.pdf';
-            
-            // Append to body, click, and remove
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
             
-            // Show success message
             const messages = {
                 id: 'Katalog berhasil diunduh!',
                 en: 'Catalog downloaded successfully!'
             };
-            
-            // Create and show notification
             const notification = document.createElement('div');
             notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300';
             notification.textContent = messages[currentLanguage] || messages.id;
-            
             document.body.appendChild(notification);
-            
-            // Remove notification after 3 seconds
             setTimeout(() => {
                 notification.style.transform = 'translateX(100%)';
                 setTimeout(() => {
