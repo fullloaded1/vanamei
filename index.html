@@ -335,8 +335,8 @@
                         <button onclick="scrollToProducts()" class="bg-primary hover:bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
                             <i class="ri-shopping-bag-3-line text-lg"></i> <span data-key="hero.cta">Jelajahi Produk</span>
                         </button>
-                        <button onclick="downloadCatalog()" class="bg-accent hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
-                            <i class="ri-download-line text-lg"></i> <span data-key="hero.cta3">Unduh Katalog</span>
+                        <button onclick="downloadCatalog()" class="bg-white text-primary font-semibold py-2 px-4 rounded-lg text-sm transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2 hover:bg-gray-50">
+                            <i class="ri-file-pdf-line text-lg"></i> <span data-key="hero.cta3">Lihat Katalog</span>
                         </button>
                         <button onclick="openWhatsApp()" class="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-lg text-sm hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 drop-shadow-lg flex items-center justify-center gap-2">
                             <i class="ri-contacts-line text-lg"></i> <span data-key="hero.cta2">Hubungi Kami</span>
@@ -490,16 +490,16 @@
                 
                 <!-- Catalog CTA -->
                 <div class="text-center mt-16">
-                    <div class="bg-gradient-to-r from-primary to-secondary p-8 rounded-2xl text-white">
-                        <h3 class="text-2xl font-bold mb-4" data-key="products.catalog.cta.title">
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <h3 class="text-2xl font-bold text-primary mb-4" data-key="products.catalog.cta.title">
                             Butuh Informasi Lebih Detail?
                         </h3>
-                        <p class="text-lg opacity-90 mb-6" data-key="products.catalog.cta.description">
-                            Unduh katalog produk lengkap kami untuk spesifikasi detail, gambar produk, dan informasi pemesanan
+                        <p class="text-lg text-gray-600 mb-6" data-key="products.catalog.cta.description">
+                            Lihat katalog lengkap kami untuk spesifikasi detail dan informasi pemesanan
                         </p>
-                        <button onclick="scrollToCatalog()" class="bg-white text-primary font-semibold py-3 px-6 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 mx-auto">
+                        <button onclick="scrollToCatalog()" class="bg-primary hover:bg-slate-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 mx-auto">
                             <i class="ri-file-pdf-line text-xl"></i>
-                            <span data-key="products.catalog.cta.button">Lihat Katalog Lengkap</span>
+                            <span data-key="products.catalog.cta.button">Lihat Katalog</span>
                         </button>
                     </div>
                 </div>
@@ -507,106 +507,120 @@
         </section>
 
         <!-- Catalog Section -->
-        <section id="catalog" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <section id="catalog" class="py-20">
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4" data-key="catalog.title">
-                        Katalog Produk Lengkap
+                        Katalog Produk
                     </h2>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-key="catalog.subtitle">
-                        Unduh katalog produk arang brikket kami untuk informasi detail spesifikasi, harga, dan cara pemesanan
+                        Dapatkan informasi lengkap produk arang brikket kami dalam format PDF
                     </p>
                 </div>
                 
-                <div class="max-w-4xl mx-auto">
-                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                        <div class="bg-gradient-to-r from-primary to-secondary p-8 text-white text-center">
-                            <div class="w-24 h-24 mx-auto mb-6 bg-white/20 rounded-full flex items-center justify-center">
-                                <i class="ri-file-pdf-line text-4xl text-white"></i>
-                            </div>
-                            <h3 class="text-3xl font-bold mb-4" data-key="catalog.pdf.title">
-                                Katalog Arang Briket
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column - Content -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-3xl font-bold text-primary mb-4" data-key="catalog.content.title">
+                                Spesifikasi Lengkap Produk
                             </h3>
-                            <p class="text-lg opacity-90 mb-6" data-key="catalog.pdf.description">
-                                Katalog lengkap produk arang brikket premium dengan spesifikasi detail, gambar produk, dan informasi pemesanan
+                            <p class="text-lg text-gray-600 leading-relaxed" data-key="catalog.content.description">
+                                Katalog kami berisi detail lengkap setiap produk arang brikket, termasuk spesifikasi teknis, 
+                                standar kualitas, dan informasi pengiriman yang Anda butuhkan.
                             </p>
-                            <div class="flex flex-wrap justify-center gap-4 text-sm opacity-80">
-                                <span class="flex items-center gap-2">
-                                    <i class="ri-file-text-line"></i>
-                                    <span data-key="catalog.pdf.pages">20+ Halaman</span>
-                                </span>
-                                <span class="flex items-center gap-2">
-                                    <i class="ri-image-line"></i>
-                                    <span data-key="catalog.pdf.images">Gambar Produk HD</span>
-                                </span>
-                                <span class="flex items-center gap-2">
-                                    <i class="ri-information-line"></i>
-                                    <span data-key="catalog.pdf.specs">Spesifikasi Lengkap</span>
-                                </span>
-                            </div>
                         </div>
                         
-                        <div class="p-8">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                                <div class="space-y-4">
-                                    <h4 class="text-xl font-semibold text-primary" data-key="catalog.features.title">
-                                        Fitur Katalog:
-                                    </h4>
-                                    <ul class="space-y-3">
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-check-line text-green-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.features.item1">Spesifikasi produk lengkap dengan standar internasional</span>
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-check-line text-green-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.features.item2">Gambar produk berkualitas tinggi</span>
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-check-line text-green-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.features.item3">Informasi kemasan dan pengiriman</span>
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-check-line text-green-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.features.item4">Cara pemesanan dan kontak</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="space-y-4">
-                                    <h4 class="text-xl font-semibold text-primary" data-key="catalog.benefits.title">
-                                        Manfaat:
-                                    </h4>
-                                    <ul class="space-y-3">
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-star-line text-yellow-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.benefits.item1">Informasi produk yang komprehensif</span>
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-star-line text-yellow-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.benefits.item2">Mudah dibagikan ke tim atau klien</span>
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-star-line text-yellow-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.benefits.item3">Referensi cepat untuk spesifikasi produk</span>
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <i class="ri-star-line text-yellow-500 text-xl mt-0.5"></i>
-                                            <span data-key="catalog.benefits.item4">Dokumen profesional untuk presentasi</span>
-                                        </li>
-                                    </ul>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-file-text-line text-2xl text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary" data-key="catalog.features.specs.title">Spesifikasi Detail</h4>
+                                        <p class="text-sm text-gray-600" data-key="catalog.features.specs.desc">Kalori, ukuran, kemasan</p>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="text-center">
-                                <button onclick="downloadCatalog()" class="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 mx-auto">
-                                    <i class="ri-download-line text-2xl"></i>
-                                    <span data-key="catalog.download.button">Unduh Katalog PDF</span>
-                                </button>
-                                <p class="text-sm text-gray-500 mt-3" data-key="catalog.download.note">
-                                    File akan diunduh secara otomatis dalam format PDF
-                                </p>
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-image-line text-2xl text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary" data-key="catalog.features.images.title">Gambar Produk</h4>
+                                        <p class="text-sm text-gray-600" data-key="catalog.features.images.desc">Foto berkualitas tinggi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex items-center mb-4">
+                                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                            <i class="ri-shipping-line text-2xl text-purple-600"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-primary" data-key="catalog.features.shipping.title">Info Pengiriman</h4>
+                                            <p class="text-sm text-gray-600" data-key="catalog.features.shipping.desc">Kemasan & transportasi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="ri-contacts-line text-2xl text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary" data-key="catalog.features.contact.title">Cara Pemesanan</h4>
+                                        <p class="text-sm text-gray-600" data-key="catalog.features.contact.desc">Kontak & prosedur</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Right Column - Download Card -->
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-white/20 rounded-full flex items-center justify-center">
+                            <i class="ri-file-pdf-line text-3xl text-white"></i>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-4" data-key="catalog.pdf.title">
+                            Katalog Arang Briket
+                        </h3>
+                        
+                        <p class="text-gray-100 mb-6 leading-relaxed" data-key="catalog.pdf.description">
+                            Unduh katalog lengkap dengan informasi produk, spesifikasi, dan cara pemesanan
+                        </p>
+                        
+                        <div class="space-y-3 mb-8 text-sm">
+                            <div class="flex items-center justify-center gap-2">
+                                <i class="ri-check-line text-green-300"></i>
+                                <span data-key="catalog.pdf.pages">20+ halaman informasi lengkap</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-2">
+                                <i class="ri-check-line text-green-300"></i>
+                                <span data-key="catalog.pdf.quality">Gambar produk berkualitas tinggi</span>
+                            </div>
+                            <div class="flex items-center justify-center gap-2">
+                                <i class="ri-check-line text-green-300"></i>
+                                <span data-key="catalog.pdf.specs">Spesifikasi teknis detail</span>
+                            </div>
+                        </div>
+                        
+                        <button onclick="downloadCatalog()" class="w-full bg-white text-primary font-bold py-4 px-6 rounded-xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3">
+                            <i class="ri-download-line text-xl"></i>
+                            <span data-key="catalog.download.button">Unduh Katalog</span>
+                        </button>
+                        
+                        <p class="text-xs text-gray-300 mt-3" data-key="catalog.download.note">
+                            Format PDF • Gratis • Langsung download
+                        </p>
                     </div>
                 </div>
             </div>
@@ -800,7 +814,7 @@
                     description: 'Kami adalah produsen dan eksportir arang brikket premium berkualitas tinggi dari Indonesia. Dengan pengalaman lebih dari 10 tahun, kami telah melayani pasar global dengan produk terbaik.',
                     cta: 'Jelajahi Produk',
                     cta2: 'Hubungi Kami',
-                    cta3: 'Unduh Katalog'
+                    cta3: 'Lihat Katalog'
                 },
                 about: {
                     title: 'Tentang Nusa Brikket',
@@ -846,38 +860,46 @@
                     catalog: {
                         cta: {
                             title: 'Butuh Informasi Lebih Detail?',
-                            description: 'Unduh katalog produk lengkap kami untuk spesifikasi detail, gambar produk, dan informasi pemesanan',
-                            button: 'Lihat Katalog Lengkap'
+                            description: 'Lihat katalog lengkap kami untuk spesifikasi detail dan informasi pemesanan',
+                            button: 'Lihat Katalog'
                         }
                     }
                 },
                 catalog: {
-                    title: 'Katalog Produk Lengkap',
-                    subtitle: 'Unduh katalog produk arang brikket kami untuk informasi detail spesifikasi, harga, dan cara pemesanan',
-                    pdf: {
-                        title: 'Katalog Arang Briket',
-                        description: 'Katalog lengkap produk arang brikket premium dengan spesifikasi detail, gambar produk, dan informasi pemesanan',
-                        pages: '20+ Halaman',
-                        images: 'Gambar Produk HD',
-                        specs: 'Spesifikasi Lengkap'
+                    title: 'Katalog Produk',
+                    subtitle: 'Dapatkan informasi lengkap produk arang brikket kami dalam format PDF',
+                    content: {
+                        title: 'Spesifikasi Lengkap Produk',
+                        description: 'Katalog kami berisi detail lengkap setiap produk arang brikket, termasuk spesifikasi teknis, standar kualitas, dan informasi pengiriman yang Anda butuhkan.'
                     },
                     features: {
-                        title: 'Fitur Katalog:',
-                        item1: 'Spesifikasi produk lengkap dengan standar internasional',
-                        item2: 'Gambar produk berkualitas tinggi',
-                        item3: 'Informasi kemasan dan pengiriman',
-                        item4: 'Cara pemesanan dan kontak'
+                        specs: {
+                            title: 'Spesifikasi Detail',
+                            desc: 'Kalori, ukuran, kemasan'
+                        },
+                        images: {
+                            title: 'Gambar Produk',
+                            desc: 'Foto berkualitas tinggi'
+                        },
+                        shipping: {
+                            title: 'Info Pengiriman',
+                            desc: 'Kemasan & transportasi'
+                        },
+                        contact: {
+                            title: 'Cara Pemesanan',
+                            desc: 'Kontak & prosedur'
+                        }
                     },
-                    benefits: {
-                        title: 'Manfaat:',
-                        item1: 'Informasi produk yang komprehensif',
-                        item2: 'Mudah dibagikan ke tim atau klien',
-                        item3: 'Referensi cepat untuk spesifikasi produk',
-                        item4: 'Dokumen profesional untuk presentasi'
+                    pdf: {
+                        title: 'Katalog Arang Briket',
+                        description: 'Unduh katalog lengkap dengan informasi produk, spesifikasi, dan cara pemesanan',
+                        pages: '20+ halaman informasi lengkap',
+                        quality: 'Gambar produk berkualitas tinggi',
+                        specs: 'Spesifikasi teknis detail'
                     },
                     download: {
-                        button: 'Unduh Katalog PDF',
-                        note: 'File akan diunduh secara otomatis dalam format PDF'
+                        button: 'Unduh Katalog',
+                        note: 'Format PDF • Gratis • Langsung download'
                     }
                 },
                 gallery: {
@@ -938,7 +960,7 @@
                     description: 'We are premium quality charcoal briquette producers and exporters from Indonesia. With over 10 years of experience, we have been serving the global market with the best products.',
                     cta: 'Explore Products',
                     cta2: 'Contact Us',
-                    cta3: 'Download Catalog'
+                    cta3: 'View Catalog'
                 },
                 about: {
                     title: 'About Nusa Brikket',
@@ -984,38 +1006,46 @@
                     catalog: {
                         cta: {
                             title: 'Need More Detailed Information?',
-                            description: 'Download our complete product catalog for detailed specifications, product images, and ordering information',
-                            button: 'View Complete Catalog'
+                            description: 'View our complete catalog for detailed specifications and ordering information',
+                            button: 'View Catalog'
                         }
                     }
                 },
                 catalog: {
-                    title: 'Complete Product Catalog',
-                    subtitle: 'Download our charcoal briquette product catalog for detailed specifications, pricing, and ordering information',
-                    pdf: {
-                        title: 'Charcoal Briquette Catalog',
-                        description: 'Complete catalog of premium charcoal briquette products with detailed specifications, product images, and ordering information',
-                        pages: '20+ Pages',
-                        images: 'HD Product Images',
-                        specs: 'Complete Specifications'
+                    title: 'Product Catalog',
+                    subtitle: 'Get complete information about our charcoal briquette products in PDF format',
+                    content: {
+                        title: 'Complete Product Specifications',
+                        description: 'Our catalog contains complete details of each charcoal briquette product, including technical specifications, quality standards, and shipping information you need.'
                     },
                     features: {
-                        title: 'Catalog Features:',
-                        item1: 'Complete product specifications with international standards',
-                        item2: 'High-quality product images',
-                        item3: 'Packaging and shipping information',
-                        item4: 'Ordering and contact information'
+                        specs: {
+                            title: 'Detailed Specifications',
+                            desc: 'Calories, size, packaging'
+                        },
+                        images: {
+                            title: 'Product Images',
+                            desc: 'High-quality photos'
+                        },
+                        shipping: {
+                            title: 'Shipping Info',
+                            desc: 'Packaging & transportation'
+                        },
+                        contact: {
+                            title: 'Ordering Process',
+                            desc: 'Contact & procedures'
+                        }
                     },
-                    benefits: {
-                        title: 'Benefits:',
-                        item1: 'Comprehensive product information',
-                        item2: 'Easy to share with team or clients',
-                        item3: 'Quick reference for product specifications',
-                        item4: 'Professional document for presentations'
+                    pdf: {
+                        title: 'Charcoal Briquette Catalog',
+                        description: 'Download complete catalog with product information, specifications, and ordering process',
+                        pages: '20+ pages of complete information',
+                        quality: 'High-quality product images',
+                        specs: 'Detailed technical specifications'
                     },
                     download: {
-                        button: 'Download PDF Catalog',
-                        note: 'File will be downloaded automatically in PDF format'
+                        button: 'Download Catalog',
+                        note: 'PDF Format • Free • Direct Download'
                     }
                 },
                 gallery: {
