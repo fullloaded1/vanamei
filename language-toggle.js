@@ -144,6 +144,76 @@ const languageData = {
                 send: 'Send Message'
             }
         }
+    },
+    ar: {
+        nav: {
+            home: 'الرئيسية',
+            about: 'من نحن',
+            products: 'منتجاتنا',
+            gallery: 'المعرض',
+            contact: 'اتصل بنا'
+        },
+        hero: {
+            title: 'شريك التصدير الموثوق من إندونيسيا إلى العالم.',
+            subtitle: 'كمحاربين لا يعرفون الكلل، نساعد الشركات الصغيرة والمتوسطة والصناعات المحلية في غزو الأسواق الدولية بشغف وتفانٍ عميق.',
+            exploreBtn: 'استكشف منتجاتنا',
+            contactBtn: 'اتصل بنا'
+        },
+        about: {
+            title: 'حول جلوبال فانابريك',
+            description: 'جلوبال فانابريك هي شركة تصدير رائدة تربط المنتجات الإندونيسية عالية الجودة بالأسواق العالمية. نحن متخصصون في تصدير فحم البركيت الممتاز والمأكولات البحرية، خاصة جمبري الفانامي، بمعايير دولية صارمة.',
+            subtitle: 'لماذا تختارنا؟',
+            features: {
+                feature1: {
+                    title: 'معايير جودة دولية',
+                    desc: 'جميع منتجاتنا تلبي معايير الجودة الدولية مع شهادات ISO الكاملة وشهادات التصدير.'
+                },
+                feature2: {
+                    title: 'خبرة تصدير إلى 14 دولة',
+                    desc: 'أكثر من 5 سنوات من خبرة التصدير إلى دول مختلفة في أوروبا وأمريكا وآسيا مع شبكات توزيع واسعة.'
+                },
+                feature3: {
+                    title: 'صديق للبيئة ومستدام',
+                    desc: 'استخدام مواد خام صديقة للبيئة وتطبيق ممارسات إنتاج مستدامة لمستقبل أفضل.'
+                },
+                feature4: {
+                    title: 'التعاون مع بلاتينوم برو',
+                    desc: 'شراكة مع بلاتينوم برو لضمان أفضل جودة منتج وخدمة عملاء متميزة.'
+                },
+                feature5: {
+                    title: 'تنوع المنتجات حسب الحاجة',
+                    desc: 'نقدم أنواع مختلفة من فحم البركيت ومنتجات المأكولات البحرية مع تخصيص حسب احتياجات السوق المستهدف.'
+                },
+                feature6: {
+                    title: 'مراقبة جودة صارمة لرضا العملاء',
+                    desc: 'عملية مراقبة جودة صارمة في كل مرحلة إنتاج لضمان رضا العملاء وسمعة جيدة.'
+                }
+            },
+            stats: {
+                experience: 'سنوات الخبرة',
+                countries: 'الدول المستهدفة',
+                clients: 'عملاء راضون'
+            }
+        },
+        products: {
+            title: 'منتجاتنا',
+            subtitle: 'فحم بركيت ممتاز مصنوع للأسواق الدولية'
+        },
+        gallery: {
+            title: 'المعرض',
+            subtitle: 'عملية الإنتاج والتعبئة وعمليات التصدير لدينا'
+        },
+        contact: {
+            title: 'اتصل بنا',
+            subtitle: 'جاهز للتصدير؟ دعنا نناقش احتياجات التصدير الخاصة بك',
+            form: {
+                name: 'الاسم الكامل',
+                email: 'البريد الإلكتروني',
+                phone: 'رقم الهاتف',
+                message: 'الرسالة',
+                send: 'إرسال الرسالة'
+            }
+        }
     }
 };
 
@@ -156,14 +226,26 @@ function toggleLanguage() {
         console.log('Current language before toggle:', currentLanguage);
         console.log('Type of currentLanguage:', typeof currentLanguage);
         
-        currentLanguage = currentLanguage === 'id' ? 'en' : 'id';
+        // Cycle through languages: id -> en -> ar -> id
+        if (currentLanguage === 'id') {
+            currentLanguage = 'en';
+        } else if (currentLanguage === 'en') {
+            currentLanguage = 'ar';
+        } else {
+            currentLanguage = 'id';
+        }
         localStorage.setItem('language', currentLanguage);
         
         console.log('Language changed to:', currentLanguage);
         console.log('localStorage saved:', localStorage.getItem('language'));
         
         // Show feedback to user
-        const languageName = currentLanguage === 'id' ? 'Indonesian' : 'English';
+        const languageNames = {
+            'id': 'Indonesian',
+            'en': 'English', 
+            'ar': 'Arabic'
+        };
+        const languageName = languageNames[currentLanguage] || 'Unknown';
         console.log('Switched to:', languageName);
         
         updateLanguage();
@@ -191,40 +273,91 @@ function updateLanguageIndicator() {
         const languageTextAlt = document.getElementById('language-text-alt');
         const flagIndonesia = document.getElementById('flag-indonesia');
         const flagEnglish = document.getElementById('flag-english');
+        const flagArabic = document.getElementById('flag-arabic');
         
         console.log('Found languageText element:', languageText);
         console.log('Found languageTextAlt element:', languageTextAlt);
         console.log('Found flagIndonesia element:', flagIndonesia);
         console.log('Found flagEnglish element:', flagEnglish);
+        console.log('Found flagArabic element:', flagArabic);
+        
+        // Reset all flags to inactive
+        [flagIndonesia, flagEnglish, flagArabic].forEach(flag => {
+            if (flag) {
+                flag.className = 'text-xl flag-inactive';
+            }
+        });
         
         if (currentLanguage === 'id') {
             // Set Indonesian as active
-            languageText.textContent = 'ID';
-            languageText.className = 'font-medium text-secondary text-sm';
-            flagIndonesia.className = 'text-xl flag-active';
-            flagIndonesia.title = 'Bahasa Indonesia (Aktif)';
+            if (languageText) {
+                languageText.textContent = 'ID';
+                languageText.className = 'font-medium text-secondary text-sm';
+            }
+            if (flagIndonesia) {
+                flagIndonesia.className = 'text-xl flag-active';
+                flagIndonesia.title = 'Bahasa Indonesia (Aktif)';
+            }
             
-            // Set English as inactive
-            languageTextAlt.textContent = 'EN';
-            languageTextAlt.className = 'text-gray-400 text-sm';
-            flagEnglish.className = 'text-xl flag-inactive';
-            flagEnglish.title = 'English (Klik untuk beralih)';
+            // Set others as inactive
+            if (languageTextAlt) {
+                languageTextAlt.textContent = 'EN';
+                languageTextAlt.className = 'text-gray-400 text-sm';
+            }
+            if (flagEnglish) {
+                flagEnglish.title = 'English (Klik untuk beralih)';
+            }
+            if (flagArabic) {
+                flagArabic.title = 'Arabic (Klik untuk beralih)';
+            }
             
             console.log('Set to Indonesian');
-        } else {
+        } else if (currentLanguage === 'en') {
             // Set English as active
-            languageText.textContent = 'ID';
-            languageText.className = 'text-gray-400 text-sm';
-            flagIndonesia.className = 'text-xl flag-inactive';
-            flagIndonesia.title = 'Bahasa Indonesia (Click to switch)';
+            if (languageText) {
+                languageText.textContent = 'ID';
+                languageText.className = 'text-gray-400 text-sm';
+            }
+            if (flagIndonesia) {
+                flagIndonesia.title = 'Bahasa Indonesia (Click to switch)';
+            }
             
-            // Set English as active
-            languageTextAlt.textContent = 'EN';
-            languageTextAlt.className = 'font-medium text-secondary text-sm';
-            flagEnglish.className = 'text-xl flag-active';
-            flagEnglish.title = 'English (Active)';
+            if (languageTextAlt) {
+                languageTextAlt.textContent = 'EN';
+                languageTextAlt.className = 'font-medium text-secondary text-sm';
+            }
+            if (flagEnglish) {
+                flagEnglish.className = 'text-xl flag-active';
+                flagEnglish.title = 'English (Active)';
+            }
+            if (flagArabic) {
+                flagArabic.title = 'Arabic (Click to switch)';
+            }
             
             console.log('Set to English');
+        } else if (currentLanguage === 'ar') {
+            // Set Arabic as active
+            if (languageText) {
+                languageText.textContent = 'ID';
+                languageText.className = 'text-gray-400 text-sm';
+            }
+            if (flagIndonesia) {
+                flagIndonesia.title = 'Bahasa Indonesia (انقر للتبديل)';
+            }
+            
+            if (languageTextAlt) {
+                languageTextAlt.textContent = 'EN';
+                languageTextAlt.className = 'text-gray-400 text-sm';
+            }
+            if (flagEnglish) {
+                flagEnglish.title = 'English (انقر للتبديل)';
+            }
+            if (flagArabic) {
+                flagArabic.className = 'text-xl flag-active';
+                flagArabic.title = 'Arabic (نشط)';
+            }
+            
+            console.log('Set to Arabic');
         }
     } catch (error) {
         console.error('Error in updateLanguageIndicator:', error);
