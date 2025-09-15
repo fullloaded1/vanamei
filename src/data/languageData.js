@@ -56,18 +56,15 @@ export const languageData = {
       items: {
         hoso: {
           title: "HOSO (Head On Shell On)",
-          description: "Udang utuh dengan kepala dan kulit, ideal untuk restoran premium",
-          specs: ["Ukuran: 31/40, 41/50, 51/60", "Kemasan: 1kg, 2kg, 5kg", "Sertifikasi: HACCP, BRC"]
+          description: "Udang utuh dengan kepala dan kulit, ideal untuk restoran premium"
         },
         hlop: {
           title: "HLOP (Head Less On Peeled)",
-          description: "Udang tanpa kepala dengan kulit, populer untuk masakan Asia",
-          specs: ["Ukuran: 31/40, 41/50, 51/60", "Kemasan: 1kg, 2kg, 5kg", "Sertifikasi: HACCP, BRC"]
+          description: "Udang tanpa kepala dengan kulit, populer untuk masakan Asia"
         },
         pto: {
           title: "PTO (Peeled Tail On)",
-          description: "Udang kupas dengan ekor, siap untuk berbagai masakan",
-          specs: ["Ukuran: 31/40, 41/50, 51/60", "Kemasan: 1kg, 2kg, 5kg", "Sertifikasi: HACCP, BRC"]
+          description: "Udang kupas dengan ekor, siap untuk berbagai masakan"
         }
       }
     },
@@ -154,18 +151,15 @@ export const languageData = {
       items: {
         hoso: {
           title: "HOSO (Head On Shell On)",
-          description: "Whole shrimp with head and shell, ideal for premium restaurants",
-          specs: ["Size: 31/40, 41/50, 51/60", "Packaging: 1kg, 2kg, 5kg", "Certification: HACCP, BRC"]
+          description: "Whole shrimp with head and shell, ideal for premium restaurants"
         },
         hlop: {
           title: "HLOP (Head Less On Peeled)",
-          description: "Headless shrimp with shell, popular for Asian cuisine",
-          specs: ["Size: 31/40, 41/50, 51/60", "Packaging: 1kg, 2kg, 5kg", "Certification: HACCP, BRC"]
+          description: "Headless shrimp with shell, popular for Asian cuisine"
         },
         pto: {
           title: "PTO (Peeled Tail On)",
-          description: "Peeled shrimp with tail, ready for various cuisines",
-          specs: ["Size: 31/40, 41/50, 51/60", "Packaging: 1kg, 2kg, 5kg", "Certification: HACCP, BRC"]
+          description: "Peeled shrimp with tail, ready for various cuisines"
         }
       }
     },
@@ -252,18 +246,15 @@ export const languageData = {
       items: {
         hoso: {
           title: "HOSO (رأس وقشرة)",
-          description: "جمبري كامل مع الرأس والقشرة، مثالي للمطاعم المميزة",
-          specs: ["الحجم: 31/40، 41/50، 51/60", "التعبئة: 1كغ، 2كغ، 5كغ", "الشهادة: HACCP، BRC"]
+          description: "جمبري كامل مع الرأس والقشرة، مثالي للمطاعم المميزة"
         },
         hlop: {
           title: "HLOP (بدون رأس مع قشرة)",
-          description: "جمبري بدون رأس مع قشرة، شائع في المطبخ الآسيوي",
-          specs: ["الحجم: 31/40، 41/50، 51/60", "التعبئة: 1كغ، 2كغ، 5كغ", "الشهادة: HACCP، BRC"]
+          description: "جمبري بدون رأس مع قشرة، شائع في المطبخ الآسيوي"
         },
         pto: {
           title: "PTO (مقشر مع ذيل)",
-          description: "جمبري مقشر مع الذيل، جاهز لمختلف الأطباق",
-          specs: ["الحجم: 31/40، 41/50، 51/60", "التعبئة: 1كغ، 2كغ، 5كغ", "الشهادة: HACCP، BRC"]
+          description: "جمبري مقشر مع الذيل، جاهز لمختلف الأطباق"
         }
       }
     },
