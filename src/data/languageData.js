@@ -54,17 +54,17 @@ export const languageData = {
       subtitle: "Udang Vanamei Premium Berkualitas Tinggi",
       description: "Kami menyediakan berbagai jenis udang vanamei dengan kualitas premium untuk memenuhi kebutuhan pasar global.",
       items: {
-        hoso: {
-          title: "HOSO (Head On Shell On)",
-          description: "Udang utuh dengan kepala dan kulit, ideal untuk restoran premium"
+        item1: {
+          title: "Hardwood Lump Charcoal",
+          description: "Hardwood lump charcoal from ulin wood"
         },
-        hlop: {
-          title: "HLOP (Head Less On Peeled)",
-          description: "Udang tanpa kepala dengan kulit, populer untuk masakan Asia"
+        item2: {
+          title: "Coconut Shell Charcoal",
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives."
         },
-        pto: {
-          title: "PTO (Peeled Tail On)",
-          description: "Udang kupas dengan ekor, siap untuk berbagai masakan"
+        item3: {
+          title: "Coconut Shell Charcoal Hexagonal",
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives."
         }
       }
     },
@@ -149,17 +149,17 @@ export const languageData = {
       subtitle: "High-Quality Vanamei Shrimp",
       description: "We provide various types of premium quality vanamei shrimp to meet global market needs.",
       items: {
-        hoso: {
-          title: "HOSO (Head On Shell On)",
-          description: "Whole shrimp with head and shell, ideal for premium restaurants"
+        item1: {
+          title: "Hardwood Lump Charcoal",
+          description: "Hardwood lump charcoal from ulin wood"
         },
-        hlop: {
-          title: "HLOP (Head Less On Peeled)",
-          description: "Headless shrimp with shell, popular for Asian cuisine"
+        item2: {
+          title: "Coconut Shell Charcoal",
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives."
         },
-        pto: {
-          title: "PTO (Peeled Tail On)",
-          description: "Peeled shrimp with tail, ready for various cuisines"
+        item3: {
+          title: "Coconut Shell Charcoal Hexagonal",
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives."
         }
       }
     },
@@ -244,17 +244,17 @@ export const languageData = {
       subtitle: "جمبري فانامي عالي الجودة",
       description: "نوفر أنواع مختلفة من جمبري الفانامي عالي الجودة لتلبية احتياجات السوق العالمي.",
       items: {
-        hoso: {
-          title: "HOSO (رأس وقشرة)",
-          description: "جمبري كامل مع الرأس والقشرة، مثالي للمطاعم المميزة"
+        item1: {
+          title: "فحم الخشب الصلب",
+          description: "فحم الخشب الصلب من خشب الأولين"
         },
-        hlop: {
-          title: "HLOP (بدون رأس مع قشرة)",
-          description: "جمبري بدون رأس مع قشرة، شائع في المطبخ الآسيوي"
+        item2: {
+          title: "فحم قشرة جوز الهند",
+          description: "حرارة أطول، طعم أنظف، تجربة متفوقة. بركيت فحم جوز الهند المكعب مصنوع من قشور جوز الهند الطبيعية 100%، بدون إضافات كيميائية."
         },
-        pto: {
-          title: "PTO (مقشر مع ذيل)",
-          description: "جمبري مقشر مع الذيل، جاهز لمختلف الأطباق"
+        item3: {
+          title: "فحم قشرة جوز الهند السداسي",
+          description: "حرارة أطول، طعم أنظف، تجربة متفوقة. بركيت فحم جوز الهند المكعب مصنوع من قشور جوز الهند الطبيعية 100%، بدون إضافات كيميائية."
         }
       }
     },
