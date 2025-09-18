@@ -56,15 +56,15 @@ export const languageData = {
       items: {
         item1: {
           title: "Premium Hardwood Charcoal – Ulin Wood",
-          description: "<strong>Strong Heat, Long Lasting, Premium Quality.</strong> Our Ulin Wood Charcoal is produced from carefully selected Ulin hardwood, well-known for its high density and long burning time. This makes it the perfect choice for grilling, BBQ, and industrial use. <strong>Key Features:</strong> Long burning duration & consistent heat, 100% natural hardwood, no chemicals, High density – less smoke, cleaner burning, Available in bulk packaging (customizable). Suitable for restaurants, BBQ houses, wholesalers, and international buyers looking for top-grade hardwood charcoal with reliable performance. <strong>Experience the strength of Ulin Hardwood Charcoal – trusted for quality and endurance.</strong>"
+          description: "Strong Heat, Long Lasting, Premium Quality. Our Ulin Wood Charcoal is produced from carefully selected Ulin hardwood, well-known for its high density and long burning time. This makes it the perfect choice for grilling, BBQ, and industrial use. Key Features: Long burning duration & consistent heat, 100% natural hardwood, no chemicals, High density – less smoke, cleaner burning, Available in bulk packaging (customizable). Suitable for restaurants, BBQ houses, wholesalers, and international buyers looking for top-grade hardwood charcoal with reliable performance. Experience the strength of Ulin Hardwood Charcoal – trusted for quality and endurance."
         },
         item2: {
           title: "Coconut Shell Charcoal",
-          description: "<strong>Longer heat, cleaner taste, superior experience.</strong> Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. <strong>Burns up to 2 hours.</strong> <strong>Low ash & odorless smoke.</strong> <strong>Perfect cube shape for a consistent shisha session.</strong> Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. <strong>Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes.</strong>"
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. Burns up to 2 hours. Low ash & odorless smoke. Perfect cube shape for a consistent shisha session. Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes."
         },
         item3: {
           title: "Coconut Shell Charcoal Hexagonal",
-          description: "<strong>Longer heat, cleaner taste, superior experience.</strong> Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. <strong>Burns up to 2 hours.</strong> <strong>Low ash & odorless smoke.</strong> <strong>Perfect cube shape for a consistent shisha session.</strong> Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. <strong>Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes.</strong>"
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. Burns up to 2 hours. Low ash & odorless smoke. Perfect cube shape for a consistent shisha session. Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes."
         }
       }
     },
@@ -151,15 +151,15 @@ export const languageData = {
       items: {
         item1: {
           title: "Premium Hardwood Charcoal – Ulin Wood",
-          description: "<strong>Strong Heat, Long Lasting, Premium Quality.</strong> Our Ulin Wood Charcoal is produced from carefully selected Ulin hardwood, well-known for its high density and long burning time. This makes it the perfect choice for grilling, BBQ, and industrial use. <strong>Key Features:</strong> Long burning duration & consistent heat, 100% natural hardwood, no chemicals, High density – less smoke, cleaner burning, Available in bulk packaging (customizable). Suitable for restaurants, BBQ houses, wholesalers, and international buyers looking for top-grade hardwood charcoal with reliable performance. <strong>Experience the strength of Ulin Hardwood Charcoal – trusted for quality and endurance.</strong>"
+          description: "Strong Heat, Long Lasting, Premium Quality. Our Ulin Wood Charcoal is produced from carefully selected Ulin hardwood, well-known for its high density and long burning time. This makes it the perfect choice for grilling, BBQ, and industrial use. Key Features: Long burning duration & consistent heat, 100% natural hardwood, no chemicals, High density – less smoke, cleaner burning, Available in bulk packaging (customizable). Suitable for restaurants, BBQ houses, wholesalers, and international buyers looking for top-grade hardwood charcoal with reliable performance. Experience the strength of Ulin Hardwood Charcoal – trusted for quality and endurance."
         },
         item2: {
           title: "Coconut Shell Charcoal",
-          description: "<strong>Longer heat, cleaner taste, superior experience.</strong> Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. <strong>Burns up to 2 hours.</strong> <strong>Low ash & odorless smoke.</strong> <strong>Perfect cube shape for a consistent shisha session.</strong> Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. <strong>Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes.</strong>"
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. Burns up to 2 hours. Low ash & odorless smoke. Perfect cube shape for a consistent shisha session. Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes."
         },
         item3: {
           title: "Coconut Shell Charcoal Hexagonal",
-          description: "<strong>Longer heat, cleaner taste, superior experience.</strong> Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. <strong>Burns up to 2 hours.</strong> <strong>Low ash & odorless smoke.</strong> <strong>Perfect cube shape for a consistent shisha session.</strong> Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. <strong>Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes.</strong>"
+          description: "Longer heat, cleaner taste, superior experience. Our cube-shaped coconut charcoal briquettes are made from 100% natural coconut shells, with no chemical additives. Burns up to 2 hours. Low ash & odorless smoke. Perfect cube shape for a consistent shisha session. Ideal for lounges, cafés, and international distributors seeking premium quality at competitive prices. Enjoy shisha without compromise – only with our Export-Grade Coconut Cube Briquettes."
         }
       }
     },
@@ -246,15 +246,15 @@ export const languageData = {
       items: {
         item1: {
           title: "فحم الخشب الصلب الممتاز – خشب الأولين",
-          description: "<strong>حرارة قوية، يدوم طويلاً، جودة ممتازة.</strong> فحم خشب الأولين مصنوع من خشب الأولين الصلب المختار بعناية، معروف بكثافته العالية ووقت الاحتراق الطويل. هذا يجعله الخيار المثالي للشواء والشواء الصناعي. <strong>الميزات الرئيسية:</strong> مدة احتراق طويلة وحرارة ثابتة، 100% خشب طبيعي، بدون مواد كيميائية، كثافة عالية – دخان أقل، احتراق أنظف، متوفر في عبوات بالجملة (قابل للتخصيص). مناسب للمطاعم وبيوت الشواء وتجار الجملة والمشترين الدوليين الذين يبحثون عن فحم خشب صلب من الدرجة الأولى بأداء موثوق. <strong>اختبر قوة فحم خشب الأولين – موثوق للجودة والتحمل.</strong>"
+          description: "حرارة قوية، يدوم طويلاً، جودة ممتازة. فحم خشب الأولين مصنوع من خشب الأولين الصلب المختار بعناية، معروف بكثافته العالية ووقت الاحتراق الطويل. هذا يجعله الخيار المثالي للشواء والشواء الصناعي. الميزات الرئيسية: مدة احتراق طويلة وحرارة ثابتة، 100% خشب طبيعي، بدون مواد كيميائية، كثافة عالية – دخان أقل، احتراق أنظف، متوفر في عبوات بالجملة (قابل للتخصيص). مناسب للمطاعم وبيوت الشواء وتجار الجملة والمشترين الدوليين الذين يبحثون عن فحم خشب صلب من الدرجة الأولى بأداء موثوق. اختبر قوة فحم خشب الأولين – موثوق للجودة والتحمل."
         },
         item2: {
           title: "فحم قشرة جوز الهند",
-          description: "<strong>حرارة أطول، طعم أنظف، تجربة متفوقة.</strong> بركيت فحم جوز الهند المكعب مصنوع من قشور جوز الهند الطبيعية 100%، بدون إضافات كيميائية. <strong>يحترق حتى ساعتين.</strong> <strong>رماد قليل ودخان عديم الرائحة.</strong> <strong>شكل مكعب مثالي لجلسة شيشة متسقة.</strong> مثالي للصالات والمقاهي وتجار الجملة الدوليين الذين يبحثون عن جودة ممتازة بأسعار تنافسية. <strong>استمتع بالشيشة بدون تنازلات – فقط مع بركيت فحم جوز الهند المكعب من الدرجة التصديرية.</strong>"
+          description: "حرارة أطول، طعم أنظف، تجربة متفوقة. بركيت فحم جوز الهند المكعب مصنوع من قشور جوز الهند الطبيعية 100%، بدون إضافات كيميائية. يحترق حتى ساعتين. رماد قليل ودخان عديم الرائحة. شكل مكعب مثالي لجلسة شيشة متسقة. مثالي للصالات والمقاهي وتجار الجملة الدوليين الذين يبحثون عن جودة ممتازة بأسعار تنافسية. استمتع بالشيشة بدون تنازلات – فقط مع بركيت فحم جوز الهند المكعب من الدرجة التصديرية."
         },
         item3: {
           title: "فحم قشرة جوز الهند السداسي",
-          description: "<strong>حرارة أطول، طعم أنظف، تجربة متفوقة.</strong> بركيت فحم جوز الهند المكعب مصنوع من قشور جوز الهند الطبيعية 100%، بدون إضافات كيميائية. <strong>يحترق حتى ساعتين.</strong> <strong>رماد قليل ودخان عديم الرائحة.</strong> <strong>شكل مكعب مثالي لجلسة شيشة متسقة.</strong> مثالي للصالات والمقاهي وتجار الجملة الدوليين الذين يبحثون عن جودة ممتازة بأسعار تنافسية. <strong>استمتع بالشيشة بدون تنازلات – فقط مع بركيت فحم جوز الهند المكعب من الدرجة التصديرية.</strong>"
+          description: "حرارة أطول، طعم أنظف، تجربة متفوقة. بركيت فحم جوز الهند المكعب مصنوع من قشور جوز الهند الطبيعية 100%، بدون إضافات كيميائية. يحترق حتى ساعتين. رماد قليل ودخان عديم الرائحة. شكل مكعب مثالي لجلسة شيشة متسقة. مثالي للصالات والمقاهي وتجار الجملة الدوليين الذين يبحثون عن جودة ممتازة بأسعار تنافسية. استمتع بالشيشة بدون تنازلات – فقط مع بركيت فحم جوز الهند المكعب من الدرجة التصديرية."
         }
       }
     },
