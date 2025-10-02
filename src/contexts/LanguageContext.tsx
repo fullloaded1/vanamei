@@ -154,6 +154,9 @@ const translations = {
     bulkShipment: 'Bulk shipment',
     per15kgPack: '15kg (inner plastic bag + outer PP woven bag/carton)',
     per5kgPack: '5kg (inner plastic bag + outer PP woven bag/carton)',
+    // Footer
+    quickLinks: 'Quick Links',
+    contact: 'Contact',
   },
   id: {
     // Navbar
@@ -296,6 +299,9 @@ const translations = {
     bulkShipment: 'Bulk shipment',
     per15kgPack: '15kg (kantong plastik dalam + karung PP luar/karton)',
     per5kgPack: '5kg (kantong plastik dalam + karung PP luar/karton)',
+    // Footer
+    quickLinks: 'Tautan Cepat',
+    contact: 'Kontak',
   },
   ar: {
     // Navbar
@@ -438,6 +444,9 @@ const translations = {
     bulkShipment: 'الشحن بالجملة',
     per15kgPack: '15 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
     per5kgPack: '5 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
+    // Footer
+    quickLinks: 'روابط سريعة',
+    contact: 'اتصل',
   }
 };
 
