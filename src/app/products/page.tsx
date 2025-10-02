@@ -1,9 +1,11 @@
 import SectionTitle from '@/components/SectionTitle';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
+import CharcoalProductCard from '@/components/CharcoalProductCard';
 import Image from 'next/image';
 import Link from 'next/link';
 import { products, Product } from '@/data/products';
+import { charcoalProducts } from '@/data/charcoalProducts';
 
 export default function Products() {
   return (
@@ -18,11 +20,26 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section className="py-16">
+      {/* Charcoal Products Section */}
+      <section className="py-16 bg-white">
         <SectionTitle 
-          title="Product Catalog" 
-          subtitle="High-quality coconut derivatives for various industries." 
+          title="Premium Charcoal Products" 
+          subtitle="High-quality charcoal products for various applications." 
+        />
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {charcoalProducts.map((product) => (
+              <CharcoalProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Other Products Grid */}
+      <section className="py-16 bg-gray-50">
+        <SectionTitle 
+          title="Other Coconut Products" 
+          subtitle="Complete range of coconut derivatives for various industries." 
         />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

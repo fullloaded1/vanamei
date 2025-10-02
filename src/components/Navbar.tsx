@@ -3,11 +3,15 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useSmoothScroll } from '@/hooks/useScrollAnimation';
+import { scrollTo } from '@/lib/smoothScroll';
 import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+
+  const closeMenu = () => setIsOpen(false);
 
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -25,6 +29,7 @@ export default function Navbar() {
                 <Image
                   src="/images/CocoBlim%20Logo%201.png"
                   alt="CocoBlim Logo"
+                  width={32}
                   height={32}
                   style={{ objectFit: 'contain' }}
                   className="rounded"

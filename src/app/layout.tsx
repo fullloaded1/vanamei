@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { SmoothScrollProvider } from '@/components/SmoothScrollProvider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
@@ -18,11 +19,13 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans">
         <LanguageProvider>
-          <div className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
+          <SmoothScrollProvider>
+            <div className="flex flex-col min-h-screen">
+              <Navbar />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+            </div>
+          </SmoothScrollProvider>
         </LanguageProvider>
       </body>
     </html>
