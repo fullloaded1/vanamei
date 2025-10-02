@@ -49,6 +49,23 @@ const translations = {
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
     address: 'Depok, West Java, Indonesia',
+    // Charcoal Products
+    charcoalBriketShisha: 'COCONUT BRIQUETTE SHISHA',
+    charcoalKayuKeras: 'HARDWOOD CHARCOAL',
+    charcoalTempurungKelapa: 'COCONUT SHELL CHARCOAL',
+    charcoalGranulaMeshed: 'GRANULATED/MESHED CHARCOAL',
+    charcoalSawdustBriquette: 'SAWDUST BRIQUETTE CHARCOAL',
+    charcoalActivatedCarbon: 'ACTIVATED CARBON',
+    // Product Features
+    kualitasPremium: 'PREMIUM QUALITY',
+    tanpaBahanKimia: 'NO CHEMICALS',
+    terbakarLebihLama: 'BURNS LONGER',
+    rasaSmoky: 'SMOKY FLAVOR',
+    bahanBakuTerbaik: 'BEST RAW MATERIALS',
+    semuaUkuranSiap: 'ALL SIZES READY',
+    kualitasTinggi: 'HIGH QUALITY',
+    untukIndustri: 'FOR INDUSTRY',
+    tahanLama: 'LONG LASTING',
   },
   id: {
     // Navbar
@@ -86,6 +103,23 @@ const translations = {
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
     address: 'Depok, Jawa Barat, Indonesia',
+    // Charcoal Products
+    charcoalBriketShisha: 'ARANG BRIKET SHISHA',
+    charcoalKayuKeras: 'ARANG KAYU KERAS',
+    charcoalTempurungKelapa: 'ARANG TEMPURUNG KELAPA',
+    charcoalGranulaMeshed: 'ARANG GRANULA/MESHED',
+    charcoalSawdustBriquette: 'ARANG SAWDUST BRIQUETTE',
+    charcoalActivatedCarbon: 'ARANG ACTIVATED CARBON',
+    // Product Features
+    kualitasPremium: 'KUALITAS PREMIUM',
+    tanpaBahanKimia: 'TANPA BAHAN KIMIA',
+    terbakarLebihLama: 'TERBAKAR LEBIH LAMA',
+    rasaSmoky: 'RASA SMOKY',
+    bahanBakuTerbaik: 'BAHAN BAKU TERBAIK',
+    semuaUkuranSiap: 'SEMUA UKURAN SIAP',
+    kualitasTinggi: 'KUALITAS TINGGI',
+    untukIndustri: 'UNTUK INDUSTRI',
+    tahanLama: 'TAHAN LAMA',
   },
   ar: {
     // Navbar
@@ -123,6 +157,23 @@ const translations = {
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
     address: 'ديبوك، جاوة الغربية، إندونيسيا',
+    // Charcoal Products
+    charcoalBriketShisha: 'فحم جوز الهند للشيشة',
+    charcoalKayuKeras: 'فحم الخشب الصلب',
+    charcoalTempurungKelapa: 'فحم قشر جوز الهند',
+    charcoalGranulaMeshed: 'فحم محبب/مشبك',
+    charcoalSawdustBriquette: 'قوالب فحم نشارة الخشب',
+    charcoalActivatedCarbon: 'الكربون المنشط',
+    // Product Features
+    kualitasPremium: 'جودة ممتازة',
+    tanpaBahanKimia: 'بدون مواد كيميائية',
+    terbakarLebihLama: 'يحترق لفترة أطول',
+    rasaSmoky: 'نكهة مدخنة',
+    bahanBakuTerbaik: 'أفضل المواد الخام',
+    semuaUkuranSiap: 'جميع الأحجام جاهزة',
+    kualitasTinggi: 'جودة عالية',
+    untukIndustri: 'للصناعة',
+    tahanLama: 'يدوم طويلاً',
   }
 };
 

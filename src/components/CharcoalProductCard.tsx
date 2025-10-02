@@ -3,19 +3,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { CharcoalProduct } from '@/data/charcoalProducts';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface CharcoalProductCardProps {
   product: CharcoalProduct;
 }
 
 export default function CharcoalProductCard({ product }: CharcoalProductCardProps) {
+  const { t } = useLanguage();
+  
   return (
     <div className="text-center group cursor-pointer">
       {/* Product Image - Enhanced with smooth animations */}
       <div className="relative w-full aspect-square mb-0 overflow-hidden transform transition-all duration-700 ease-out group-hover:scale-105">
         <Image
           src={product.image}
-          alt={product.name}
+          alt={t(product.name)}
           fill
           style={{ objectFit: 'cover' }}
           className="w-full h-full transition-transform duration-700 ease-out group-hover:scale-110"
@@ -42,14 +45,14 @@ export default function CharcoalProductCard({ product }: CharcoalProductCardProp
                 animationDelay: `${index * 100}ms`
               }}
             >
-              {feature}
+              {t(feature)}
             </span>
           ))}
         </div>
 
         {/* Product Title - smooth color transition */}
         <h3 className="text-lg font-bold text-black mb-3 uppercase tracking-wide leading-tight h-12 flex items-center justify-center transition-colors duration-300 ease-out group-hover:text-gray-700">
-          {product.name}
+          {t(product.name)}
         </h3>
         
         {/* Description - fade animation */}
