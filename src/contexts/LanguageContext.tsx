@@ -40,7 +40,7 @@ const translations = {
     understandingText2: 'We understand global market needs and standards, and are committed to providing the best service.',
     // About Section
     story: 'Story',
-    storyText: 'The initial idea of CocoBlim was to utilize coconut waste and sawdust that are abundant in various regions in Indonesia.',
+    storyText: 'CocoBlim is committed to utilizing coconut waste and quality wood from all regions in Indonesia for the international market.',
     vision: 'Vision',
     visionText: 'To become a charcoal supply company that can meet local and global market needs, and prioritize the quality of charcoal products.',
     mission: 'Mission',
@@ -68,6 +68,12 @@ const translations = {
     tahanLama: 'LONG LASTING',
     // Product Descriptions
     descBriketShisha: 'Our coconut briquette shisha is made from selected coconut shells processed with modern technology to produce the best quality.',
+    // Briket Shisha Specifications
+    specifications: 'Specifications',
+    ashContent: 'Ash Content: ≤ 2.5%',
+    fixedCarbon: 'Fixed Carbon: ≥ 75%',
+    burningTime: 'Burning Time: 90–120 minutes',
+    calorificValue: 'Calorific Value: ≥ 7,000 kcal/kg',
     descKayuKeras: 'Our hardwood charcoal is made from selected wood starting from Tamarind Wood, premium quality wood.',
     descTempurungKelapa: 'Coconut shell charcoal is a material that can be used for various industrial applications.',
     descGranulaMeshed: 'Meshed charcoal or known as granular activated carbon can be used for water treatment and filtration.',
@@ -101,7 +107,7 @@ const translations = {
     understandingText2: 'Kami memahami kebutuhan dan standard pasar global, dan berkomitmen untuk memberikan layanan terbaik.',
     // About Section
     story: 'Story',
-    storyText: 'Ide awal CocoBlim adalah untuk memanfaatkan limbah kelapa dan serbuk gergaji yang melimpah di berbagai daerah di Indonesia.',
+    storyText: 'CocoBlim berkomitmen terhadap pemanfaatan limbah kelapa dan kayu berkualitas dari seluruh wilayah di Indonesia untuk pasar internasional.',
     vision: 'Visi',
     visionText: 'Menjadi perusahaan pemasok arang yang mampu memenuhi kebutuhan pasar lokal, dunia, dan mengutamakan kualitas produk-produk arang.',
     mission: 'Misi',
@@ -129,6 +135,12 @@ const translations = {
     tahanLama: 'TAHAN LAMA',
     // Product Descriptions
     descBriketShisha: 'Arang briket shisha kami terbuat dari tempurung kelapa pilihan yang diproses dengan teknologi modern untuk menghasilkan kualitas terbaik.',
+    // Briket Shisha Specifications
+    specifications: 'Spesifikasi',
+    ashContent: 'Ash Content: ≤ 2.5%',
+    fixedCarbon: 'Fixed Carbon: ≥ 75%',
+    burningTime: 'Burning Time: 90–120 menit',
+    calorificValue: 'Calorific Value: ≥ 7.000 kcal/kg',
     descKayuKeras: 'Arang kayu keras kami terbuat dari kayu pilihan mulai dari Kayu Asam Jawa, kayu berkualitas premium.',
     descTempurungKelapa: 'Arang tempurung kelapa merupakan bahan yang dapat digunakan untuk berbagai keperluan industri.',
     descGranulaMeshed: 'Arang meshed atau dikenal dengan karbon aktif granular dapat digunakan untuk pengolahan air dan filtrasi.',
@@ -162,7 +174,7 @@ const translations = {
     understandingText2: 'نحن نفهم احتياجات ومعايير السوق العالمية، ونلتزم بتقديم أفضل خدمة.',
     // About Section
     story: 'القصة',
-    storyText: 'الفكرة الأولى لكوكوبليم كانت الاستفادة من نفايات جوز الهند ونشارة الخشب الوفيرة في مختلف المناطق في إندونيسيا.',
+    storyText: 'كوكوبليم ملتزمة بالاستفادة من نفايات جوز الهند والأخشاب عالية الجودة من جميع المناطق في إندونيسيا للسوق الدولية.',
     vision: 'الرؤية',
     visionText: 'أن نصبح شركة توريد فحم قادرة على تلبية احتياجات السوق المحلية والعالمية، وإعطاء الأولوية لجودة منتجات الفحم.',
     mission: 'المهمة',
@@ -190,6 +202,12 @@ const translations = {
     tahanLama: 'يدوم طويلاً',
     // Product Descriptions
     descBriketShisha: 'فحم جوز الهند للشيشة مصنوع من قشور جوز الهند المختارة المعالجة بالتكنولوجيا الحديثة لإنتاج أفضل جودة.',
+    // Briket Shisha Specifications
+    specifications: 'المواصفات',
+    ashContent: 'محتوى الرماد: ≤ 2.5%',
+    fixedCarbon: 'الكربون الثابت: ≥ 75%',
+    burningTime: 'وقت الاحتراق: 90–120 دقيقة',
+    calorificValue: 'القيمة الحرارية: ≥ 7,000 سعرة حرارية/كغ',
     descKayuKeras: 'فحم الخشب الصلب مصنوع من الأخشاب المختارة بدءاً من خشب التمر الهندي، خشب عالي الجودة.',
     descTempurungKelapa: 'فحم قشر جوز الهند مادة يمكن استخدامها لمختلف التطبيقات الصناعية.',
     descGranulaMeshed: 'الفحم المشبك أو المعروف بالكربون المنشط الحبيبي يمكن استخدامه لمعالجة المياه والترشيح.',

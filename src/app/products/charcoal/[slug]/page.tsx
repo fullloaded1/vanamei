@@ -26,12 +26,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   const productSpecs = {
     'arang-briket-shisha': {
       specifications: [
-        { label: 'Bahan Baku', value: 'Kayu Asam Jawa, Kayu Keras Pilihan' },
+        { label: 'Bahan Baku', value: 'Tempurung Kelapa Pilihan' },
         { label: 'Bentuk', value: 'Kubus 25x25x25mm' },
-        { label: 'Waktu Bakar', value: '2-3 jam' },
-        { label: 'Kadar Abu', value: '< 3%' },
-        { label: 'Kadar Air', value: '< 8%' },
-        { label: 'Kalori', value: '7000-7500 kcal/kg' }
+        { label: 'Ash Content', value: '≤ 2.5%' },
+        { label: 'Fixed Carbon', value: '≥ 75%' },
+        { label: 'Burning Time', value: '90–120 menit' },
+        { label: 'Calorific Value', value: '≥ 7.000 kcal/kg' }
       ],
       applications: [
         'Shisha dan Hookah Premium',
