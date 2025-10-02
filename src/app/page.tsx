@@ -309,32 +309,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Factory Features */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { key: 'factoryFeature1', icon: '🏭' },
-                { key: 'factoryFeature2', icon: '✅' },
-                { key: 'factoryFeature3', icon: '🏆' },
-                { key: 'factoryFeature4', icon: '🌱' }
-              ].map((feature, index) => (
-                <div
-                  key={feature.key}
-                  className={`text-center p-6 bg-gray-50 rounded-lg transition-all duration-700 ${
-                    factoryAnimation.isVisible 
-                      ? 'opacity-100 translate-y-0' 
-                      : 'opacity-0 translate-y-12'
-                  }`}
-                  style={{ 
-                    transitionDelay: `${600 + (index * 150)}ms`,
-                  }}
-                >
-                  <div className="text-4xl mb-4">{feature.icon}</div>
-                  <h4 className="text-lg font-semibold text-gray-900">
-                    {t(feature.key)}
-                  </h4>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
