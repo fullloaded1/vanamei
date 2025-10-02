@@ -46,19 +46,13 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl">
                 Anda membutuhkan arang?
               </h1>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight drop-shadow-2xl">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-12 leading-tight drop-shadow-2xl">
                 Kualitas arang kami selalu dapat dipercaya.
               </h1>
-              <div className="mb-12">
-                <h2 className="text-xl md:text-2xl font-semibold text-white/90 drop-shadow-xl">
-                  CocoBlim - Supplier arang Indonesia yang dapat dipercaya
-                </h2>
-              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Benefits Section - Exact Cocologi Style */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
