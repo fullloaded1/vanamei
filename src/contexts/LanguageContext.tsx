@@ -79,6 +79,8 @@ const translations = {
     descGranulaMeshed: 'Meshed charcoal or known as granular activated carbon can be used for water treatment and filtration.',
     descSawdustBriquette: 'Sawdust briquette charcoal is made from compressed sawdust with high quality standards.',
     descActivatedCarbon: 'Activated carbon charcoal for industrial needs and water filtration applications.',
+    // Products Section
+    ourProducts: 'OUR PRODUCTS',
     // Product Detail Page
     productSpecifications: 'Product Specifications',
     applications: 'Applications',
@@ -215,6 +217,8 @@ const translations = {
     descGranulaMeshed: 'Arang meshed atau dikenal dengan karbon aktif granular dapat digunakan untuk pengolahan air dan filtrasi.',
     descSawdustBriquette: 'Arang sawdust briquette terbuat dari serbuk gergaji yang dipadatkan dengan standar kualitas tinggi.',
     descActivatedCarbon: 'Arang activated carbon untuk keperluan industri dan aplikasi filtrasi air.',
+    // Products Section
+    ourProducts: 'PRODUK KAMI',
     // Product Detail Page
     productSpecifications: 'Spesifikasi Produk',
     applications: 'Aplikasi',
@@ -351,6 +355,8 @@ const translations = {
     descGranulaMeshed: 'الفحم المشبك أو المعروف بالكربون المنشط الحبيبي يمكن استخدامه لمعالجة المياه والترشيح.',
     descSawdustBriquette: 'قوالب فحم نشارة الخشب مصنوعة من نشارة الخشب المضغوطة بمعايير جودة عالية.',
     descActivatedCarbon: 'الكربون المنشط للاحتياجات الصناعية وتطبيقات ترشيح المياه.',
+    // Products Section
+    ourProducts: 'منتجاتنا',
     // Product Detail Page
     productSpecifications: 'مواصفات المنتج',
     applications: 'التطبيقات',

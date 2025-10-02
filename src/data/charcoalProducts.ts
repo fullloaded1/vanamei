@@ -38,29 +38,11 @@ export const charcoalProducts: CharcoalProduct[] = [
   },
   {
     id: '4',
-    name: 'charcoalGranulaMeshed',
-    slug: 'arang-granula-meshed',
-    description: 'descGranulaMeshed',
-    features: ['semuaUkuranSiap'],
-    image: '/images/charcoal/ARANG GRANULAMESHED.jpg',
-    category: 'Granulated'
-  },
-  {
-    id: '5',
     name: 'charcoalSawdustBriquette',
     slug: 'arang-sawdust-briquette',
     description: 'descSawdustBriquette',
     features: ['bahanBakuTerbaik', 'tahanLama'],
-    image: '/images/charcoal/ARANG SAWDUST BRIQUETTE.jpg',
+    image: '/images/charcoal/SAWDUST.jpeg',
     category: 'Briquette'
-  },
-  {
-    id: '6',
-    name: 'charcoalActivatedCarbon',
-    slug: 'arang-activated-carbon',
-    description: 'descActivatedCarbon',
-    features: ['kualitasTinggi', 'untukIndustri'],
-    image: '/images/charcoal/ARANG ACTIVATED CARBON.jpg',
-    category: 'Industrial'
   }
 ];

@@ -200,10 +200,13 @@ export default function Home() {
               productsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
             }`}
           >
-            {/* Optional Section Header with Animation */}
+            {/* Section Header with Animation */}
             <div className={`text-center mb-12 transition-all duration-800 delay-200 ease-out ${
               productsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {t('ourProducts')}
+              </h2>
               <div className="inline-block">
                 <div className="w-16 h-1 bg-gradient-to-r from-gray-400 to-gray-600 mx-auto mb-4 transform transition-all duration-700 ease-out scale-x-0 group-hover:scale-x-100" 
                      style={{ 
@@ -213,8 +216,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Products Grid - Enhanced with staggered animations */}
-            <div className="grid grid-cols-3 gap-8">
+            {/* Products Grid - Enhanced with staggered animations - 2x2 grid for 4 products */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {charcoalProducts.map((product, index) => (
                 <div
                   key={product.id}
