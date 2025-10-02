@@ -276,35 +276,34 @@ export default function Home() {
             </div>
 
             {/* Factory Images Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {[
+                '/images/factory/2.jpg',
+                '/images/factory/2123.jpg',
+                '/images/factory/Untitled.jpg',
                 '/images/factory/WhatsApp Image 2025-10-02 at 18.07.51.jpeg',
                 '/images/factory/WhatsApp Image 2025-10-02 at 18.07.52.jpeg',
-                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.53.jpeg',
-                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.51(1).jpeg',
-                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.52(1).jpeg',
-                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.53(1).jpeg',
-                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.52(2).jpeg',
-                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.54.jpeg'
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.53.jpeg'
               ].map((imageSrc, index) => (
                 <div
                   key={index}
-                  className={`relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-500 transform hover:scale-105 ${
+                  className={`relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] ${
                     factoryAnimation.isVisible 
                       ? 'opacity-100 translate-y-0' 
                       : 'opacity-0 translate-y-8'
                   }`}
                   style={{ 
-                    transitionDelay: `${200 + (index * 100)}ms`,
+                    transitionDelay: `${200 + (index * 150)}ms`,
                   }}
                 >
                   <Image
                     src={imageSrc}
-                    alt={`Factory Image ${index + 1}`}
+                    alt={`CocoBlim Factory - Production Facility ${index + 1}`}
                     fill
                     style={{ objectFit: 'cover' }}
-                    className="transition-transform duration-500 hover:scale-110"
+                    className="transition-transform duration-700 hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               ))}
             </div>
