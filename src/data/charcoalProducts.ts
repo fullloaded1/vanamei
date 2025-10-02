@@ -13,7 +13,7 @@ export const charcoalProducts: CharcoalProduct[] = [
     id: '1',
     name: 'charcoalBriketShisha',
     slug: 'arang-briket-shisha',
-    description: 'Arang briket shisha kami terbuat dari tempurung kelapa pilihan yang diproses dengan teknologi modern untuk menghasilkan kualitas terbaik.',
+    description: 'descBriketShisha',
     features: ['kualitasPremium', 'tanpaBahanKimia', 'terbakarLebihLama'],
     image: '/images/charcoal/ARANG BRIKET SHISHA.jpg',
     category: 'Briquette'
@@ -22,7 +22,7 @@ export const charcoalProducts: CharcoalProduct[] = [
     id: '2',
     name: 'charcoalKayuKeras',
     slug: 'arang-kayu-keras',
-    description: 'Arang kayu keras kami terbuat dari kayu pilihan mulai dari Kayu Asam Jawa, Kayu',
+    description: 'descKayuKeras',
     features: ['rasaSmoky', 'bahanBakuTerbaik', 'semuaUkuranSiap'],
     image: '/images/charcoal/ARANG KAYU KERAS.jpg',
     category: 'Hardwood'
@@ -31,7 +31,7 @@ export const charcoalProducts: CharcoalProduct[] = [
     id: '3',
     name: 'charcoalTempurungKelapa',
     slug: 'arang-tempurung-kelapa',
-    description: 'Arang tempurung kelapa merupakan bahan yang dapat digunakan untuk',
+    description: 'descTempurungKelapa',
     features: ['bahanBakuTerbaik', 'semuaUkuranSiap'],
     image: '/images/charcoal/ARANG TEMPURUNG KELAPA.jpg',
     category: 'Coconut Shell'
@@ -40,7 +40,7 @@ export const charcoalProducts: CharcoalProduct[] = [
     id: '4',
     name: 'charcoalGranulaMeshed',
     slug: 'arang-granula-meshed',
-    description: 'Arang meshed atau dikenal dengan karbon aktif granular dapat digunakan',
+    description: 'descGranulaMeshed',
     features: ['semuaUkuranSiap'],
     image: '/images/charcoal/ARANG GRANULAMESHED.jpg',
     category: 'Granulated'
@@ -49,7 +49,7 @@ export const charcoalProducts: CharcoalProduct[] = [
     id: '5',
     name: 'charcoalSawdustBriquette',
     slug: 'arang-sawdust-briquette',
-    description: 'Arang sawdust briquette terbuat dari serbuk gergaji yang dipadatkan',
+    description: 'descSawdustBriquette',
     features: ['bahanBakuTerbaik', 'tahanLama'],
     image: '/images/charcoal/ARANG SAWDUST BRIQUETTE.jpg',
     category: 'Briquette'
@@ -58,7 +58,7 @@ export const charcoalProducts: CharcoalProduct[] = [
     id: '6',
     name: 'charcoalActivatedCarbon',
     slug: 'arang-activated-carbon',
-    description: 'Arang activated carbon untuk keperluan industri dan filtrasi air',
+    description: 'descActivatedCarbon',
     features: ['kualitasTinggi', 'untukIndustri'],
     image: '/images/charcoal/ARANG ACTIVATED CARBON.jpg',
     category: 'Industrial'

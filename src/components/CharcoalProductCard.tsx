@@ -57,7 +57,7 @@ export default function CharcoalProductCard({ product }: CharcoalProductCardProp
         
         {/* Description - fade animation */}
         <p className="text-gray-700 text-sm leading-relaxed mb-4 flex-1 overflow-hidden transition-colors duration-300 ease-out group-hover:text-gray-600">
-          {product.description}
+          {t(product.description)}
         </p>
 
         {/* More Detail Button - enhanced hover effects */}

@@ -66,6 +66,13 @@ const translations = {
     kualitasTinggi: 'HIGH QUALITY',
     untukIndustri: 'FOR INDUSTRY',
     tahanLama: 'LONG LASTING',
+    // Product Descriptions
+    descBriketShisha: 'Our coconut briquette shisha is made from selected coconut shells processed with modern technology to produce the best quality.',
+    descKayuKeras: 'Our hardwood charcoal is made from selected wood starting from Tamarind Wood, premium quality wood.',
+    descTempurungKelapa: 'Coconut shell charcoal is a material that can be used for various industrial applications.',
+    descGranulaMeshed: 'Meshed charcoal or known as granular activated carbon can be used for water treatment and filtration.',
+    descSawdustBriquette: 'Sawdust briquette charcoal is made from compressed sawdust with high quality standards.',
+    descActivatedCarbon: 'Activated carbon charcoal for industrial needs and water filtration applications.',
   },
   id: {
     // Navbar
@@ -120,6 +127,13 @@ const translations = {
     kualitasTinggi: 'KUALITAS TINGGI',
     untukIndustri: 'UNTUK INDUSTRI',
     tahanLama: 'TAHAN LAMA',
+    // Product Descriptions
+    descBriketShisha: 'Arang briket shisha kami terbuat dari tempurung kelapa pilihan yang diproses dengan teknologi modern untuk menghasilkan kualitas terbaik.',
+    descKayuKeras: 'Arang kayu keras kami terbuat dari kayu pilihan mulai dari Kayu Asam Jawa, kayu berkualitas premium.',
+    descTempurungKelapa: 'Arang tempurung kelapa merupakan bahan yang dapat digunakan untuk berbagai keperluan industri.',
+    descGranulaMeshed: 'Arang meshed atau dikenal dengan karbon aktif granular dapat digunakan untuk pengolahan air dan filtrasi.',
+    descSawdustBriquette: 'Arang sawdust briquette terbuat dari serbuk gergaji yang dipadatkan dengan standar kualitas tinggi.',
+    descActivatedCarbon: 'Arang activated carbon untuk keperluan industri dan aplikasi filtrasi air.',
   },
   ar: {
     // Navbar
@@ -174,6 +188,13 @@ const translations = {
     kualitasTinggi: 'جودة عالية',
     untukIndustri: 'للصناعة',
     tahanLama: 'يدوم طويلاً',
+    // Product Descriptions
+    descBriketShisha: 'فحم جوز الهند للشيشة مصنوع من قشور جوز الهند المختارة المعالجة بالتكنولوجيا الحديثة لإنتاج أفضل جودة.',
+    descKayuKeras: 'فحم الخشب الصلب مصنوع من الأخشاب المختارة بدءاً من خشب التمر الهندي، خشب عالي الجودة.',
+    descTempurungKelapa: 'فحم قشر جوز الهند مادة يمكن استخدامها لمختلف التطبيقات الصناعية.',
+    descGranulaMeshed: 'الفحم المشبك أو المعروف بالكربون المنشط الحبيبي يمكن استخدامه لمعالجة المياه والترشيح.',
+    descSawdustBriquette: 'قوالب فحم نشارة الخشب مصنوعة من نشارة الخشب المضغوطة بمعايير جودة عالية.',
+    descActivatedCarbon: 'الكربون المنشط للاحتياجات الصناعية وتطبيقات ترشيح المياه.',
   }
 };
 
