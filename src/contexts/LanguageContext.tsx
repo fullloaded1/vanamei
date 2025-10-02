@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-type Language = 'en' | 'id';
+type Language = 'en' | 'id' | 'ar';
 
 interface LanguageContextType {
   language: Language;
@@ -78,6 +78,39 @@ const translations = {
     visionText: 'Menjadi perusahaan pemasok arang yang mampu memenuhi kebutuhan pasar lokal, dunia, dan mengutamakan kualitas produk-produk arang.',
     mission: 'Misi',
     missionText: 'Selalu cepat dalam merespon kebutuhan klien dan terus berinovasi untuk memenuhi kebutuhan pasar arang.',
+  },
+  ar: {
+    // Navbar
+    home: 'الرئيسية',
+    about: 'حولنا',
+    product: 'المنتجات',
+    media: 'الوسائط',
+    blog: 'المدونة',
+    glossary: 'المصطلحات',
+    getSample: 'احصل على عينة',
+    // Hero
+    heroTitle: 'هل تحتاج إلى فحم؟',
+    heroSubtitle: 'جودة فحمنا موثوقة دائماً.',
+    supplierText: 'كوكوبليم - مورد الفحم الإندونيسي الموثوق',
+    // Benefits
+    whyUs: 'لماذا نحن؟',
+    benefit1Title: '01. سريع ودقيق',
+    benefit1Text: 'سنلبي احتياجاتك من الفحم بسرعة. فريقنا مؤهل جداً وقوي ويمكنه التواصل بشكل جيد باللغتين الإندونيسية والإنجليزية.',
+    benefit2Title: '02. تكلفة منخفضة',
+    benefit2Text: 'نحن مورد فحم في إندونيسيا لدينا ما يقرب من 10 مصانع فحم تعمل معنا في جزيرة جاوة. سهولة التوزيع اللوجستي في جزيرة جاوة يمكن أن تساعدنا في تسريع تسليم احتياجاتك من خلال 3 موانئ دولية وهي جاكرتا وسيمارانغ وسورابايا.',
+    benefit3Title: '03. الجودة هي الأولوية',
+    benefit3Text: 'نحن نعطي الأولوية دائماً لجودة منتجات الفحم لدينا. أولويتنا هي اختيار أفضل المواد الخام لإنتاج منتجات فحم إندونيسية تنافسية، سواء فحم قشر جوز الهند أو قوالب الفحم عالية الجودة.',
+    // Understanding Section
+    understandingTitle: 'نحن نفهم احتياجاتك من الفحم',
+    understandingText1: 'إندونيسيا هي أفضل منتج لجوز الهند في العالم ولديها أنواع كثيرة من الأخشاب الصلبة التي تلبي المعايير الدولية. يمكننا ضمان أن منتجات الفحم لدينا تتم معالجتها بأفضل المواد.',
+    understandingText2: 'نحن نفهم احتياجات ومعايير السوق العالمية، ونلتزم بتقديم أفضل خدمة.',
+    // About Section
+    story: 'القصة',
+    storyText: 'الفكرة الأولى لكوكوبليم كانت الاستفادة من نفايات جوز الهند ونشارة الخشب الوفيرة في مختلف المناطق في إندونيسيا.',
+    vision: 'الرؤية',
+    visionText: 'أن نصبح شركة توريد فحم قادرة على تلبية احتياجات السوق المحلية والعالمية، وإعطاء الأولوية لجودة منتجات الفحم.',
+    mission: 'المهمة',
+    missionText: 'الاستجابة السريعة دائماً لاحتياجات العملاء والاستمرار في الابتكار لتلبية احتياجات سوق الفحم.',
   }
 };
 

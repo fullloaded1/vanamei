@@ -223,3 +223,27 @@
     opacity: 0.6;
   }
 }
+
+/* Arabic RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .navbar-logo {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .language-switcher {
+  flex-direction: row-reverse;
+}
+
+/* Arabic font support */
+.arabic-text {
+  font-family: 'Noto Sans Arabic', 'Arial Unicode MS', sans-serif;
+  line-height: 1.6;
+}

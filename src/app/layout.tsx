@@ -4,6 +4,7 @@ import { SmoothScrollProvider } from '@/components/SmoothScrollProvider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import LanguageWrapper from '@/components/LanguageWrapper';
 
 export const metadata: Metadata = {
   title: 'CocoBlim - Premium Coconut Products',
@@ -19,13 +20,15 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans">
         <LanguageProvider>
-          <SmoothScrollProvider>
-            <div className="flex flex-col min-h-screen">
-              <Navbar />
-              <main className="flex-grow">{children}</main>
-              <Footer />
-            </div>
-          </SmoothScrollProvider>
+          <LanguageWrapper>
+            <SmoothScrollProvider>
+              <div className="flex flex-col min-h-screen">
+                <Navbar />
+                <main className="flex-grow">{children}</main>
+                <Footer />
+              </div>
+            </SmoothScrollProvider>
+          </LanguageWrapper>
         </LanguageProvider>
       </body>
     </html>
