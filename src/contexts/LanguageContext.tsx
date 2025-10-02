@@ -79,6 +79,22 @@ const translations = {
     descGranulaMeshed: 'Meshed charcoal or known as granular activated carbon can be used for water treatment and filtration.',
     descSawdustBriquette: 'Sawdust briquette charcoal is made from compressed sawdust with high quality standards.',
     descActivatedCarbon: 'Activated carbon charcoal for industrial needs and water filtration applications.',
+    // Product Detail Page
+    productSpecifications: 'Product Specifications',
+    applications: 'Applications',
+    packaging: 'Packaging Options',
+    contactForOrder: 'Contact us for orders and inquiries',
+    getQuote: 'Get Quote',
+    backToProducts: 'Back to Products',
+    // Common Labels
+    rawMaterial: 'Raw Material',
+    shape: 'Shape',
+    size: 'Size',
+    moisture: 'Moisture Content',
+    volatileMatter: 'Volatile Matter',
+    hardness: 'Hardness',
+    iodineNumber: 'Iodine Number',
+    meshSize: 'Mesh Size',
   },
   id: {
     // Navbar
@@ -146,6 +162,22 @@ const translations = {
     descGranulaMeshed: 'Arang meshed atau dikenal dengan karbon aktif granular dapat digunakan untuk pengolahan air dan filtrasi.',
     descSawdustBriquette: 'Arang sawdust briquette terbuat dari serbuk gergaji yang dipadatkan dengan standar kualitas tinggi.',
     descActivatedCarbon: 'Arang activated carbon untuk keperluan industri dan aplikasi filtrasi air.',
+    // Product Detail Page
+    productSpecifications: 'Spesifikasi Produk',
+    applications: 'Aplikasi',
+    packaging: 'Pilihan Kemasan',
+    contactForOrder: 'Hubungi kami untuk pemesanan dan inquiry',
+    getQuote: 'Minta Penawaran',
+    backToProducts: 'Kembali ke Produk',
+    // Common Labels
+    rawMaterial: 'Bahan Baku',
+    shape: 'Bentuk',
+    size: 'Ukuran',
+    moisture: 'Kadar Air',
+    volatileMatter: 'Volatile Matter',
+    hardness: 'Kekerasan',
+    iodineNumber: 'Iodine Number',
+    meshSize: 'Ukuran Mesh',
   },
   ar: {
     // Navbar
@@ -213,6 +245,22 @@ const translations = {
     descGranulaMeshed: 'الفحم المشبك أو المعروف بالكربون المنشط الحبيبي يمكن استخدامه لمعالجة المياه والترشيح.',
     descSawdustBriquette: 'قوالب فحم نشارة الخشب مصنوعة من نشارة الخشب المضغوطة بمعايير جودة عالية.',
     descActivatedCarbon: 'الكربون المنشط للاحتياجات الصناعية وتطبيقات ترشيح المياه.',
+    // Product Detail Page
+    productSpecifications: 'مواصفات المنتج',
+    applications: 'التطبيقات',
+    packaging: 'خيارات التعبئة',
+    contactForOrder: 'اتصل بنا للطلبات والاستفسارات',
+    getQuote: 'احصل على عرض سعر',
+    backToProducts: 'العودة إلى المنتجات',
+    // Common Labels
+    rawMaterial: 'المواد الخام',
+    shape: 'الشكل',
+    size: 'الحجم',
+    moisture: 'محتوى الرطوبة',
+    volatileMatter: 'المادة المتطايرة',
+    hardness: 'الصلابة',
+    iodineNumber: 'رقم اليود',
+    meshSize: 'حجم الشبكة',
   }
 };
 

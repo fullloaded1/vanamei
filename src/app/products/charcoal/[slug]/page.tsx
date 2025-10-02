@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { charcoalProducts } from '@/data/charcoalProducts';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ProductDetailPageProps {
   params: {
@@ -13,6 +14,7 @@ interface ProductDetailPageProps {
 }
 
 export default function ProductDetailPage({ params }: ProductDetailPageProps) {
+  const { t } = useLanguage();
   const product = charcoalProducts.find(p => p.slug === params.slug);
   const headerAnimation = useScrollAnimation();
   const contentAnimation = useScrollAnimation();
@@ -158,7 +160,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
                 {/* Product Title */}
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 uppercase">
-                  {product.name}
+                  {t(product.name)}
                 </h1>
 
                 {/* Features */}
@@ -168,7 +170,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     {product.features.map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <div className="w-2 h-2 bg-gray-900 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700 font-medium">{feature}</span>
+                        <span className="text-gray-700 font-medium">{t(feature)}</span>
                       </div>
                     ))}
                   </div>
@@ -176,7 +178,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
                 {/* Description */}
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                  {product.description}
+                  {t(product.description)}
                 </p>
 
                 {/* CTA Buttons */}
@@ -185,7 +187,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     href="/contact"
                     className="bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 text-center"
                   >
-                    Request Quote
+                    {t('getQuote')}
                   </Link>
                   <Link 
                     href="/contact"
@@ -212,7 +214,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Technical Specifications */}
               <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Technical Specifications</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('productSpecifications')}</h3>
                 <div className="space-y-4">
                   {currentSpecs.specifications.map((spec, index) => (
                     <div key={index} className="flex justify-between items-center border-b border-gray-200 pb-2">
@@ -225,7 +227,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
               {/* Applications */}
               <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Applications</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('applications')}</h3>
                 <div className="space-y-3">
                   {currentSpecs.applications.map((app, index) => (
                     <div key={index} className="flex items-center">
@@ -238,7 +240,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
               {/* Packaging Options */}
               <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Packaging Options</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('packaging')}</h3>
                 <div className="space-y-3">
                   {currentSpecs.packaging.map((pack, index) => (
                     <div key={index} className="flex items-center">
@@ -263,24 +265,23 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
             }`}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Interested in {product.name}?
+              Interested in {t(product.name)}?
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Get detailed specifications, pricing, and samples. Our team is ready to help you 
-              find the perfect charcoal solution for your needs.
+              {t('contactForOrder')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact"
                 className="bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300"
               >
-                Contact Sales Team
+                {t('getQuote')}
               </Link>
               <Link 
                 href="/#products"
                 className="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-gray-900 transition-colors duration-300"
               >
-                View Other Products
+                {t('backToProducts')}
               </Link>
             </div>
           </div>
