@@ -45,6 +45,10 @@ const translations = {
     visionText: 'To become a charcoal supply company that can meet local and global market needs, and prioritize the quality of charcoal products.',
     mission: 'Mission',
     missionText: 'Always quick in responding to client needs and continue to innovate to meet charcoal market needs.',
+    // Contact Info
+    phone: '+62 851 4492 0078',
+    email: 'info@cocoblim.com',
+    address: 'Depok, West Java, Indonesia',
   },
   id: {
     // Navbar
@@ -78,6 +82,10 @@ const translations = {
     visionText: 'Menjadi perusahaan pemasok arang yang mampu memenuhi kebutuhan pasar lokal, dunia, dan mengutamakan kualitas produk-produk arang.',
     mission: 'Misi',
     missionText: 'Selalu cepat dalam merespon kebutuhan klien dan terus berinovasi untuk memenuhi kebutuhan pasar arang.',
+    // Contact Info
+    phone: '+62 851 4492 0078',
+    email: 'info@cocoblim.com',
+    address: 'Depok, Jawa Barat, Indonesia',
   },
   ar: {
     // Navbar
@@ -111,6 +119,10 @@ const translations = {
     visionText: 'أن نصبح شركة توريد فحم قادرة على تلبية احتياجات السوق المحلية والعالمية، وإعطاء الأولوية لجودة منتجات الفحم.',
     mission: 'المهمة',
     missionText: 'الاستجابة السريعة دائماً لاحتياجات العملاء والاستمرار في الابتكار لتلبية احتياجات سوق الفحم.',
+    // Contact Info
+    phone: '+62 851 4492 0078',
+    email: 'info@cocoblim.com',
+    address: 'ديبوك، جاوة الغربية، إندونيسيا',
   }
 };
 

@@ -90,15 +90,22 @@ export default function Contact() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-semibold text-primary">Address</h4>
-                      <p className="text-secondary">Jl. Coconut No. 123, Jakarta, Indonesia</p>
+                      <p className="text-secondary">Depok, Jawa Barat, Indonesia</p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary">Email</h4>
-                      <p className="text-secondary">info@coconutco.com</p>
+                      <p className="text-secondary">info@cocoblim.com</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary">WhatsApp</h4>
-                      <p className="text-secondary">+62 123 456 7890</p>
+                      <h4 className="font-semibold text-primary">Phone / WhatsApp</h4>
+                      <p className="text-secondary">
+                        <a href="tel:+6285144920078" className="hover:text-primary transition-colors">+62 851 4492 0078</a>
+                      </p>
+                      <p className="text-secondary mt-1">
+                        <a href="https://wa.me/6285144920078" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                          WhatsApp: +62 851 4492 0078
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </Card>

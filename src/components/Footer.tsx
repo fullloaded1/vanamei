@@ -66,28 +66,29 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center">
                 <span className="text-gray-600">📞</span>
-                <span className="ml-2 text-gray-600">+62 123 456 7890</span>
+                <span className="ml-2 text-gray-600">+62 851 4492 0078</span>
               </div>
               <div className="flex items-center">
                 <span className="text-gray-600">✉️</span>
                 <span className="ml-2 text-gray-600">info@cocoblim.com</span>
               </div>
-              <div className="text-gray-600 text-xs mt-2">
-                Jakarta, Indonesia
+              <div className="flex items-center">
+                <span className="text-gray-600">📍</span>
+                <span className="ml-2 text-gray-600">Depok, Jawa Barat, Indonesia</span>
               </div>
               
               {/* Social Media Icons */}
               <div className="flex space-x-3 mt-4">
-                <a href="#" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
-                  <span className="text-xs">f</span>
+                <a href="https://wa.me/6285144920078" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
+                  <span className="text-xs">WA</span>
+                </a>
+                <a href="tel:+6285144920078" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
+                  <span className="text-xs">📞</span>
                 </a>
                 <a href="#" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
                   <span className="text-xs">IG</span>
                 </a>
-                <a href="#" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
-                  <span className="text-xs">WA</span>
-                </a>
-                <a href="#" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
+                <a href="mailto:info@cocoblim.com" className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors">
                   <span className="text-xs">@</span>
                 </a>
               </div>
