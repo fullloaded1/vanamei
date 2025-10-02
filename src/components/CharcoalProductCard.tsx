@@ -67,20 +67,6 @@ export default function CharcoalProductCard({ product }: CharcoalProductCardProp
           </Link>
         </div>
       </div>
-
-      {/* CSS Keyframes for animations */}
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }
