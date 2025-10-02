@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export const useScrollAnimation = (threshold = 0.1) => {
+export const useScrollAnimation = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -13,7 +13,10 @@ export const useScrollAnimation = (threshold = 0.1) => {
           setIsVisible(true);
         }
       },
-      { threshold }
+      {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+      }
     );
 
     if (ref.current) {
@@ -25,7 +28,7 @@ export const useScrollAnimation = (threshold = 0.1) => {
         observer.unobserve(ref.current);
       }
     };
-  }, [threshold]);
+  }, []);
 
   return { ref, isVisible };
 };

@@ -37,8 +37,8 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 flex items-center min-h-[80vh]">
           <div 
             ref={heroAnimation.ref}
-            className={`w-full flex justify-end transition-all duration-1000 ${
-              heroAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            className={`w-full flex justify-end transition-all duration-1200 ease-out ${
+              heroAnimation.isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-95'
             }`}
           >
             {/* Text positioned on the right like screenshot */}
@@ -57,7 +57,11 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           {/* Section Title */}
-          <div className="text-center mb-16">
+          <div 
+            className={`text-center mb-16 transition-all duration-1000 ease-out ${
+              benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
             <h2 className="text-2xl md:text-3xl font-bold text-blue-600 mb-4">
               {t('supplierText')}
             </h2>
@@ -67,8 +71,8 @@ export default function Home() {
             {/* Benefit 1 */}
             <div 
               ref={benefitsAnimation.ref}
-              className={`max-w-4xl transition-all duration-1000 ${
-                benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              className={`max-w-4xl transition-all duration-1000 ease-out ${
+                benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
               <h3 className="text-2xl font-bold text-blue-600 mb-4">{t('benefit1Title')}</h3>
@@ -82,8 +86,8 @@ export default function Home() {
 
             {/* Benefit 2 */}
             <div 
-              className={`max-w-4xl transition-all duration-1000 delay-300 ${
-                benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              className={`max-w-4xl transition-all duration-1200 delay-200 ease-out ${
+                benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
               <h3 className="text-2xl font-bold text-blue-600 mb-4">{t('benefit2Title')}</h3>
@@ -97,8 +101,8 @@ export default function Home() {
 
             {/* Benefit 3 */}
             <div 
-              className={`max-w-4xl transition-all duration-1000 delay-500 ${
-                benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              className={`max-w-4xl transition-all duration-1400 delay-400 ease-out ${
+                benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
               <h3 className="text-2xl font-bold text-blue-600 mb-4">{t('benefit3Title')}</h3>
