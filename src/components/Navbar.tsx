@@ -25,19 +25,17 @@ export default function Navbar() {
                 <Image
                   src="/images/CocoBlim%20Logo%201.png"
                   alt="CocoBlim Logo"
-                  width={32}
                   height={32}
                   style={{ objectFit: 'contain' }}
                   className="rounded"
                 />
               </div>
-              <span className="text-lg font-semibold text-gray-900">cocoblim</span>
-              <span className="text-xs text-gray-500 ml-1">.id</span>
+              <span className="text-lg font-semibold text-gray-900">cocoblim.com</span>
             </Link>
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-gray-700 hover:text-gray-900 text-sm">
               {t('home')}
             </Link>
