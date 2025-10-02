@@ -45,21 +45,24 @@ export default function Home() {
             }`}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-center">
-              Do you need charcoal?<br />
-              <span className="text-white">Our charcoal quality is<br />always trusted.</span>
+              Anda membutuhkan arang?<br />
+              <span className="text-white">Kualitas arang kami selalu<br />dipercaya.</span>
             </h1>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl text-center">
+              Supplier arang Indonesia yang dapat dipercaya
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact" 
                 className="bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center font-semibold"
               >
-                Get Quote Now
+                Dapatkan Sampel
               </Link>
               <Link 
                 href="/#products" 
                 className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 text-center font-semibold"
               >
-                View Products
+                Lihat Produk
               </Link>
             </div>
           </div>
@@ -80,57 +83,51 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="space-y-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Benefit 1 - Cepat dan tepat */}
             <div 
               ref={benefitsAnimation.ref}
-              className={`transition-all duration-700 ease-out ${
+              className={`text-center transition-all duration-700 ease-out ${
                 benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                {t('benefit1Title')}
+              <div className="text-4xl font-bold text-emerald-600 mb-4">01.</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Cepat dan tepat
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-4xl">
-                {t('benefit1Text')}
+              <p className="text-gray-700 leading-relaxed">
+                Kami akan memenuhi kebutuhan arang anda dengan respon yang cepat. Tim kami sangat kompeten, solid, dan dapat berkomunikasi dengan baik dalam Bahasa Indonesia, Jepang, dan juga Inggris.
               </p>
-              <div className="text-base text-gray-600">
-                Average response: <span className="font-semibold text-gray-800">2-4 hours</span>
-              </div>
             </div>
 
             {/* Benefit 2 - Biaya rendah */}
             <div 
-              className={`transition-all duration-700 delay-200 ease-out ${
+              className={`text-center transition-all duration-700 delay-200 ease-out ${
                 benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                {t('benefit2Title')}
+              <div className="text-4xl font-bold text-emerald-600 mb-4">02.</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Biaya rendah
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-4xl">
-                {t('benefit2Text')}
+              <p className="text-gray-700 leading-relaxed">
+                Kami adalah pemasok arang di Indonesia yang memiliki pabrik arang, yang bekerja sama dengan kami di Jakarta. Kemudahan distribusi logistik dapat membantu kami meminimalkan biaya distribusi.
               </p>
-              <div className="text-base text-gray-600">
-                Save up to <span className="font-semibold text-gray-800">25% on shipping</span>
-              </div>
             </div>
 
             {/* Benefit 3 - Kualitas adalah prioritas */}
             <div 
-              className={`transition-all duration-700 delay-400 ease-out ${
+              className={`text-center transition-all duration-700 delay-400 ease-out ${
                 benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                {t('benefit3Title')}
+              <div className="text-4xl font-bold text-emerald-600 mb-4">03.</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Kualitas adalah prioritas
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-4xl">
-                {t('benefit3Text')}
+              <p className="text-gray-700 leading-relaxed">
+                Kami selalu memprioritaskan kualitas produk arang kami. Prioritas kami adalah memilih bahan baku terbaik untuk menghasilkan produk arang Indonesia yang kompetitif, baik arang alami ataupun arang briket.
               </p>
-              <div className="text-base text-gray-600">
-                <span className="font-semibold text-gray-800">99.8% quality approval</span> rate
-              </div>
             </div>
           </div>
           
