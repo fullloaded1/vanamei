@@ -26,14 +26,14 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="relative w-8 h-8 mr-2">
+              <div className="relative w-12 h-12 mr-3">
                 <Image
-                  src="/images/CocoBlim%20Logo%201.png"
+                  src="/images/CocoBlim_logo_baru_-removebg-preview.png"
                   alt="CocoBlim Logo"
-                  width={32}
-                  height={32}
+                  width={48}
+                  height={48}
                   style={{ objectFit: 'contain' }}
-                  className="rounded"
+                  className=""
                 />
               </div>
               <span className="text-lg font-semibold text-gray-900">cocoblim.com</span>
