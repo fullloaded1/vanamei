@@ -146,6 +146,8 @@ const translations = {
     per50kgSack: '50kg per sack',
     jumbo1ton: 'Jumbo bag 1 ton',
     bulkShipment: 'Bulk shipment',
+    per15kgPack: '15kg (inner plastic bag + outer PP woven bag/carton)',
+    per5kgPack: '5kg (inner plastic bag + outer PP woven bag/carton)',
   },
   id: {
     // Navbar
@@ -280,6 +282,8 @@ const translations = {
     per50kgSack: '50kg per karung',
     jumbo1ton: 'Jumbo bag 1 ton',
     bulkShipment: 'Bulk shipment',
+    per15kgPack: '15kg (kantong plastik dalam + karung PP luar/karton)',
+    per5kgPack: '5kg (kantong plastik dalam + karung PP luar/karton)',
   },
   ar: {
     // Navbar
@@ -414,6 +418,8 @@ const translations = {
     per50kgSack: '50 كيلو لكل كيس',
     jumbo1ton: 'كيس جامبو 1 طن',
     bulkShipment: 'الشحن بالجملة',
+    per15kgPack: '15 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
+    per5kgPack: '5 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
   }
 };
 

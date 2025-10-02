@@ -50,11 +50,12 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     'arang-kayu-keras': {
       specifications: [
         { label: t('rawMaterial'), value: t('selectedHardwood') },
-        { label: t('shape'), value: t('naturalPieces') },
-        { label: t('size'), value: '3-8 cm' },
-        { label: 'Ash Content', value: '< 2%' },
-        { label: t('moisture'), value: '< 6%' },
-        { label: 'Fixed Carbon', value: '> 80%' }
+        { label: t('size'), value: '3-20 cm' },
+        { label: 'Ash Content', value: '3-5%' },
+        { label: 'Fixed Carbon', value: '≥ 70%' },
+        { label: t('volatileMatter'), value: '≤ 20%' },
+        { label: 'Calorific Value', value: '6,500-7,500 kcal/kg' },
+        { label: 'Burning Time', value: '2-4 hours' }
       ],
       applications: [
         t('bbqGrilling'),
@@ -63,20 +64,23 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
         t('exportMarket')
       ],
       packaging: [
-        t('per5kgSack'),
+        t('per5kgPack'),
         t('per10kgSack'),
-        t('per20kgSack'),
-        t('bulkPackaging')
+        t('per15kgPack'),
+        t('customPackaging')
       ]
     },
     'arang-tempurung-kelapa': {
       specifications: [
         { label: t('rawMaterial'), value: t('selectedCoconutShells') },
-        { label: t('shape'), value: t('smallPieces') },
-        { label: t('size'), value: '1-3 cm' },
-        { label: 'Ash Content', value: '< 4%' },
-        { label: t('moisture'), value: '< 10%' },
-        { label: t('volatileMatter'), value: '15-20%' }
+        { label: t('size'), value: '3-12 cm (customizable)' },
+        { label: t('moisture'), value: 'Max 8%' },
+        { label: 'Ash Content', value: '3-5%' },
+        { label: 'Fixed Carbon', value: 'Min 70%' },
+        { label: t('volatileMatter'), value: 'Max 15%' },
+        { label: 'Calorific Value', value: '6,500-7,200 kcal/kg' },
+        { label: 'Burning Time', value: 'Long-lasting, low smoke' },
+        { label: 'Ash Color', value: 'Grey to white' }
       ],
       applications: [
         t('activatedCarbonRaw'),
