@@ -59,7 +59,7 @@ export default function Home() {
           {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-600 mb-4">
-              Supplier arang Indonesia yang dapat dipercaya
+              {t('supplierText')}
             </h2>
           </div>
 

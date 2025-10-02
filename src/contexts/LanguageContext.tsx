@@ -25,7 +25,7 @@ const translations = {
     // Hero
     heroTitle: 'Do you need charcoal?',
     heroSubtitle: 'Our charcoal quality is always trusted.',
-    supplierText: 'CocoBlim - Trusted Indonesian charcoal supplier',
+    supplierText: 'Trusted Indonesian charcoal supplier',
     // Benefits
     benefit1Title: '01. Fast and precise',
     benefit1Text: 'We will fulfill your charcoal needs with quick response. Our team is very competent, solid, and can communicate well in Indonesian and English.',
