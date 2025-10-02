@@ -119,12 +119,15 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     },
     'arang-sawdust-briquette': {
       specifications: [
-        { label: t('rawMaterial'), value: 'Sawdust Compressed' },
-        { label: t('shape'), value: t('cubeShape') },
-        { label: 'Ash Content', value: '< 3%' },
-        { label: t('moisture'), value: '< 8%' },
-        { label: 'Fixed Carbon', value: '> 75%' },
-        { label: 'Calorific Value', value: '> 6500 kcal/kg' }
+        { label: 'Form', value: 'Lump/crushed (compressed sawdust carbonized)' },
+        { label: t('size'), value: '3-12 cm (adjustable on request)' },
+        { label: t('moisture'), value: 'Max 8%' },
+        { label: 'Ash Content', value: '2-4%' },
+        { label: 'Fixed Carbon', value: 'Min 75%' },
+        { label: t('volatileMatter'), value: 'Max 15%' },
+        { label: 'Calorific Value', value: '6,800-7,500 kcal/kg' },
+        { label: 'Burning Time', value: 'Long, steady heat release' },
+        { label: 'Ash Color', value: 'White to light grey' }
       ],
       applications: [
         t('bbqGrilling'),
