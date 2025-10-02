@@ -95,6 +95,22 @@ const translations = {
     hardness: 'Hardness',
     iodineNumber: 'Iodine Number',
     meshSize: 'Mesh Size',
+    keyFeatures: 'Key Features',
+    requestSample: 'Request Sample',
+    requestQuote: 'Request Quote',
+    // Contact Page
+    contactUs: 'Contact Us',
+    contactSubtitle: 'Have questions or want to request a sample? Reach out to us!',
+    sendMessage: 'Send Us a Message',
+    nameLabel: 'Name',
+    emailLabel: 'Email',
+    messageLabel: 'Message',
+    sendMessageBtn: 'Send Message',
+    contactInformation: 'Contact Information',
+    addressLabel: 'Address',
+    phoneWhatsapp: 'Phone / WhatsApp',
+    ourLocation: 'Our Location',
+    thankYouMessage: 'Thank you for your message! We will get back to you soon.',
   },
   id: {
     // Navbar
@@ -178,6 +194,22 @@ const translations = {
     hardness: 'Kekerasan',
     iodineNumber: 'Iodine Number',
     meshSize: 'Ukuran Mesh',
+    keyFeatures: 'Fitur Utama',
+    requestSample: 'Minta Sampel',
+    requestQuote: 'Minta Penawaran',
+    // Contact Page
+    contactUs: 'Hubungi Kami',
+    contactSubtitle: 'Ada pertanyaan atau ingin meminta sampel? Hubungi kami!',
+    sendMessage: 'Kirim Pesan',
+    nameLabel: 'Nama',
+    emailLabel: 'Email',
+    messageLabel: 'Pesan',
+    sendMessageBtn: 'Kirim Pesan',
+    contactInformation: 'Informasi Kontak',
+    addressLabel: 'Alamat',
+    phoneWhatsapp: 'Telepon / WhatsApp',
+    ourLocation: 'Lokasi Kami',
+    thankYouMessage: 'Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.',
   },
   ar: {
     // Navbar
@@ -261,6 +293,22 @@ const translations = {
     hardness: 'الصلابة',
     iodineNumber: 'رقم اليود',
     meshSize: 'حجم الشبكة',
+    keyFeatures: 'الميزات الرئيسية',
+    requestSample: 'طلب عينة',
+    requestQuote: 'طلب عرض سعر',
+    // Contact Page
+    contactUs: 'اتصل بنا',
+    contactSubtitle: 'هل لديك أسئلة أو تريد طلب عينة؟ تواصل معنا!',
+    sendMessage: 'أرسل لنا رسالة',
+    nameLabel: 'الاسم',
+    emailLabel: 'البريد الإلكتروني',
+    messageLabel: 'الرسالة',
+    sendMessageBtn: 'إرسال الرسالة',
+    contactInformation: 'معلومات الاتصال',
+    addressLabel: 'العنوان',
+    phoneWhatsapp: 'الهاتف / واتساب',
+    ourLocation: 'موقعنا',
+    thankYouMessage: 'شكراً لك على رسالتك! سنتواصل معك قريباً.',
   }
 };
 

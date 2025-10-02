@@ -165,7 +165,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
 
                 {/* Features */}
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Features:</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{t('keyFeatures')}:</h3>
                   <div className="space-y-2">
                     {product.features.map((feature, index) => (
                       <div key={index} className="flex items-center">
@@ -193,7 +193,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     href="/contact"
                     className="border border-gray-300 text-gray-900 px-8 py-3 rounded-full font-medium hover:border-gray-900 transition-colors duration-300 text-center"
                   >
-                    Request Sample
+                    {t('requestSample')}
                   </Link>
                 </div>
               </div>

@@ -4,8 +4,10 @@ import SectionTitle from '@/components/SectionTitle';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import { useState } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Contact() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,7 +23,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Placeholder for form submission logic
-    setFormStatus('Thank you for your message! We will get back to you soon.');
+    setFormStatus(t('thankYouMessage'));
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -30,9 +32,9 @@ export default function Contact() {
         {/* Page Header */}
         <section className="py-16 bg-gray-50 text-center">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-bold text-primary mb-6">Contact Us</h1>
+            <h1 className="text-4xl font-bold text-primary mb-6">{t('contactUs')}</h1>
             <p className="text-lg text-secondary max-w-3xl mx-auto">
-              Have questions or want to request a sample? Reach out to us!
+              {t('contactSubtitle')}
             </p>
           </div>
         </section>
