@@ -46,60 +46,31 @@ export default function Navbar() {
               {t('home')}
             </Link>
             
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
-                {t('about')}
-                <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-1 w-44 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
-                <Link href="/about" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Our Vision</Link>
-                <Link href="/about" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Our Values</Link>
-                <Link href="/about" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Our Achievement</Link>
-              </div>
-            </div>
-            
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
-                {t('product')}
-                <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-1 w-48 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
-                <Link href="/products" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Coconut List</Link>
-                <Link href="/products" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Coconut Specification</Link>
-                <Link href="/products/coconut-oil" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Virgin Coconut Oil</Link>
-              </div>
-            </div>
-            
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
-                {t('media')}
-                <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-1 w-36 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
-                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Team</Link>
-                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Legality</Link>
-                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Catalog</Link>
-                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Activity</Link>
-                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Co-Factories</Link>
-              </div>
-            </div>
-            
-            <Link href="/blog" className="text-gray-700 hover:text-gray-900 text-sm">
-              {t('blog')}
+            <Link href="/#story" className="text-gray-700 hover:text-gray-900 text-sm">
+              {t('about')}
             </Link>
             
-            <Link href="/glossary" className="text-gray-700 hover:text-gray-900 text-sm">
-              {t('glossary')}
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
+                {t('ourProducts')}
+                <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-1 w-56 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
+                <Link href="/products/charcoal/arang-briket-shisha" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">{t('charcoalBriketShisha')}</Link>
+                <Link href="/products/charcoal/arang-kayu-keras" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">{t('charcoalKayuKeras')}</Link>
+                <Link href="/products/charcoal/arang-tempurung-kelapa" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">{t('charcoalTempurungKelapa')}</Link>
+                <Link href="/products/charcoal/arang-sawdust-briquette" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">{t('charcoalSawdustBriquette')}</Link>
+              </div>
+            </div>
+            
+            <Link href="/#factory" className="text-gray-700 hover:text-gray-900 text-sm">
+              {t('ourFactory')}
             </Link>
             
-            <Link href="/contact" className="bg-blue-600 text-white px-4 py-1.5 rounded text-sm hover:bg-blue-700 transition-colors">
-              {t('getSample')}
+            <Link href="/contact" className="bg-primary text-white px-4 py-1.5 rounded text-sm hover:bg-primary-dark transition-colors">
+              {t('contactUs')}
             </Link>
           </div>
 
@@ -142,26 +113,20 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link href="/" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
+              <Link href="/" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeMenu}>
                 {t('home')}
               </Link>
-              <Link href="/about" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
+              <Link href="/#story" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeMenu}>
                 {t('about')}
               </Link>
-              <Link href="/products" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
-                {t('product')}
+              <Link href="/#products" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeMenu}>
+                {t('ourProducts')}
               </Link>
-              <Link href="/media" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
-                {t('media')}
+              <Link href="/#factory" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900" onClick={closeMenu}>
+                {t('ourFactory')}
               </Link>
-              <Link href="/blog" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
-                {t('blog')}
-              </Link>
-              <Link href="/glossary" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
-                {t('glossary')}
-              </Link>
-              <Link href="/contact" className="block mx-3 my-2 px-3 py-2 text-sm text-white bg-blue-600 rounded text-center hover:bg-blue-700">
-                {t('getSample')}
+              <Link href="/contact" className="block mx-3 my-2 px-3 py-2 text-sm text-white bg-primary rounded text-center hover:bg-primary-dark" onClick={closeMenu}>
+                {t('contactUs')}
               </Link>
               
               {/* Mobile Language Switcher */}
