@@ -28,89 +28,132 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   const productSpecs = {
     'arang-briket-shisha': {
       specifications: [
-        { label: 'Bahan Baku', value: 'Tempurung Kelapa Pilihan' },
-        { label: 'Bentuk', value: 'Kubus 25x25x25mm' },
+        { label: t('rawMaterial'), value: t('selectedCoconutShells') },
+        { label: t('shape'), value: t('cubeShape') },
         { label: 'Ash Content', value: '≤ 2.5%' },
         { label: 'Fixed Carbon', value: '≥ 75%' },
         { label: 'Burning Time', value: '90–120 menit' },
         { label: 'Calorific Value', value: '≥ 7.000 kcal/kg' }
       ],
       applications: [
-        'Shisha dan Hookah Premium',
-        'BBQ dan Grilling',
-        'Restoran dan Cafe',
-        'Export Quality'
+        t('premiumShishaHookah'),
+        t('bbqGrilling'),
+        t('restaurantsCafes'),
+        t('exportQuality')
       ],
       packaging: [
-        '10kg per karton',
-        '20kg per karton',
-        'Custom packaging tersedia'
+        t('per10kgCarton'),
+        t('per20kgCarton'),
+        t('customPackaging')
       ]
     },
     'arang-kayu-keras': {
       specifications: [
-        { label: 'Bahan Baku', value: 'Kayu Keras Pilihan (Asam Jawa, Sono)' },
-        { label: 'Bentuk', value: 'Potongan Natural' },
-        { label: 'Ukuran', value: '3-8 cm' },
-        { label: 'Kadar Abu', value: '< 2%' },
-        { label: 'Kadar Air', value: '< 6%' },
+        { label: t('rawMaterial'), value: t('selectedHardwood') },
+        { label: t('shape'), value: t('naturalPieces') },
+        { label: t('size'), value: '3-8 cm' },
+        { label: 'Ash Content', value: '< 2%' },
+        { label: t('moisture'), value: '< 6%' },
         { label: 'Fixed Carbon', value: '> 80%' }
       ],
       applications: [
-        'BBQ dan Grilling Premium',
-        'Restoran Tradisional',
-        'Industri Makanan',
-        'Export Market'
+        t('bbqGrilling'),
+        t('traditionalRestaurants'),
+        t('foodIndustry'),
+        t('exportMarket')
       ],
       packaging: [
-        '5kg per karung',
-        '10kg per karung',
-        '20kg per karung',
-        'Bulk packaging'
+        t('per5kgSack'),
+        t('per10kgSack'),
+        t('per20kgSack'),
+        t('bulkPackaging')
       ]
     },
     'arang-tempurung-kelapa': {
       specifications: [
-        { label: 'Bahan Baku', value: 'Tempurung Kelapa Pilihan' },
-        { label: 'Bentuk', value: 'Potongan Kecil' },
-        { label: 'Ukuran', value: '1-3 cm' },
-        { label: 'Kadar Abu', value: '< 4%' },
-        { label: 'Kadar Air', value: '< 10%' },
-        { label: 'Volatile Matter', value: '15-20%' }
+        { label: t('rawMaterial'), value: t('selectedCoconutShells') },
+        { label: t('shape'), value: t('smallPieces') },
+        { label: t('size'), value: '1-3 cm' },
+        { label: 'Ash Content', value: '< 4%' },
+        { label: t('moisture'), value: '< 10%' },
+        { label: t('volatileMatter'), value: '15-20%' }
       ],
       applications: [
-        'Bahan Baku Activated Carbon',
-        'Industri Metalurgi',
-        'Water Treatment',
-        'Fuel Industrial'
+        t('activatedCarbonRaw'),
+        t('metallurgyIndustry'),
+        t('waterTreatment'),
+        t('industrialFuel')
       ],
       packaging: [
-        '25kg per karung',
-        '50kg per karung',
-        'Jumbo bag 1 ton',
-        'Bulk shipment'
+        t('per25kgSack'),
+        t('per50kgSack'),
+        t('jumbo1ton'),
+        t('bulkShipment')
       ]
     },
     'arang-granula-meshed': {
       specifications: [
-        { label: 'Bahan Baku', value: 'Tempurung Kelapa Activated' },
-        { label: 'Mesh Size', value: '4x8, 6x12, 8x16, 12x40' },
-        { label: 'Iodine Number', value: '> 1000 mg/g' },
+        { label: t('rawMaterial'), value: t('activatedCoconutShells') },
+        { label: t('meshSize'), value: '4x8, 6x12, 8x16, 12x40' },
+        { label: t('iodineNumber'), value: '> 1000 mg/g' },
         { label: 'Ash Content', value: '< 5%' },
-        { label: 'Moisture', value: '< 5%' },
-        { label: 'Hardness', value: '> 95%' }
+        { label: t('moisture'), value: '< 5%' },
+        { label: t('hardness'), value: '> 95%' }
       ],
       applications: [
-        'Water Treatment Plant',
-        'Air Purification',
-        'Gold Mining',
-        'Chemical Industry'
+        t('waterTreatment'),
+        t('airPurification'),
+        t('goldRecovery'),
+        t('chemicalProcessing')
       ],
       packaging: [
-        '25kg per karung',
+        t('per25kgSack'),
         'Jumbo bag 500kg',
-        'Jumbo bag 1000kg',
-        'Custom packaging'
+        t('jumbo1ton'),
+        t('customPackaging')
+      ]
+    },
+    'arang-sawdust-briquette': {
+      specifications: [
+        { label: t('rawMaterial'), value: 'Sawdust Compressed' },
+        { label: t('shape'), value: t('cubeShape') },
+        { label: 'Ash Content', value: '< 3%' },
+        { label: t('moisture'), value: '< 8%' },
+        { label: 'Fixed Carbon', value: '> 75%' },
+        { label: 'Calorific Value', value: '> 6500 kcal/kg' }
+      ],
+      applications: [
+        t('bbqGrilling'),
+        t('restaurantsCafes'),
+        t('industrialFuel'),
+        t('exportQuality')
+      ],
+      packaging: [
+        t('per10kgCarton'),
+        t('per20kgCarton'),
+        t('bulkPackaging')
+      ]
+    },
+    'arang-activated-carbon': {
+      specifications: [
+        { label: t('rawMaterial'), value: t('activatedCoconutShells') },
+        { label: t('iodineNumber'), value: '> 1200 mg/g' },
+        { label: 'Ash Content', value: '< 3%' },
+        { label: t('moisture'), value: '< 5%' },
+        { label: t('hardness'), value: '> 98%' },
+        { label: 'Surface Area', value: '> 1100 m²/g' }
+      ],
+      applications: [
+        t('waterPurification'),
+        t('airPurification'),
+        t('goldRecovery'),
+        t('chemicalProcessing')
+      ],
+      packaging: [
+        t('per25kgSack'),
+        t('per50kgSack'),
+        t('jumbo1ton'),
+        t('bulkShipment')
       ]
     }
   };
