@@ -78,7 +78,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <span className="text-gray-600">📍</span>
-                <span className="ml-2 text-gray-600">Depok, Jawa Barat, Indonesia</span>
+                <span className="ml-2 text-gray-600">Jakarta, Indonesia</span>
               </div>
               
               {/* Social Media Icons */}

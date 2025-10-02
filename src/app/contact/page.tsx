@@ -92,7 +92,7 @@ export default function Contact() {
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-semibold text-primary">Address</h4>
-                      <p className="text-secondary">Depok, Jawa Barat, Indonesia</p>
+                      <p className="text-secondary">Jakarta, Indonesia</p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary">Email</h4>
@@ -112,9 +112,29 @@ export default function Contact() {
                   </div>
                 </Card>
                 <Card className="p-8 mt-6 h-64">
-                  <SectionTitle title="Our Location" />
-                  <div className="h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                    <p className="text-secondary">Google Maps Placeholder</p>
+                  <SectionTitle title={t('ourLocation')} />
+                  <div className="h-48 bg-gray-200 rounded-md overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.26476693163!2d106.6894!3d-6.2088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1696234567890!5m2!1sen!2sid"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="CocoBlim Location - Jakarta, Indonesia"
+                    ></iframe>
+                  </div>
+                  <div className="mt-4">
+                    <a 
+                      href="https://maps.app.goo.gl/4NAQsTvDfusyuVnG9?g_st=iw"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-primary hover:text-primary-dark transition-colors text-sm font-medium"
+                    >
+                      <span className="mr-2">📍</span>
+                      {t('viewOnGoogleMaps') || 'View on Google Maps'}
+                    </a>
                   </div>
                 </Card>
               </div>

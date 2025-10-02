@@ -48,7 +48,7 @@ const translations = {
     // Contact Info
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
-    address: 'Depok, West Java, Indonesia',
+    address: 'Jakarta, Indonesia',
     // Charcoal Products
     charcoalBriketShisha: 'COCONUT BRIQUETTE SHISHA',
     charcoalKayuKeras: 'HARDWOOD CHARCOAL',
@@ -157,6 +157,7 @@ const translations = {
     // Footer
     quickLinks: 'Quick Links',
     contact: 'Contact',
+    viewOnGoogleMaps: 'View on Google Maps',
   },
   id: {
     // Navbar
@@ -193,7 +194,7 @@ const translations = {
     // Contact Info
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
-    address: 'Depok, Jawa Barat, Indonesia',
+    address: 'Jakarta, Indonesia',
     // Charcoal Products
     charcoalBriketShisha: 'ARANG BRIKET SHISHA',
     charcoalKayuKeras: 'ARANG KAYU KERAS',
@@ -302,6 +303,7 @@ const translations = {
     // Footer
     quickLinks: 'Tautan Cepat',
     contact: 'Kontak',
+    viewOnGoogleMaps: 'Lihat di Google Maps',
   },
   ar: {
     // Navbar
@@ -338,7 +340,7 @@ const translations = {
     // Contact Info
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
-    address: 'ديبوك، جاوة الغربية، إندونيسيا',
+    address: 'جاكرتا، إندونيسيا',
     // Charcoal Products
     charcoalBriketShisha: 'فحم جوز الهند للشيشة',
     charcoalKayuKeras: 'فحم الخشب الصلب',
@@ -447,6 +449,7 @@ const translations = {
     // Footer
     quickLinks: 'روابط سريعة',
     contact: 'اتصل',
+    viewOnGoogleMaps: 'عرض على خرائط جوجل',
   }
 };
 
