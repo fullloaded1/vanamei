@@ -23,16 +23,16 @@ const translations = {
     glossary: 'Glossary',
     getSample: 'Get Sample',
     // Hero
-    heroTitle: 'Do you need coconut products?',
-    heroSubtitle: 'Our product quality is always trusted.',
-    supplierText: 'CocoBlim - Trusted Indonesian coconut supplier',
+    heroTitle: 'Do you need charcoal?',
+    heroSubtitle: 'Our charcoal quality is always trusted.',
+    supplierText: 'CocoBlim - Trusted Indonesian charcoal supplier',
     // Benefits
     benefit1Title: '01. Fast and precise',
-    benefit1Text: 'We will fulfill your coconut product needs with quick response. Our team is very competent, solid, and can communicate well in Indonesian, Japanese, and English.',
+    benefit1Text: 'We will fulfill your charcoal needs with quick response. Our team is very competent, solid, and can communicate well in Indonesian and English.',
     benefit2Title: '02. Low cost',
-    benefit2Text: 'We are a coconut product supplier in Indonesia that has nearly 10 coconut factories, which work with us on the island of Java. The ease of logistics distribution on Java Island can help us speed up delivery of your needs through 3 International Ports, namely Jakarta, Semarang, and Surabaya. Thus we can minimize local logistics distribution costs.',
+    benefit2Text: 'We are a charcoal supplier in Indonesia that has nearly 10 charcoal factories, which work with us on the island of Java. The ease of logistics distribution on Java Island can help us speed up delivery of your needs through 3 International Ports, namely Jakarta, Semarang, and Surabaya.',
     benefit3Title: '03. Quality is priority',
-    benefit3Text: 'We always prioritize the quality of our coconut products. Our priority is to select the best raw materials to produce competitive Indonesian coconut products, both natural coconuts and processed coconut products.',
+    benefit3Text: 'We always prioritize the quality of our charcoal products. Our priority is to select the best raw materials to produce competitive Indonesian charcoal products, both coconut shell charcoal and high-quality briquettes.',
   },
   id: {
     // Navbar
@@ -44,9 +44,9 @@ const translations = {
     glossary: 'Glosarium',
     getSample: 'Dapatkan Sampel',
     // Hero
-    heroTitle: 'Anda membutuhkan produk kelapa?',
-    heroSubtitle: 'Kualitas produk kami selalu dipercaya.',
-    supplierText: 'CocoBlim - Supplier produk kelapa Indonesia yang dapat dipercaya',
+    heroTitle: 'Anda membutuhkan arang?',
+    heroSubtitle: 'Kualitas arang kami selalu dapat dipercaya.',
+    supplierText: 'CocoBlim - Supplier arang Indonesia yang dapat dipercaya',
     // Benefits
     benefit1Title: '01. Cepat dan tepat',
     benefit1Text: 'Kami akan memenuhi kebutuhan arang anda dengan respon yang cepat. Tim kami sangat kompeten, solid, dan dapat berkomunikasi dengan baik dalam Bahasa Indonesia dan Inggris.',

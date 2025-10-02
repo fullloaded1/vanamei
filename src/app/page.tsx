@@ -44,10 +44,10 @@ export default function Home() {
             {/* Text positioned on the right like screenshot */}
             <div className="max-w-2xl text-left">
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl">
-                Anda membutuhkan arang?
+                {t('heroTitle')}
               </h1>
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-12 leading-tight drop-shadow-2xl">
-                Kualitas arang kami selalu dapat dipercaya.
+                {t('heroSubtitle')}
               </h1>
             </div>
           </div>
