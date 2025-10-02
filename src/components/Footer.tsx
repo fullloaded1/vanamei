@@ -1,10 +1,6 @@
-'use client';
-
 import Link from 'next/link';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
-  const { t } = useLanguage();
   return (
     <footer className="bg-gray-200 text-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-6">
@@ -32,41 +28,41 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-black">{t('quickLinks') || 'Quick Links'}</h4>
+            <h4 className="text-base font-semibold mb-4 text-black">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/" className="text-gray-600 hover:text-black transition-colors">{t('home')}</Link></li>
-              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">{t('about')}</Link></li>
-              <li><Link href="/" className="text-gray-600 hover:text-black transition-colors">{t('ourProducts')}</Link></li>
-              <li><Link href="/" className="text-gray-600 hover:text-black transition-colors">{t('ourFactory')}</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-black transition-colors">{t('contact') || 'Contact'}</Link></li>
+              <li><Link href="/" className="text-gray-600 hover:text-black transition-colors">Home</Link></li>
+              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">About Us</Link></li>
+              <li><Link href="/products" className="text-gray-600 hover:text-black transition-colors">All Products</Link></li>
+              <li><Link href="/blog" className="text-gray-600 hover:text-black transition-colors">Blog</Link></li>
+              <li><Link href="/contact" className="text-gray-600 hover:text-black transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Charcoal Products */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-black">{t('ourProducts')}</h4>
+            <h4 className="text-base font-semibold mb-4 text-black">Charcoal Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/products/charcoal/arang-briket-shisha" className="text-gray-600 hover:text-black transition-colors">{t('charcoalBriketShisha')}</Link></li>
-              <li><Link href="/products/charcoal/arang-kayu-keras" className="text-gray-600 hover:text-black transition-colors">{t('charcoalKayuKeras')}</Link></li>
-              <li><Link href="/products/charcoal/arang-tempurung-kelapa" className="text-gray-600 hover:text-black transition-colors">{t('charcoalTempurungKelapa')}</Link></li>
-              <li><Link href="/products/charcoal/arang-sawdust-briquette" className="text-gray-600 hover:text-black transition-colors">{t('charcoalSawdustBriquette')}</Link></li>
+              <li><Link href="/products/charcoal/arang-briket-shisha" className="text-gray-600 hover:text-black transition-colors">Briket Shisha</Link></li>
+              <li><Link href="/products/charcoal/arang-kayu-keras" className="text-gray-600 hover:text-black transition-colors">Kayu Keras</Link></li>
+              <li><Link href="/products/charcoal/arang-tempurung-kelapa" className="text-gray-600 hover:text-black transition-colors">Tempurung Kelapa</Link></li>
+              <li><Link href="/products/charcoal/arang-granula-meshed" className="text-gray-600 hover:text-black transition-colors">Granula/Meshed</Link></li>
             </ul>
           </div>
 
-          {/* Company Info */}
+          {/* Coconut Products */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-black">{t('about')}</h4>
+            <h4 className="text-base font-semibold mb-4 text-black">Coconut Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">{t('story')}</Link></li>
-              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">{t('vision')}</Link></li>
-              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">{t('mission')}</Link></li>
-              <li><Link href="/" className="text-gray-600 hover:text-black transition-colors">{t('ourFactory')}</Link></li>
+              <li><Link href="/products" className="text-gray-600 hover:text-black transition-colors">Coconut Oil</Link></li>
+              <li><Link href="/products" className="text-gray-600 hover:text-black transition-colors">Coconut Fiber</Link></li>
+              <li><Link href="/products" className="text-gray-600 hover:text-black transition-colors">Activated Carbon</Link></li>
+              <li><Link href="/products" className="text-gray-600 hover:text-black transition-colors">Desiccated Coconut</Link></li>
             </ul>
           </div>
 
           {/* Contact Us */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-black">{t('contactUs')}</h4>
+            <h4 className="text-base font-semibold mb-4 text-black">Contact Us</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center">
                 <span className="text-gray-600">📞</span>
@@ -78,7 +74,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <span className="text-gray-600">📍</span>
-                <span className="ml-2 text-gray-600">Jakarta, Indonesia</span>
+                <span className="ml-2 text-gray-600">Depok, Jawa Barat, Indonesia</span>
               </div>
               
               {/* Social Media Icons */}

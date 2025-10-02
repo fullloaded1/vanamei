@@ -36,41 +36,70 @@ export default function Navbar() {
                   className=""
                 />
               </div>
-              <span className="heading-xs text-gray-900">cocoblim.com</span>
+              <span className="text-lg font-semibold text-gray-900">cocoblim.com</span>
             </Link>
           </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="nav-link text-gray-700 hover:text-gray-900">
+            <Link href="/" className="text-gray-700 hover:text-gray-900 text-sm">
               {t('home')}
             </Link>
             
-            <Link href="/#story" className="nav-link text-gray-700 hover:text-gray-900">
-              {t('about')}
-            </Link>
-            
             <div className="relative group">
-              <button className="nav-link text-gray-700 hover:text-gray-900 flex items-center">
-                {t('ourProducts')}
+              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
+                {t('about')}
                 <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-1 w-56 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
-                <Link href="/products/charcoal/arang-briket-shisha" className="nav-dropdown block px-3 py-2 text-gray-600 hover:bg-gray-50">{t('charcoalBriketShisha')}</Link>
-                <Link href="/products/charcoal/arang-kayu-keras" className="nav-dropdown block px-3 py-2 text-gray-600 hover:bg-gray-50">{t('charcoalKayuKeras')}</Link>
-                <Link href="/products/charcoal/arang-tempurung-kelapa" className="nav-dropdown block px-3 py-2 text-gray-600 hover:bg-gray-50">{t('charcoalTempurungKelapa')}</Link>
-                <Link href="/products/charcoal/arang-sawdust-briquette" className="nav-dropdown block px-3 py-2 text-gray-600 hover:bg-gray-50">{t('charcoalSawdustBriquette')}</Link>
+              <div className="absolute left-0 mt-1 w-44 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
+                <Link href="/about" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Our Vision</Link>
+                <Link href="/about" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Our Values</Link>
+                <Link href="/about" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Our Achievement</Link>
               </div>
             </div>
             
-            <Link href="/#factory" className="nav-link text-gray-700 hover:text-gray-900">
-              {t('ourFactory')}
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
+                {t('product')}
+                <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-1 w-48 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
+                <Link href="/products" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Coconut List</Link>
+                <Link href="/products" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Coconut Specification</Link>
+                <Link href="/products/coconut-oil" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Virgin Coconut Oil</Link>
+              </div>
+            </div>
+            
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-gray-900 text-sm flex items-center">
+                {t('media')}
+                <svg className="ml-1 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-1 w-36 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border">
+                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Team</Link>
+                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Legality</Link>
+                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Catalog</Link>
+                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Activity</Link>
+                <Link href="/media" className="block px-3 py-2 text-xs text-gray-600 hover:bg-gray-50">Co-Factories</Link>
+              </div>
+            </div>
+            
+            <Link href="/blog" className="text-gray-700 hover:text-gray-900 text-sm">
+              {t('blog')}
             </Link>
             
-            <Link href="/contact" className="btn-text-md bg-primary text-white px-4 py-1.5 rounded hover:bg-primary-dark transition-colors">
-              {t('contactUs')}
+            <Link href="/glossary" className="text-gray-700 hover:text-gray-900 text-sm">
+              {t('glossary')}
+            </Link>
+            
+            <Link href="/contact" className="bg-blue-600 text-white px-4 py-1.5 rounded text-sm hover:bg-blue-700 transition-colors">
+              {t('getSample')}
             </Link>
           </div>
 
@@ -80,7 +109,7 @@ export default function Navbar() {
               <button
                 key={lang.code}
                 onClick={() => setLanguage(lang.code as any)}
-                className={`flex items-center px-2 py-1 rounded body-xs transition-colors ${
+                className={`flex items-center px-2 py-1 rounded text-xs transition-colors ${
                   language === lang.code 
                     ? 'bg-blue-100 text-blue-700' 
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
@@ -113,38 +142,44 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link href="/" className="nav-link block px-3 py-2 text-gray-600 hover:text-gray-900" onClick={closeMenu}>
+              <Link href="/" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
                 {t('home')}
               </Link>
-              <Link href="/#story" className="nav-link block px-3 py-2 text-gray-600 hover:text-gray-900" onClick={closeMenu}>
+              <Link href="/about" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
                 {t('about')}
               </Link>
-              <Link href="/#products" className="nav-link block px-3 py-2 text-gray-600 hover:text-gray-900" onClick={closeMenu}>
-                {t('ourProducts')}
+              <Link href="/products" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
+                {t('product')}
               </Link>
-              <Link href="/#factory" className="nav-link block px-3 py-2 text-gray-600 hover:text-gray-900" onClick={closeMenu}>
-                {t('ourFactory')}
+              <Link href="/media" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
+                {t('media')}
               </Link>
-              <Link href="/contact" className="btn-text-md block mx-3 my-2 px-3 py-2 text-white bg-primary rounded text-center hover:bg-primary-dark" onClick={closeMenu}>
-                {t('contactUs')}
+              <Link href="/blog" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
+                {t('blog')}
+              </Link>
+              <Link href="/glossary" className="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900">
+                {t('glossary')}
+              </Link>
+              <Link href="/contact" className="block mx-3 my-2 px-3 py-2 text-sm text-white bg-blue-600 rounded text-center hover:bg-blue-700">
+                {t('getSample')}
               </Link>
               
               {/* Mobile Language Switcher */}
               <div className="px-3 py-2">
-                <div className="body-xs text-gray-500 mb-2">Language:</div>
+                <div className="text-xs text-gray-500 mb-2">Language:</div>
                 <div className="grid grid-cols-3 gap-2">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
                       onClick={() => setLanguage(lang.code as any)}
-                      className={`flex items-center justify-center px-2 py-1 rounded body-xs transition-colors ${
+                      className={`flex items-center justify-center px-2 py-1 rounded text-xs transition-colors ${
                         language === lang.code 
                           ? 'bg-blue-100 text-blue-700' 
                           : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                       }`}
                     >
                       <span className="mr-1">{lang.flag}</span>
-                      <span className="body-xs">{lang.code.toUpperCase()}</span>
+                      <span className="text-xs">{lang.code.toUpperCase()}</span>
                     </button>
                   ))}
                 </div>

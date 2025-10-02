@@ -37,40 +37,27 @@ export default function Home() {
         </div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 flex items-center justify-center min-h-[80vh]">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 flex items-center min-h-[80vh]">
           <div 
             ref={heroAnimation.ref}
-            className={`transition-all duration-1000 ease-out text-center ${
-              heroAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+            className={`w-full flex justify-end transition-all duration-1000 ease-out ${
+              heroAnimation.isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'
             }`}
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-center">
-              Anda membutuhkan arang?<br />
-              <span className="text-white">Kualitas arang kami selalu<br />dipercaya.</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl text-center">
-              Supplier arang Indonesia yang dapat dipercaya
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/contact" 
-                className="bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center font-semibold"
-              >
-                Dapatkan Sampel
-              </Link>
-              <Link 
-                href="/#products" 
-                className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 text-center font-semibold"
-              >
-                Lihat Produk
-              </Link>
+            {/* Text positioned on the right like screenshot */}
+            <div className="max-w-2xl text-left">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-2xl">
+                {t('heroTitle')}
+              </h1>
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-12 leading-tight drop-shadow-2xl">
+                {t('heroSubtitle')}
+              </h1>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Benefits Section - Enhanced with Better Animations */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      {/* Benefits Section - Exact Cocologi Style */}
+      <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           {/* Section Title */}
           <div 
@@ -78,56 +65,62 @@ export default function Home() {
               benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            <h2 className="heading-lg text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {t('whyUs')}
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="space-y-20">
             {/* Benefit 1 - Cepat dan tepat */}
             <div 
               ref={benefitsAnimation.ref}
-              className={`text-center transition-all duration-700 ease-out ${
+              className={`transition-all duration-700 ease-out ${
                 benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-4">01.</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Cepat dan tepat
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                {t('benefit1Title')}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Kami akan memenuhi kebutuhan arang anda dengan respon yang cepat. Tim kami sangat kompeten, solid, dan dapat berkomunikasi dengan baik dalam Bahasa Indonesia, Jepang, dan juga Inggris.
+              <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-4xl">
+                {t('benefit1Text')}
               </p>
+              <div className="text-base text-gray-600">
+                Average response: <span className="font-semibold text-gray-800">2-4 hours</span>
+              </div>
             </div>
 
             {/* Benefit 2 - Biaya rendah */}
             <div 
-              className={`text-center transition-all duration-700 delay-200 ease-out ${
+              className={`transition-all duration-700 delay-200 ease-out ${
                 benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-4">02.</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Biaya rendah
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                {t('benefit2Title')}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Kami adalah pemasok arang di Indonesia yang memiliki pabrik arang, yang bekerja sama dengan kami di Jakarta. Kemudahan distribusi logistik dapat membantu kami meminimalkan biaya distribusi.
+              <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-4xl">
+                {t('benefit2Text')}
               </p>
+              <div className="text-base text-gray-600">
+                Save up to <span className="font-semibold text-gray-800">25% on shipping</span>
+              </div>
             </div>
 
             {/* Benefit 3 - Kualitas adalah prioritas */}
             <div 
-              className={`text-center transition-all duration-700 delay-400 ease-out ${
+              className={`transition-all duration-700 delay-400 ease-out ${
                 benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <div className="text-4xl font-bold text-emerald-600 mb-4">03.</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Kualitas adalah prioritas
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                {t('benefit3Title')}
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Kami selalu memprioritaskan kualitas produk arang kami. Prioritas kami adalah memilih bahan baku terbaik untuk menghasilkan produk arang Indonesia yang kompetitif, baik arang alami ataupun arang briket.
+              <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-4xl">
+                {t('benefit3Text')}
               </p>
+              <div className="text-base text-gray-600">
+                <span className="font-semibold text-gray-800">99.8% quality approval</span> rate
+              </div>
             </div>
           </div>
           
@@ -428,84 +421,19 @@ export default function Home() {
             
           </div>
           
-          {/* Enhanced Map Section */}
-          <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-            <div className="bg-gradient-to-r from-primary to-primary-dark p-6">
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-white mb-2">CocoBlim Head Office</h3>
-                <p className="text-white/90 text-sm">📍 Jakarta Selatan, DKI Jakarta, Indonesia</p>
-                <p className="text-white/80 text-xs mt-1">Premium Charcoal Manufacturing & Export</p>
+          <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="flex items-center justify-center mb-6">
+              <div className="bg-gray-100 p-4 rounded-lg mr-4">
+                <div className="text-2xl">QR</div>
+              </div>
+              <div className="text-left">
+                <h3 className="font-bold text-gray-900">Scan QR Code for Instant Contact</h3>
+                <p className="text-sm text-gray-600">Add us to your contacts & get priority support</p>
               </div>
             </div>
-            
-            <div className="relative">
-              <div className="h-64 bg-gray-200 overflow-hidden relative group">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.26476693163!2d106.6894!3d-6.2088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1696234567890!5m2!1sen!2sid"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="CocoBlim Location - Jakarta, Indonesia"
-                  className="transition-all duration-300 group-hover:scale-105"
-                ></iframe>
-                
-                {/* Company overlay - Clean without icons */}
-                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg max-w-xs">
-                  <div className="space-y-1">
-                    <h3 className="text-sm font-bold text-gray-900">CocoBlim Head Office</h3>
-                    <p className="text-xs text-gray-700 font-medium">Jakarta Selatan, Indonesia</p>
-                    <p className="text-xs text-blue-600 font-medium">Charcoal Export Specialist</p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Action buttons */}
-              <div className="p-6 bg-gray-50">
-                <div className="flex flex-col sm:flex-row gap-3 mb-4">
-                  <a 
-                    href="https://maps.app.goo.gl/4NAQsTvDfusyuVnG9?g_st=iw"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg font-medium text-sm"
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                    </svg>
-                    View on Google Maps
-                  </a>
-                  
-                  <a 
-                    href={`https://www.google.com/maps/dir/?api=1&destination=Jakarta,Indonesia`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-white border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg font-medium text-sm"
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />
-                    </svg>
-                    Get Directions
-                  </a>
-                </div>
-                
-                {/* Business info - Clean without icons */}
-                <div className="space-y-3 pt-4 border-t border-gray-200">
-                  <div className="text-center">
-                    <p className="text-sm font-semibold text-gray-800">Business Hours</p>
-                    <p className="text-xs text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM (GMT+7)</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-sm font-semibold text-gray-800">Contact</p>
-                    <p className="text-xs text-gray-600">+62 851 4492 0078 (WhatsApp Available)</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-sm font-semibold text-gray-800">Services</p>
-                    <p className="text-xs text-gray-600">Manufacturing & Export Office | International Shipping Available</p>
-                  </div>
-                </div>
-              </div>
+            <div className="text-sm text-gray-600">
+              <span className="font-medium">Business Hours:</span> Mon-Fri 8AM-6PM (GMT+7) | 
+              <span className="font-medium">Languages:</span> Indonesian, English
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ const translations = {
     // Contact Info
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
-    address: 'Jakarta, Indonesia',
+    address: 'Depok, West Java, Indonesia',
     // Charcoal Products
     charcoalBriketShisha: 'COCONUT BRIQUETTE SHISHA',
     charcoalKayuKeras: 'HARDWOOD CHARCOAL',
@@ -154,12 +154,6 @@ const translations = {
     bulkShipment: 'Bulk shipment',
     per15kgPack: '15kg (inner plastic bag + outer PP woven bag/carton)',
     per5kgPack: '5kg (inner plastic bag + outer PP woven bag/carton)',
-    // Footer
-    quickLinks: 'Quick Links',
-    contact: 'Contact',
-    viewOnGoogleMaps: 'View on Google Maps',
-    getDirections: 'Get Directions',
-    businessHours: 'Business Hours',
   },
   id: {
     // Navbar
@@ -196,7 +190,7 @@ const translations = {
     // Contact Info
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
-    address: 'Jakarta, Indonesia',
+    address: 'Depok, Jawa Barat, Indonesia',
     // Charcoal Products
     charcoalBriketShisha: 'ARANG BRIKET SHISHA',
     charcoalKayuKeras: 'ARANG KAYU KERAS',
@@ -302,12 +296,6 @@ const translations = {
     bulkShipment: 'Bulk shipment',
     per15kgPack: '15kg (kantong plastik dalam + karung PP luar/karton)',
     per5kgPack: '5kg (kantong plastik dalam + karung PP luar/karton)',
-    // Footer
-    quickLinks: 'Tautan Cepat',
-    contact: 'Kontak',
-    viewOnGoogleMaps: 'Lihat di Google Maps',
-    getDirections: 'Dapatkan Petunjuk Arah',
-    businessHours: 'Jam Operasional',
   },
   ar: {
     // Navbar
@@ -344,7 +332,7 @@ const translations = {
     // Contact Info
     phone: '+62 851 4492 0078',
     email: 'info@cocoblim.com',
-    address: 'جاكرتا، إندونيسيا',
+    address: 'ديبوك، جاوة الغربية، إندونيسيا',
     // Charcoal Products
     charcoalBriketShisha: 'فحم جوز الهند للشيشة',
     charcoalKayuKeras: 'فحم الخشب الصلب',
@@ -450,12 +438,6 @@ const translations = {
     bulkShipment: 'الشحن بالجملة',
     per15kgPack: '15 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
     per5kgPack: '5 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
-    // Footer
-    quickLinks: 'روابط سريعة',
-    contact: 'اتصل',
-    viewOnGoogleMaps: 'عرض على خرائط جوجل',
-    getDirections: 'احصل على الاتجاهات',
-    businessHours: 'ساعات العمل',
   }
 };
 
