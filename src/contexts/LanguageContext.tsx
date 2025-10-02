@@ -81,6 +81,14 @@ const translations = {
     descActivatedCarbon: 'Activated carbon charcoal for industrial needs and water filtration applications.',
     // Products Section
     ourProducts: 'OUR PRODUCTS',
+    // Factory Section
+    ourFactory: 'OUR FACTORY',
+    factoryTitle: 'State-of-the-Art Production Facility',
+    factoryDescription: 'Our modern factory is equipped with advanced technology and follows strict quality control standards to ensure the highest quality charcoal products for our international clients.',
+    factoryFeature1: 'Advanced Production Technology',
+    factoryFeature2: 'Quality Control Standards',
+    factoryFeature3: 'International Certification',
+    factoryFeature4: 'Sustainable Manufacturing',
     // Product Detail Page
     productSpecifications: 'Product Specifications',
     applications: 'Applications',
@@ -219,6 +227,14 @@ const translations = {
     descActivatedCarbon: 'Arang activated carbon untuk keperluan industri dan aplikasi filtrasi air.',
     // Products Section
     ourProducts: 'PRODUK KAMI',
+    // Factory Section
+    ourFactory: 'PABRIK KAMI',
+    factoryTitle: 'Fasilitas Produksi Berteknologi Tinggi',
+    factoryDescription: 'Pabrik modern kami dilengkapi dengan teknologi canggih dan mengikuti standar kontrol kualitas ketat untuk memastikan produk arang berkualitas tinggi untuk klien internasional.',
+    factoryFeature1: 'Teknologi Produksi Canggih',
+    factoryFeature2: 'Standar Kontrol Kualitas',
+    factoryFeature3: 'Sertifikasi Internasional',
+    factoryFeature4: 'Manufaktur Berkelanjutan',
     // Product Detail Page
     productSpecifications: 'Spesifikasi Produk',
     applications: 'Aplikasi',
@@ -357,6 +373,14 @@ const translations = {
     descActivatedCarbon: 'الكربون المنشط للاحتياجات الصناعية وتطبيقات ترشيح المياه.',
     // Products Section
     ourProducts: 'منتجاتنا',
+    // Factory Section
+    ourFactory: 'مصنعنا',
+    factoryTitle: 'مرفق إنتاج متطور',
+    factoryDescription: 'مصنعنا الحديث مجهز بتكنولوجيا متقدمة ويتبع معايير مراقبة الجودة الصارمة لضمان أعلى جودة من منتجات الفحم لعملائنا الدوليين.',
+    factoryFeature1: 'تكنولوجيا الإنتاج المتقدمة',
+    factoryFeature2: 'معايير مراقبة الجودة',
+    factoryFeature3: 'الشهادات الدولية',
+    factoryFeature4: 'التصنيع المستدام',
     // Product Detail Page
     productSpecifications: 'مواصفات المنتج',
     applications: 'التطبيقات',

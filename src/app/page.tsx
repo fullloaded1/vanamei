@@ -16,6 +16,7 @@ export default function Home() {
   const benefitsAnimation = useScrollAnimation();
   const storyAnimation = useScrollAnimation();
   const productsAnimation = useScrollAnimation();
+  const factoryAnimation = useScrollAnimation();
 
   return (
     <>
@@ -250,7 +251,92 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
 
+      {/* Factory Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div 
+            ref={factoryAnimation.ref}
+            className={`transition-all duration-1000 ease-out ${
+              factoryAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
+            }`}
+          >
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {t('ourFactory')}
+              </h2>
+              <h3 className="text-xl md:text-2xl text-gray-700 mb-6">
+                {t('factoryTitle')}
+              </h3>
+              <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                {t('factoryDescription')}
+              </p>
+            </div>
+
+            {/* Factory Images Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+              {[
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.51.jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.52.jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.53.jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.51(1).jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.52(1).jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.53(1).jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.52(2).jpeg',
+                '/images/factory/WhatsApp Image 2025-10-02 at 18.07.54.jpeg'
+              ].map((imageSrc, index) => (
+                <div
+                  key={index}
+                  className={`relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-500 transform hover:scale-105 ${
+                    factoryAnimation.isVisible 
+                      ? 'opacity-100 translate-y-0' 
+                      : 'opacity-0 translate-y-8'
+                  }`}
+                  style={{ 
+                    transitionDelay: `${200 + (index * 100)}ms`,
+                  }}
+                >
+                  <Image
+                    src={imageSrc}
+                    alt={`Factory Image ${index + 1}`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Factory Features */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { key: 'factoryFeature1', icon: '🏭' },
+                { key: 'factoryFeature2', icon: '✅' },
+                { key: 'factoryFeature3', icon: '🏆' },
+                { key: 'factoryFeature4', icon: '🌱' }
+              ].map((feature, index) => (
+                <div
+                  key={feature.key}
+                  className={`text-center p-6 bg-gray-50 rounded-lg transition-all duration-700 ${
+                    factoryAnimation.isVisible 
+                      ? 'opacity-100 translate-y-0' 
+                      : 'opacity-0 translate-y-12'
+                  }`}
+                  style={{ 
+                    transitionDelay: `${600 + (index * 150)}ms`,
+                  }}
+                >
+                  <div className="text-4xl mb-4">{feature.icon}</div>
+                  <h4 className="text-lg font-semibold text-gray-900">
+                    {t(feature.key)}
+                  </h4>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Blog Section - Natural & Engaging */}
