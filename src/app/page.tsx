@@ -37,21 +37,17 @@ export default function Home() {
         </div>
         
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 flex items-center min-h-[80vh]">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 flex items-center justify-center min-h-[80vh]">
           <div 
             ref={heroAnimation.ref}
-            className={`transition-all duration-1000 ease-out ${
+            className={`transition-all duration-1000 ease-out text-center ${
               heroAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Premium Indonesian<br />
-              <span className="text-emerald-400">Coconut Charcoal</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-center">
+              Do you need charcoal?<br />
+              <span className="text-white">Our charcoal quality is<br />always trusted.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl">
-              High-quality charcoal products for international markets. 
-              Sustainable, reliable, and expertly crafted.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 href="/contact" 
@@ -459,14 +455,13 @@ export default function Home() {
                   className="transition-all duration-300 group-hover:scale-105"
                 ></iframe>
                 
-                {/* Company overlay */}
-                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-lg max-w-xs">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-semibold text-gray-800">CocoBlim HQ</span>
+                {/* Company overlay - Clean without icons */}
+                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-4 shadow-lg max-w-xs">
+                  <div className="space-y-1">
+                    <h3 className="text-sm font-bold text-gray-900">CocoBlim Head Office</h3>
+                    <p className="text-xs text-gray-700 font-medium">Jakarta Selatan, Indonesia</p>
+                    <p className="text-xs text-blue-600 font-medium">Charcoal Export Specialist</p>
                   </div>
-                  <p className="text-xs text-gray-600 mt-1">📍 Jakarta Selatan</p>
-                  <p className="text-xs text-blue-600 mt-1 font-medium">Charcoal Export Specialist</p>
                 </div>
               </div>
               
@@ -498,29 +493,19 @@ export default function Home() {
                   </a>
                 </div>
                 
-                {/* Business info */}
-                <div className="space-y-2 pt-3 border-t border-gray-200">
-                  <div className="flex items-center justify-between text-xs text-gray-600">
-                    <div className="flex items-center">
-                      <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                      </svg>
-                      <span className="font-medium">Mon-Fri: 9:00 AM - 5:00 PM (GMT+7)</span>
-                    </div>
+                {/* Business info - Clean without icons */}
+                <div className="space-y-3 pt-4 border-t border-gray-200">
+                  <div className="text-center">
+                    <p className="text-sm font-semibold text-gray-800">Business Hours</p>
+                    <p className="text-xs text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM (GMT+7)</p>
                   </div>
-                  <div className="flex items-center justify-between text-xs text-gray-600">
-                    <div className="flex items-center">
-                      <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
-                      <span className="font-medium">📞 +62 851 4492 0078 (WhatsApp Available)</span>
-                    </div>
+                  <div className="text-center">
+                    <p className="text-sm font-semibold text-gray-800">Contact</p>
+                    <p className="text-xs text-gray-600">+62 851 4492 0078 (WhatsApp Available)</p>
                   </div>
-                  <div className="flex items-center text-xs text-gray-500">
-                    <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
-                    </svg>
-                    <span>🏢 Manufacturing & Export Office | 🌍 International Shipping Available</span>
+                  <div className="text-center">
+                    <p className="text-sm font-semibold text-gray-800">Services</p>
+                    <p className="text-xs text-gray-600">Manufacturing & Export Office | International Shipping Available</p>
                   </div>
                 </div>
               </div>
