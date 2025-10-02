@@ -158,6 +158,8 @@ const translations = {
     quickLinks: 'Quick Links',
     contact: 'Contact',
     viewOnGoogleMaps: 'View on Google Maps',
+    getDirections: 'Get Directions',
+    businessHours: 'Business Hours',
   },
   id: {
     // Navbar
@@ -304,6 +306,8 @@ const translations = {
     quickLinks: 'Tautan Cepat',
     contact: 'Kontak',
     viewOnGoogleMaps: 'Lihat di Google Maps',
+    getDirections: 'Dapatkan Petunjuk Arah',
+    businessHours: 'Jam Operasional',
   },
   ar: {
     // Navbar
@@ -450,6 +454,8 @@ const translations = {
     quickLinks: 'روابط سريعة',
     contact: 'اتصل',
     viewOnGoogleMaps: 'عرض على خرائط جوجل',
+    getDirections: 'احصل على الاتجاهات',
+    businessHours: 'ساعات العمل',
   }
 };
 
