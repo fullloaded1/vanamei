@@ -248,35 +248,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CSS Keyframes for advanced animations */}
-        <style jsx>{`
-          @keyframes expandLine {
-            from {
-              transform: scaleX(0);
-            }
-            to {
-              transform: scaleX(1);
-            }
-          }
-
-          @keyframes float {
-            0%, 100% {
-              transform: translateY(0px) rotate(0deg);
-            }
-            50% {
-              transform: translateY(-20px) rotate(180deg);
-            }
-          }
-
-          @keyframes pulse {
-            0%, 100% {
-              opacity: 0.3;
-            }
-            50% {
-              opacity: 0.6;
-            }
-          }
-        `}</style>
       </section>
 
       {/* Blog Section - Natural & Engaging */}

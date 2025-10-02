@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { CharcoalProduct } from '@/data/charcoalProducts';
@@ -35,10 +37,9 @@ export default function CharcoalProductCard({ product }: CharcoalProductCardProp
           {product.features.slice(0, 3).map((feature, index) => (
             <span
               key={index}
-              className="inline-block bg-white border border-gray-300 text-gray-800 px-2 py-1 text-xs font-normal mb-1 mr-1 transform transition-all duration-300 ease-out hover:scale-105 hover:border-gray-400 hover:shadow-sm"
+              className="inline-block bg-white border border-gray-300 text-gray-800 px-2 py-1 text-xs font-normal mb-1 mr-1 transform transition-all duration-300 ease-out hover:scale-105 hover:border-gray-400 hover:shadow-sm animate-fade-in-up"
               style={{ 
-                transitionDelay: `${index * 100}ms`,
-                animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+                animationDelay: `${index * 100}ms`
               }}
             >
               {feature}
