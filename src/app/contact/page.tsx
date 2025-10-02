@@ -116,7 +116,8 @@ export default function Contact() {
                   <Card className="p-0 overflow-hidden shadow-xl">
                     <div className="bg-gradient-to-r from-primary to-primary-dark p-6">
                       <h3 className="text-xl font-bold text-white mb-2">{t('ourLocation')}</h3>
-                      <p className="text-white/90 text-sm">Jakarta, Indonesia</p>
+                      <p className="text-white/90 text-sm">📍 Jakarta Selatan, DKI Jakarta, Indonesia</p>
+                      <p className="text-white/80 text-xs mt-1">CocoBlim Head Office & Manufacturing</p>
                     </div>
                     
                     <div className="relative">
