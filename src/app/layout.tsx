@@ -9,6 +9,7 @@ import { Analytics } from '@vercel/analytics/next';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cocoblim.com'),
   title: 'CocoBlim - Premium Coconut Charcoal Manufacturer Indonesia | Arang Kelapa Berkualitas',
   description: 'CocoBlim adalah produsen arang kelapa premium di Jakarta. Menyediakan briket shisha, arang kayu keras, tempurung kelapa & sawdust briquette berkualitas tinggi untuk ekspor dan domestik.',
   keywords: 'arang kelapa, coconut charcoal, briket shisha, arang tempurung kelapa, coconut charcoal Indonesia, arang kayu keras, sawdust briquette, coconut charcoal manufacturer, arang kelapa Jakarta, coconut charcoal supplier',
