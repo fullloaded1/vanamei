@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     canonical: 'https://cocoblim.com',
   },
   icons: {
-    icon: '/images/CocoBlim_logo_baru_-removebg-preview.png',
-    shortcut: '/images/CocoBlim_logo_baru_-removebg-preview.png',
-    apple: '/images/CocoBlim_logo_baru_-removebg-preview.png',
+    icon: '/images/CocoBlim Logo 1.png',
+    shortcut: '/images/CocoBlim Logo 1.png',
+    apple: '/images/CocoBlim Logo 1.png',
   },
 };
 
@@ -61,9 +61,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="fvvOtA2-eGnDPHom3t1PN5SwIWX6cC-tPNfy85sTO3Q" />
-        <link rel="icon" href="/images/CocoBlim_logo_baru_-removebg-preview.png" type="image/png" />
-        <link rel="shortcut icon" href="/images/CocoBlim_logo_baru_-removebg-preview.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/CocoBlim_logo_baru_-removebg-preview.png" />
+        <link rel="icon" href="/images/CocoBlim Logo 1.png" type="image/png" />
+        <link rel="shortcut icon" href="/images/CocoBlim Logo 1.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/CocoBlim Logo 1.png" />
         <StructuredData />
       </head>
       <body className="font-sans">
