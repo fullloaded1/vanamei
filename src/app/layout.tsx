@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import LanguageWrapper from '@/components/LanguageWrapper';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'CocoBlim - Premium Coconut Products',
@@ -30,6 +31,7 @@ export default function RootLayout({
             </SmoothScrollProvider>
           </LanguageWrapper>
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
