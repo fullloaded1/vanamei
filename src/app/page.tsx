@@ -4,6 +4,7 @@ import SectionTitle from '@/components/SectionTitle';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import CharcoalProductCard from '@/components/CharcoalProductCard';
+import InteractiveMap from '@/components/InteractiveMap';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
@@ -438,6 +439,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Map Section */}
+      <InteractiveMap />
     </>
   );
 }
