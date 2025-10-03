@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   creator: 'CocoBlim',
   publisher: 'CocoBlim',
   robots: 'index, follow',
+  verification: {
+    google: 'fvvOtA2-eGnDPHom3t1PN5SwIWX6cC-tPNfy85sTO3Q',
+  },
   openGraph: {
     title: 'CocoBlim - Premium Coconut Charcoal Manufacturer Indonesia',
     description: 'Produsen arang kelapa premium di Jakarta. Briket shisha, arang kayu keras, tempurung kelapa berkualitas tinggi.',
@@ -51,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="fvvOtA2-eGnDPHom3t1PN5SwIWX6cC-tPNfy85sTO3Q" />
         <StructuredData />
       </head>
       <body className="font-sans">
