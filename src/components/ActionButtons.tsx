@@ -84,6 +84,17 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
           {t('downloadCatalog')}
         </Link>
       )}
+
+      {/* Download NIB Certificate Button - Tertiary */}
+      {showAll && (
+        <Link 
+          href="/file/NIB.pdf" 
+          target="_blank"
+          className={`${buttonBaseClasses} bg-gradient-to-r from-emerald-600 to-emerald-700 text-white hover:from-emerald-700 hover:to-emerald-800 border-2 border-transparent hover:shadow-xl`}
+        >
+          {t('downloadNIB')}
+        </Link>
+      )}
     </div>
   );
 };

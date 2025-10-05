@@ -5,6 +5,7 @@ import Button from '@/components/Button';
 import Card from '@/components/Card';
 import CharcoalProductCard from '@/components/CharcoalProductCard';
 import ActionButtons from '@/components/ActionButtons';
+import NIBSection from '@/components/NIBSection';
 import InteractiveMap from '@/components/InteractiveMap';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -187,6 +188,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* NIB Certificate Section */}
+      <NIBSection />
 
       {/* Charcoal Products Section - Enhanced with Professional Animations */}
       <section className="py-16 bg-gray-50 overflow-hidden">
