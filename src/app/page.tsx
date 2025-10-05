@@ -4,6 +4,7 @@ import SectionTitle from '@/components/SectionTitle';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import CharcoalProductCard from '@/components/CharcoalProductCard';
+import ActionButtons from '@/components/ActionButtons';
 import InteractiveMap from '@/components/InteractiveMap';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -130,9 +131,7 @@ export default function Home() {
               benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            <Link href="/contact" className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 shadow-lg">
-              {t('getSample')}
-            </Link>
+            <ActionButtons variant="horizontal" size="medium" showAll={false} />
           </div>
         </div>
       </section>
@@ -152,9 +151,7 @@ export default function Home() {
                 {t('understandingText2')}
               </p>
             </div>
-            <Link href="/contact" className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 shadow-lg">
-              {t('getSample')}
-            </Link>
+            <ActionButtons variant="horizontal" size="medium" showAll={false} />
           </div>
         </div>
       </section>
@@ -179,9 +176,7 @@ export default function Home() {
               <p className="text-gray-700 text-base leading-relaxed mb-6">
                 {t('visionText')}
               </p>
-              <Link href="/contact" className="inline-block bg-green-600 text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105">
-                {t('getSample')}
-              </Link>
+              <ActionButtons variant="vertical" size="small" showAll={false} />
             </div>
             <div className="text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('mission')}</h3>
@@ -236,6 +231,13 @@ export default function Home() {
                   <CharcoalProductCard product={product} />
                 </div>
               ))}
+            </div>
+
+            {/* Call to Action for Products */}
+            <div className={`text-center mt-16 transition-all duration-700 delay-800 ease-out ${
+              productsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
+              <ActionButtons variant="horizontal" size="medium" className="mb-8" />
             </div>
 
             {/* Floating Background Elements for Visual Interest */}
@@ -307,6 +309,13 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               ))}
+            </div>
+
+            {/* Call to Action after Factory */}
+            <div className={`text-center mt-16 transition-all duration-700 delay-1000 ease-out ${
+              factoryAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
+              <ActionButtons variant="horizontal" size="medium" />
             </div>
 
           </div>
@@ -401,6 +410,9 @@ export default function Home() {
               Whether you need samples, custom quotes, or just want to chat about coconut products - 
               we're here to help. <span className="font-medium">Average response time: 2-4 hours</span>
             </p>
+            
+            {/* Main Action Buttons */}
+            <ActionButtons variant="horizontal" size="large" className="mb-8" />
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

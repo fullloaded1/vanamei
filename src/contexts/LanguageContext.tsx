@@ -22,6 +22,9 @@ const translations = {
     blog: 'Blog',
     glossary: 'Glossary',
     getSample: 'Get Sample',
+    getQuoteBtn: 'Get Quote',
+    requestSampleBtn: 'Request a Sample',
+    downloadCatalog: 'Download Our Catalog',
     // Hero
     heroTitle: 'Do you need charcoal?',
     heroSubtitle: 'Our charcoal quality is always trusted.',
@@ -164,6 +167,9 @@ const translations = {
     blog: 'Blog',
     glossary: 'Glosarium',
     getSample: 'Dapatkan Sampel',
+    getQuoteBtn: 'Dapatkan Penawaran Harga',
+    requestSampleBtn: 'Minta Sampel Produk',
+    downloadCatalog: 'Unduh Katalog Kami',
     // Hero
     heroTitle: 'Anda membutuhkan arang?',
     heroSubtitle: 'Kualitas arang kami selalu dapat dipercaya.',
@@ -306,6 +312,9 @@ const translations = {
     blog: 'المدونة',
     glossary: 'المصطلحات',
     getSample: 'احصل على عينة',
+    getQuoteBtn: 'احصل على عرض سعر',
+    requestSampleBtn: 'اطلب عينة منتج',
+    downloadCatalog: 'تحميل الكتالوج',
     // Hero
     heroTitle: 'هل تحتاج إلى فحم؟',
     heroSubtitle: 'جودة فحمنا موثوقة دائماً.',
