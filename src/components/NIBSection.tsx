@@ -1,11 +1,13 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
+import NIBModal from './NIBModal';
 
 const NIBSection: React.FC = () => {
   const { t } = useLanguage();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
@@ -24,10 +26,19 @@ const NIBSection: React.FC = () => {
             {/* Left side - Certificate Preview */}
             <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 p-8 flex items-center justify-center">
               <div className="text-center text-white">
-                <div className="w-24 h-24 mx-auto mb-6 bg-white/20 rounded-full flex items-center justify-center">
-                  <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-                  </svg>
+                <div className="relative w-48 h-64 mx-auto mb-6 bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
+                     onClick={() => setIsModalOpen(true)}>
+                  <Image
+                    src="/file/NIB_page-0001.jpg"
+                    alt="NIB Certificate Preview"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300"></div>
+                  <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+                    Click to view
+                  </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-2">NIB Certificate</h3>
                 <p className="text-emerald-100 mb-4">
@@ -70,19 +81,21 @@ const NIBSection: React.FC = () => {
                 </div>
               </div>
 
-              <Link 
-                href="/file/NIB.pdf" 
-                target="_blank"
+              <button 
+                onClick={() => setIsModalOpen(true)}
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
-                {t('downloadNIB')}
-              </Link>
+                {t('viewNIB')}
+              </button>
             </div>
           </div>
         </div>
+
+        <NIBModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </section>
   );

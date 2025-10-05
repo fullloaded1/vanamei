@@ -28,6 +28,7 @@ const translations = {
     requestSampleWhatsApp: 'Sample via WhatsApp',
     downloadCatalog: 'Download Our Catalog',
     downloadNIB: 'Download NIB Certificate',
+    viewNIB: 'View NIB Certificate',
     // NIB Section
     nibCertification: 'Business License Certification',
     nibDescription: 'CocoBlim is a legally registered business entity in Indonesia with official NIB (Nomor Induk Berusaha) certification, ensuring our credibility and compliance with Indonesian business regulations.',
@@ -187,6 +188,7 @@ const translations = {
     requestSampleWhatsApp: 'Sampel via WhatsApp',
     downloadCatalog: 'Unduh Katalog Kami',
     downloadNIB: 'Unduh Sertifikat NIB',
+    viewNIB: 'Lihat Sertifikat NIB',
     // NIB Section
     nibCertification: 'Sertifikasi Izin Usaha',
     nibDescription: 'CocoBlim adalah badan usaha yang terdaftar secara legal di Indonesia dengan sertifikasi NIB (Nomor Induk Berusaha) resmi, memastikan kredibilitas dan kepatuhan kami terhadap regulasi bisnis Indonesia.',
@@ -346,6 +348,7 @@ const translations = {
     requestSampleWhatsApp: 'عينة عبر واتساب',
     downloadCatalog: 'تحميل الكتالوج',
     downloadNIB: 'تحميل شهادة NIB',
+    viewNIB: 'عرض شهادة NIB',
     // NIB Section
     nibCertification: 'شهادة ترخيص الأعمال',
     nibDescription: 'كوكوبليم هي كيان تجاري مسجل قانونياً في إندونيسيا مع شهادة NIB (رقم الهوية التجارية) الرسمية، مما يضمن مصداقيتنا والامتثال للوائح التجارية الإندونيسية.',
