@@ -24,6 +24,8 @@ const translations = {
     getSample: 'Get Sample',
     getQuoteBtn: 'Get Quote',
     requestSampleBtn: 'Request a Sample',
+    requestSampleEmail: 'Sample via Email',
+    requestSampleWhatsApp: 'Sample via WhatsApp',
     downloadCatalog: 'Download Our Catalog',
     downloadNIB: 'Download NIB Certificate',
     // NIB Section
@@ -181,6 +183,8 @@ const translations = {
     getSample: 'Dapatkan Sampel',
     getQuoteBtn: 'Dapatkan Penawaran Harga',
     requestSampleBtn: 'Minta Sampel Produk',
+    requestSampleEmail: 'Sampel via Email',
+    requestSampleWhatsApp: 'Sampel via WhatsApp',
     downloadCatalog: 'Unduh Katalog Kami',
     downloadNIB: 'Unduh Sertifikat NIB',
     // NIB Section
@@ -338,6 +342,8 @@ const translations = {
     getSample: 'احصل على عينة',
     getQuoteBtn: 'احصل على عرض سعر',
     requestSampleBtn: 'اطلب عينة منتج',
+    requestSampleEmail: 'عينة عبر البريد الإلكتروني',
+    requestSampleWhatsApp: 'عينة عبر واتساب',
     downloadCatalog: 'تحميل الكتالوج',
     downloadNIB: 'تحميل شهادة NIB',
     // NIB Section

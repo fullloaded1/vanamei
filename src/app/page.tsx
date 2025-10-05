@@ -127,13 +127,6 @@ export default function Home() {
             </div>
           </div>
           
-          <div 
-            className={`text-center mt-20 transition-all duration-600 delay-600 ease-out ${
-              benefitsAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            <ActionButtons variant="horizontal" size="medium" showAll={false} />
-          </div>
         </div>
       </section>
 
@@ -152,7 +145,6 @@ export default function Home() {
                 {t('understandingText2')}
               </p>
             </div>
-            <ActionButtons variant="horizontal" size="medium" showAll={false} />
           </div>
         </div>
       </section>
@@ -177,7 +169,6 @@ export default function Home() {
               <p className="text-gray-700 text-base leading-relaxed mb-6">
                 {t('visionText')}
               </p>
-              <ActionButtons variant="vertical" size="small" showAll={false} />
             </div>
             <div className="text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('mission')}</h3>
@@ -316,11 +307,6 @@ export default function Home() {
             </div>
 
             {/* Call to Action after Factory */}
-            <div className={`text-center mt-16 transition-all duration-700 delay-1000 ease-out ${
-              factoryAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}>
-              <ActionButtons variant="horizontal" size="medium" />
-            </div>
 
           </div>
         </div>
