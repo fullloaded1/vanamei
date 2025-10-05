@@ -1,9 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
-import NIBModal from './NIBModal';
 
 interface ActionButtonsProps {
   variant?: 'horizontal' | 'vertical';
@@ -19,7 +18,6 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
   className = ''
 }) => {
   const { t, language } = useLanguage();
-  const [isNIBModalOpen, setIsNIBModalOpen] = useState(false);
 
   // WhatsApp messages in different languages
   const whatsappMessages = {
@@ -120,17 +118,6 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
         </Link>
       )}
 
-      {/* View NIB Certificate Button - Tertiary */}
-      {showAll && (
-        <button 
-          onClick={() => setIsNIBModalOpen(true)}
-          className={`${buttonBaseClasses} bg-gradient-to-r from-emerald-600 to-emerald-700 text-white hover:from-emerald-700 hover:to-emerald-800 border-2 border-transparent hover:shadow-xl`}
-        >
-          {t('viewNIB')}
-        </button>
-      )}
-
-      <NIBModal isOpen={isNIBModalOpen} onClose={() => setIsNIBModalOpen(false)} />
     </div>
   );
 };

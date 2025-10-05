@@ -1,13 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
-import NIBModal from './NIBModal';
 
 const NIBSection: React.FC = () => {
   const { t } = useLanguage();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const nibPages = [
+    '/file/NIB_page-0001.jpg',
+    '/file/NIB_page-0002.jpg',
+    '/file/NIB_page-0003.jpg'
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
@@ -16,86 +20,86 @@ const NIBSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {t('nibCertification')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             {t('nibDescription')}
           </p>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-0">
-            {/* Left side - Certificate Preview */}
-            <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 p-8 flex items-center justify-center">
-              <div className="text-center text-white">
-                <div className="relative w-48 h-64 mx-auto mb-6 bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
-                     onClick={() => setIsModalOpen(true)}>
-                  <Image
-                    src="/file/NIB_page-0001.jpg"
-                    alt="NIB Certificate Preview"
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    className="rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300"></div>
-                  <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-                    Click to view
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold mb-2">NIB Certificate</h3>
-                <p className="text-emerald-100 mb-4">
-                  {t('officialBusinessLicense')}
-                </p>
-                <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-lg">
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {t('verified')}
-                </div>
-              </div>
-            </div>
-
-            {/* Right side - Information and Download */}
-            <div className="p-8">
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                {t('nibCertificateTitle')}
-              </h4>
-              <p className="text-gray-600 mb-6">
-                {t('nibCertificateDescription')}
-              </p>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">{t('legalBusinessEntity')}</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">{t('governmentApproved')}</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">{t('internationalTrade')}</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">{t('qualityAssurance')}</span>
-                </div>
-              </div>
-
-              <button 
-                onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-semibold rounded-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-                {t('viewNIB')}
-              </button>
-            </div>
+          <div className="inline-flex items-center px-6 py-3 bg-emerald-100 text-emerald-800 rounded-full">
+            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+            </svg>
+            {t('verified')} - {t('officialBusinessLicense')}
           </div>
         </div>
 
-        <NIBModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        {/* NIB Certificate Gallery */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {nibPages.map((imageSrc, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02]"
+            >
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <Image
+                  src={imageSrc}
+                  alt={`NIB Certificate Page ${index + 1}`}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="transition-transform duration-700 hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-4 right-4 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-medium">
+                  Page {index + 1}
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {t('nibCertificateTitle')} - Page {index + 1}
+                </h3>
+                <p className="text-sm text-gray-600">
+                  {index === 0 && "Company Information & Registration Details"}
+                  {index === 1 && "Business License & Permits"}
+                  {index === 2 && "Additional Certifications & Approvals"}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Key Features */}
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+            <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg className="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <h4 className="font-semibold text-gray-900 text-sm">{t('legalBusinessEntity')}</h4>
+          </div>
+          <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+            <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg className="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <h4 className="font-semibold text-gray-900 text-sm">{t('governmentApproved')}</h4>
+          </div>
+          <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+            <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg className="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h4 className="font-semibold text-gray-900 text-sm">{t('internationalTrade')}</h4>
+          </div>
+          <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+            <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg className="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <h4 className="font-semibold text-gray-900 text-sm">{t('qualityAssurance')}</h4>
+          </div>
+        </div>
       </div>
     </section>
   );
