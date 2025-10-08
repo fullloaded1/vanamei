@@ -4,6 +4,8 @@ import SectionTitle from '@/components/SectionTitle';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import CharcoalProductCard from '@/components/CharcoalProductCard';
+import PricingCard from '@/components/PricingCard';
+import PriceListDownload from '@/components/PriceListDownload';
 import ActionButtons from '@/components/ActionButtons';
 import NIBSection from '@/components/NIBSection';
 import InteractiveMap from '@/components/InteractiveMap';
@@ -12,6 +14,7 @@ import Link from 'next/link';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { charcoalProducts } from '@/data/charcoalProducts';
+import { pricingProducts } from '@/data/pricingData';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -19,6 +22,7 @@ export default function Home() {
   const benefitsAnimation = useScrollAnimation();
   const storyAnimation = useScrollAnimation();
   const productsAnimation = useScrollAnimation();
+  const pricingAnimation = useScrollAnimation();
   const factoryAnimation = useScrollAnimation();
 
   return (
@@ -246,6 +250,81 @@ export default function Home() {
                      animation: productsAnimation.isVisible ? 'float 8s ease-in-out infinite reverse' : 'none',
                      animationDelay: '2s'
                    }}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 bg-gradient-to-br from-emerald-50 to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div 
+            ref={pricingAnimation.ref}
+            className={`transition-all duration-1000 ease-out ${
+              pricingAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
+            }`}
+          >
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {t('pricing') || 'FOB Pricing'}
+              </h2>
+              <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                {t('pricingDescription') || 'Competitive FOB prices for premium Indonesian charcoal products. All prices are per metric ton with minimum order quantities.'}
+              </p>
+              
+              {/* Download Buttons */}
+              <div className="mb-12">
+                <PriceListDownload />
+              </div>
+            </div>
+
+            {/* Pricing Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {pricingProducts.map((product, index) => (
+                <div
+                  key={product.id}
+                  className={`transition-all duration-700 ease-out transform ${
+                    pricingAnimation.isVisible 
+                      ? 'opacity-100 translate-y-0 scale-100' 
+                      : 'opacity-0 translate-y-12 scale-95'
+                  }`}
+                  style={{ 
+                    transitionDelay: `${300 + (index * 150)}ms`,
+                    willChange: 'transform, opacity'
+                  }}
+                >
+                  <PricingCard product={product} />
+                </div>
+              ))}
+            </div>
+
+            {/* Additional Info */}
+            <div className={`text-center mt-16 transition-all duration-700 delay-800 ease-out ${
+              pricingAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg max-w-4xl mx-auto">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {t('pricingNote') || 'Important Pricing Information'}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-700">
+                  <div>
+                    <strong className="text-emerald-700">FOB Terms:</strong> Free on Board - Tanjung Priok / Surabaya Port
+                  </div>
+                  <div>
+                    <strong className="text-emerald-700">Payment:</strong> L/C, T/T, or negotiable terms
+                  </div>
+                  <div>
+                    <strong className="text-emerald-700">Delivery:</strong> 2-3 weeks after order confirmation
+                  </div>
+                  <div>
+                    <strong className="text-emerald-700">Packaging:</strong> Standard export packaging included
+                  </div>
+                </div>
+                <p className="text-xs text-gray-500 mt-4">
+                  * Prices subject to change based on market conditions. Contact us for current rates and custom specifications.
+                </p>
+              </div>
             </div>
           </div>
         </div>

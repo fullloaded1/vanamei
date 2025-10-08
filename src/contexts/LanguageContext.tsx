@@ -172,6 +172,10 @@ const translations = {
     bulkShipment: 'Bulk shipment',
     per15kgPack: '15kg (inner plastic bag + outer PP woven bag/carton)',
     per5kgPack: '5kg (inner plastic bag + outer PP woven bag/carton)',
+    // Pricing Section
+    pricing: 'FOB Pricing',
+    pricingDescription: 'Competitive FOB prices for premium Indonesian charcoal products. All prices are per metric ton with minimum order quantities.',
+    pricingNote: 'Important Pricing Information',
   },
   id: {
     // Navbar
@@ -332,6 +336,10 @@ const translations = {
     bulkShipment: 'Bulk shipment',
     per15kgPack: '15kg (kantong plastik dalam + karung PP luar/karton)',
     per5kgPack: '5kg (kantong plastik dalam + karung PP luar/karton)',
+    // Pricing Section
+    pricing: 'Harga FOB',
+    pricingDescription: 'Harga FOB yang kompetitif untuk produk arang premium Indonesia. Semua harga per metrik ton dengan kuantitas pesanan minimum.',
+    pricingNote: 'Informasi Harga Penting',
   },
   ar: {
     // Navbar
@@ -492,6 +500,10 @@ const translations = {
     bulkShipment: 'الشحن بالجملة',
     per15kgPack: '15 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
     per5kgPack: '5 كيلو (كيس بلاستيك داخلي + كيس PP خارجي/كرتون)',
+    // Pricing Section
+    pricing: 'أسعار FOB',
+    pricingDescription: 'أسعار FOB تنافسية لمنتجات الفحم الإندونيسية المتميزة. جميع الأسعار لكل طن متري مع الحد الأدنى لكميات الطلب.',
+    pricingNote: 'معلومات التسعير المهمة',
   }
 };
 
