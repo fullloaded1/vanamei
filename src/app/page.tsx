@@ -6,6 +6,7 @@ import Card from '@/components/Card';
 import CharcoalProductCard from '@/components/CharcoalProductCard';
 import PricingCard from '@/components/PricingCard';
 import PriceListDownload from '@/components/PriceListDownload';
+import PriceListImage from '@/components/PriceListImage';
 import ActionButtons from '@/components/ActionButtons';
 import NIBSection from '@/components/NIBSection';
 import InteractiveMap from '@/components/InteractiveMap';
@@ -272,31 +273,11 @@ export default function Home() {
               <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
                 {t('pricingDescription') || 'Competitive FOB prices for premium Indonesian charcoal products. All prices are per metric ton with minimum order quantities.'}
               </p>
-              
-              {/* Download Buttons */}
-              <div className="mb-12">
-                <PriceListDownload />
-              </div>
             </div>
 
-            {/* Pricing Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {pricingProducts.map((product, index) => (
-                <div
-                  key={product.id}
-                  className={`transition-all duration-700 ease-out transform ${
-                    pricingAnimation.isVisible 
-                      ? 'opacity-100 translate-y-0 scale-100' 
-                      : 'opacity-0 translate-y-12 scale-95'
-                  }`}
-                  style={{ 
-                    transitionDelay: `${300 + (index * 150)}ms`,
-                    willChange: 'transform, opacity'
-                  }}
-                >
-                  <PricingCard product={product} />
-                </div>
-              ))}
+            {/* Price List Image Display */}
+            <div className="max-w-4xl mx-auto">
+              <PriceListImage />
             </div>
 
             {/* Additional Info */}
