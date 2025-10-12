@@ -390,7 +390,7 @@ export default function Home() {
                 <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">QUALITY GUIDE</span>
                 <span className="ml-2 text-xs text-gray-500">25 Jan 2024</span>
               </div>
-              <a href="#cara-memilih-arang-berkualitas" className="group-hover:text-emerald-600 transition-colors">
+              <a href="mailto:info@cocoblim.com?subject=Informasi%20Panduan%20Memilih%20Arang%20Berkualitas&body=Halo%20CocoBlim,%0A%0ASaya%20tertarik%20untuk%20mendapatkan%20panduan%20lengkap%20tentang%20cara%20memilih%20arang%20berkualitas.%0A%0AMohon%20informasi%20lebih%20lanjut%20mengenai:%0A-%20Tips%20memilih%20arang%20kelapa%20terbaik%0A-%20Spesifikasi%20kualitas%20yang%20harus%20diperhatikan%0A-%20Sample%20produk%20untuk%20evaluasi%0A%0ATerima%20kasih." className="group-hover:text-emerald-600 transition-colors">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
                   Cara Memilih Arang Berkualitas: Panduan & Tips dari CocoBlim
                 </h3>
@@ -410,7 +410,7 @@ export default function Home() {
                 <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded font-medium">INDUSTRY NEWS</span>
                 <span className="ml-2 text-xs text-gray-500">20 Jan 2024</span>
               </div>
-              <a href="#arang-kelapa-pasar-global" className="group-hover:text-blue-600 transition-colors">
+              <a href="mailto:info@cocoblim.com?subject=Informasi%20Ekspor%20Arang%20Kelapa%20ke%20Pasar%20Global&body=Halo%20CocoBlim,%0A%0ASaya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20peluang%20ekspor%20arang%20kelapa%20ke%20pasar%20global.%0A%0AMohon%20informasi%20mengenai:%0A-%20Tren%20pasar%20arang%20kelapa%20internasional%0A-%20Persyaratan%20ekspor%20dan%20sertifikasi%0A-%20Kemitraan%20ekspor%20dengan%20CocoBlim%0A-%20Volume%20dan%20harga%20untuk%20pasar%20global%0A%0ATerima%20kasih." className="group-hover:text-blue-600 transition-colors">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
                   Mengapa Arang Kelapa (Coconut Charcoal) Semakin Diminati di Pasar Global
                 </h3>
@@ -430,7 +430,7 @@ export default function Home() {
                 <span className="text-xs bg-green-100 text-green-600 px-2 py-1 rounded font-medium">COMPANY PROFILE</span>
                 <span className="ml-2 text-xs text-gray-500">15 Jan 2024</span>
               </div>
-              <a href="#keunggulan-arang-cocoblim" className="group-hover:text-green-600 transition-colors">
+              <a href="mailto:info@cocoblim.com?subject=Informasi%20Keunggulan%20Produk%20Arang%20CocoBlim&body=Halo%20CocoBlim,%0A%0ASaya%20ingin%20mengetahui%20lebih%20detail%20tentang%20keunggulan%20produk%20arang%20CocoBlim.%0A%0AMohon%20informasi%20mengenai:%0A-%20Keunggulan%20bahan%20baku%20dan%20proses%20produksi%0A-%20Kualitas%20pembakaran%20dan%20efisiensi%0A-%20Sertifikat%20dan%20standar%20kualitas%0A-%20Sample%20produk%20untuk%20testing%0A%0ATerima%20kasih." className="group-hover:text-green-600 transition-colors">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
                   Keunggulan Arang CocoBlim: Dari Bahan Baku hingga Api yang Lebih Bersih
                 </h3>
@@ -445,8 +445,8 @@ export default function Home() {
             </article>
           </div>
           <div className="mt-12 text-center">
-            <a href="#keunggulan-arang-cocoblim" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded text-sm font-medium hover:bg-emerald-700 transition-all duration-300 hover:scale-105">
-              Baca Semua Artikel
+            <a href="mailto:info@cocoblim.com?subject=Request%20Artikel%20Lengkap%20CocoBlim&body=Halo%20CocoBlim,%0A%0ASaya%20tertarik%20untuk%20mendapatkan%20artikel%20lengkap%20dan%20panduan%20komprehensif%20tentang:%0A%0A1.%20Cara%20memilih%20arang%20berkualitas%0A2.%20Tren%20pasar%20arang%20kelapa%20global%0A3.%20Keunggulan%20produk%20CocoBlim%0A%0AMohon%20kirimkan%20informasi%20lengkap%20dan%20panduan%20teknis.%0A%0ATerima%20kasih." className="inline-block bg-emerald-600 text-white px-6 py-3 rounded text-sm font-medium hover:bg-emerald-700 transition-all duration-300 hover:scale-105">
+              Minta Panduan Lengkap
             </a>
           </div>
         </div>
