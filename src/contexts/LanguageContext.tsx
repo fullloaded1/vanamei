@@ -176,6 +176,21 @@ const translations = {
     pricing: 'FOB Pricing',
     pricingDescription: 'Competitive FOB prices for premium Indonesian charcoal products. All prices are per metric ton with minimum order quantities.',
     pricingNote: 'Important Pricing Information',
+    // Blog Section
+    blogTitle: 'Blog',
+    blogSubtitle: 'Stay updated with the latest news and insights on coconut products and sustainable practices.',
+    latestArticles: 'Latest Articles',
+    articlesSubtitle: 'Insights and updates from the world of coconut products.',
+    readMore: 'Read More',
+    publishedOn: 'Published on',
+    completeGuide: 'Complete Guide',
+    industryNews: 'Industry News',
+    companyProfile: 'Company Profile',
+    backToBlog: 'Back to Blog',
+    qualityguide: 'Quality Guide',
+    industrynews: 'Industry News',
+    companyprofile: 'Company Profile',
+    completeguide: 'Complete Guide',
   },
   id: {
     // Navbar
@@ -340,6 +355,21 @@ const translations = {
     pricing: 'Harga FOB',
     pricingDescription: 'Harga FOB yang kompetitif untuk produk arang premium Indonesia. Semua harga per metrik ton dengan kuantitas pesanan minimum.',
     pricingNote: 'Informasi Harga Penting',
+    // Blog Section
+    blogTitle: 'Blog',
+    blogSubtitle: 'Tetap update dengan berita terbaru dan wawasan tentang produk kelapa dan praktik berkelanjutan.',
+    latestArticles: 'Artikel Terbaru',
+    articlesSubtitle: 'Wawasan dan update dari dunia produk kelapa.',
+    readMore: 'Baca Selengkapnya',
+    publishedOn: 'Diterbitkan pada',
+    completeGuide: 'Panduan Lengkap',
+    industryNews: 'Berita Industri',
+    companyProfile: 'Profil Perusahaan',
+    backToBlog: 'Kembali ke Blog',
+    qualityguide: 'Panduan Kualitas',
+    industrynews: 'Berita Industri',
+    companyprofile: 'Profil Perusahaan',
+    completeguide: 'Panduan Lengkap',
   },
   ar: {
     // Navbar
@@ -504,6 +534,21 @@ const translations = {
     pricing: 'أسعار FOB',
     pricingDescription: 'أسعار FOB تنافسية لمنتجات الفحم الإندونيسية المتميزة. جميع الأسعار لكل طن متري مع الحد الأدنى لكميات الطلب.',
     pricingNote: 'معلومات التسعير المهمة',
+    // Blog Section
+    blogTitle: 'المدونة',
+    blogSubtitle: 'ابق محدثاً مع آخر الأخبار والرؤى حول منتجات جوز الهند والممارسات المستدامة.',
+    latestArticles: 'أحدث المقالات',
+    articlesSubtitle: 'رؤى وتحديثات من عالم منتجات جوز الهند.',
+    readMore: 'اقرأ المزيد',
+    publishedOn: 'نُشر في',
+    completeGuide: 'دليل شامل',
+    industryNews: 'أخبار الصناعة',
+    companyProfile: 'ملف الشركة',
+    backToBlog: 'العودة إلى المدونة',
+    qualityguide: 'دليل الجودة',
+    industrynews: 'أخبار الصناعة',
+    companyprofile: 'ملف الشركة',
+    completeguide: 'دليل شامل',
   }
 };
 
