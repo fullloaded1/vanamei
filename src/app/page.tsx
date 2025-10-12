@@ -372,7 +372,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Blog Section - Natural & Engaging */}
+      {/* Latest Insights - CocoBlim Articles */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
@@ -384,70 +384,74 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Article 1 - Cara Memilih Arang Berkualitas */}
             <article className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 group">
               <div className="flex items-center mb-3">
-                <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded font-medium">QUALITY GUIDE</span>
-                <span className="ml-2 text-xs text-gray-500">Dec 15, 2023</span>
+                <span className="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded font-medium">QUALITY GUIDE</span>
+                <span className="ml-2 text-xs text-gray-500">25 Jan 2024</span>
               </div>
-              <Link href="/blog/choosing-quality-coconut-products" className="group-hover:text-blue-600 transition-colors">
+              <a href="#cara-memilih-arang-berkualitas" className="group-hover:text-emerald-600 transition-colors">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  How to Choose Premium Coconut Products: A Buyer's Guide
+                  Cara Memilih Arang Berkualitas: Panduan & Tips dari CocoBlim
                 </h3>
-              </Link>
+              </a>
               <p className="text-gray-600 text-sm mb-4">
-                From moisture content to packaging - learn what separates premium coconut products from the rest. 
-                <span className="font-medium">5 min read</span>
+                Panduan lengkap memilih arang kelapa berkualitas tinggi. Tips dari ahli CocoBlim untuk mendapatkan arang terbaik untuk BBQ, hookah, dan keperluan industri.
+                <span className="font-medium ml-1">7 menit baca</span>
               </p>
               <div className="text-xs text-gray-500">
-                2.3k views • 12 comments
+                2.8k views • 15 comments
               </div>
             </article>
 
+            {/* Article 2 - Arang Kelapa Pasar Global */}
             <article className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 group">
               <div className="flex items-center mb-3">
-                <span className="text-xs bg-green-100 text-green-600 px-2 py-1 rounded font-medium">SUSTAINABILITY</span>
-                <span className="ml-2 text-xs text-gray-500">Dec 8, 2023</span>
+                <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded font-medium">INDUSTRY NEWS</span>
+                <span className="ml-2 text-xs text-gray-500">20 Jan 2024</span>
               </div>
-              <Link href="/blog/coconut-industry-sustainability" className="group-hover:text-blue-600 transition-colors">
+              <a href="#arang-kelapa-pasar-global" className="group-hover:text-blue-600 transition-colors">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  The Future is Coconut: Sustainable Manufacturing in 2024
+                  Mengapa Arang Kelapa (Coconut Charcoal) Semakin Diminati di Pasar Global
                 </h3>
-              </Link>
+              </a>
               <p className="text-gray-600 text-sm mb-4">
-                How Indonesian coconut farmers are leading the sustainability revolution. 
-                <span className="font-medium">7 min read</span>
+                Pelajari mengapa permintaan arang kelapa Indonesia meningkat pesat di pasar global. Dari karakteristik unik hingga potensi ekspor yang menjanjikan.
+                <span className="font-medium ml-1">6 menit baca</span>
               </p>
               <div className="text-xs text-gray-500">
-                1.8k views • 8 comments
+                3.5k views • 28 comments
               </div>
             </article>
 
+            {/* Article 3 - Keunggulan Arang CocoBlim */}
             <article className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-300 group">
               <div className="flex items-center mb-3">
-                <span className="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded font-medium">INDUSTRY NEWS</span>
-                <span className="ml-2 text-xs text-gray-500">Nov 28, 2023</span>
+                <span className="text-xs bg-green-100 text-green-600 px-2 py-1 rounded font-medium">COMPANY PROFILE</span>
+                <span className="ml-2 text-xs text-gray-500">15 Jan 2024</span>
               </div>
-              <Link href="/blog/coconut-charcoal-export-trends" className="group-hover:text-blue-600 transition-colors">
+              <a href="#keunggulan-arang-cocoblim" className="group-hover:text-green-600 transition-colors">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  Export Trends: Why Global Demand for Coconut Charcoal is Soaring
+                  Keunggulan Arang CocoBlim: Dari Bahan Baku hingga Api yang Lebih Bersih
                 </h3>
-              </Link>
+              </a>
               <p className="text-gray-600 text-sm mb-4">
-                Market analysis and predictions for the coconut charcoal industry. 
-                <span className="font-medium">4 min read</span>
+                Temukan keunggulan arang kelapa CocoBlim dari bahan baku berkualitas, proses produksi modern, hingga pembakaran bersih untuk BBQ dan hookah terbaik.
+                <span className="font-medium ml-1">5 menit baca</span>
               </p>
               <div className="text-xs text-gray-500">
-                3.1k views • 24 comments
+                2.1k views • 11 comments
               </div>
             </article>
           </div>
           <div className="mt-12 text-center">
-            <Link href="/blog" className="inline-block bg-blue-600 text-white px-6 py-3 rounded text-sm font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105">
-              Read All Articles
-            </Link>
+            <a href="#keunggulan-arang-cocoblim" className="inline-block bg-emerald-600 text-white px-6 py-3 rounded text-sm font-medium hover:bg-emerald-700 transition-all duration-300 hover:scale-105">
+              Baca Semua Artikel
+            </a>
           </div>
         </div>
       </section>
+
 
       {/* Contact Section - Creative & Engaging */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
