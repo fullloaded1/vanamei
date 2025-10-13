@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import LanguageWrapper from '@/components/LanguageWrapper';
+import LanguageDetectionInfo from '@/components/LanguageDetectionInfo';
 import { Analytics } from '@vercel/analytics/next';
 import StructuredData from '@/components/StructuredData';
 
@@ -77,6 +78,7 @@ export default function RootLayout({
               </div>
             </SmoothScrollProvider>
           </LanguageWrapper>
+          <LanguageDetectionInfo />
         </LanguageProvider>
         <Analytics />
       </body>

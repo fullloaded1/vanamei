@@ -1,6 +1,7 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { useAutoLanguageDetection } from '../hooks/useAutoLanguageDetection';
 
 type Language = 'en' | 'id' | 'ar';
 
@@ -553,7 +554,37 @@ const translations = {
 };
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const { detectedLanguage, isDetecting } = useAutoLanguageDetection();
   const [language, setLanguage] = useState<Language>('id');
+  const [hasAutoDetected, setHasAutoDetected] = useState(false);
+
+  // Auto-detect language on first visit
+  useEffect(() => {
+    if (!isDetecting && !hasAutoDetected) {
+      // Check if user has manually selected a language before
+      const savedLanguage = localStorage.getItem('coconut-language');
+      
+      if (!savedLanguage) {
+        // No saved preference, use detected language
+        setLanguage(detectedLanguage);
+        localStorage.setItem('coconut-language', detectedLanguage);
+        console.log(`Auto-detected language: ${detectedLanguage}`);
+      } else {
+        // Use saved preference
+        setLanguage(savedLanguage as Language);
+        console.log(`Using saved language: ${savedLanguage}`);
+      }
+      
+      setHasAutoDetected(true);
+    }
+  }, [detectedLanguage, isDetecting, hasAutoDetected]);
+
+  // Save language preference when manually changed
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang);
+    localStorage.setItem('coconut-language', lang);
+    console.log(`Language manually changed to: ${lang}`);
+  };
 
   const t = (key: string): string => {
     const translation = translations[language]?.[key as keyof typeof translations[typeof language]];
@@ -561,7 +592,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );
