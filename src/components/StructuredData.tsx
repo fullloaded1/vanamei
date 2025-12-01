@@ -15,14 +15,23 @@ export default function StructuredData() {
       "postalCode": "12630",
       "addressCountry": "ID"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+62-851-4492-0078",
-      "contactType": "customer service",
-      "availableLanguage": ["Indonesian", "English"]
-    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+62-851-4492-0078",
+        "contactType": "customer service",
+        "availableLanguage": ["Indonesian", "English"]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "0857-7106-0462",
+        "contactType": "customer service",
+        "availableLanguage": ["Indonesian", "English"]
+      }
+    ],
     "sameAs": [
-      "https://wa.me/6285144920078"
+      "https://wa.me/6285144920078",
+      "https://wa.me/6285771060462"
     ],
     "foundingDate": "2024",
     "industry": "Manufacturing",
@@ -85,7 +94,7 @@ export default function StructuredData() {
       "latitude": -6.2987654321,
       "longitude": 106.8123456789
     },
-    "telephone": "+62-851-4492-0078",
+    "telephone": "+62-851-4492-0078, 0857-7106-0462",
     "openingHours": "Mo-Fr 08:00-18:00",
     "priceRange": "$$",
     "servesCuisine": "Industrial Manufacturing"

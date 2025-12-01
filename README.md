@@ -73,7 +73,7 @@ vercel
 
 - 🌐 Website: [Your Domain]
 - 📧 Email: info@cocoblim.com
-- 📱 WhatsApp: +62 xxx xxxx xxxx
+- 📱 WhatsApp: 0857-7106-0462
 
 ---
 **Built with ❤️ for Indonesian charcoal industry**

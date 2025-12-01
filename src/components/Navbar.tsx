@@ -128,7 +128,7 @@ export default function Navbar() {
                     {t('requestSampleEmail')}
                   </Link>
                   <Link 
-                    href={`https://wa.me/6285144920078?text=${whatsappMessage}`}
+                    href={`https://wa.me/6285771060462?text=${whatsappMessage}`}
                     target="_blank"
                     className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                   >
@@ -210,7 +210,7 @@ export default function Navbar() {
                     {t('requestSampleEmail')}
                   </Link>
                   <Link 
-                    href={`https://wa.me/6285144920078?text=${whatsappMessage}`}
+                    href={`https://wa.me/6285771060462?text=${whatsappMessage}`}
                     target="_blank"
                     className="flex items-center px-3 py-2 text-sm text-white bg-green-500 rounded hover:bg-green-600 transition-colors"
                     onClick={closeMenu}

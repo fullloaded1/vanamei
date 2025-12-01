@@ -66,7 +66,10 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center">
                 <span className="text-gray-600">📞</span>
-                <span className="ml-2 text-gray-600">+62 851 4492 0078</span>
+                <div className="ml-2 text-gray-600">
+                  <div>+62 851 4492 0078</div>
+                  <div>0857-7106-0462 (WhatsApp)</div>
+                </div>
               </div>
               <div className="flex items-center">
                 <span className="text-gray-600">✉️</span>
@@ -86,7 +89,7 @@ export default function Footer() {
               
               {/* Social Media Icons */}
               <div className="flex space-x-3 mt-4">
-                <a href="https://wa.me/6285144920078" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition-colors" title="WhatsApp">
+                <a href="https://wa.me/6285771060462" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition-colors" title="WhatsApp">
                   <span className="text-xs">WA</span>
                 </a>
                 <a href="tel:+6285144920078" className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors" title="Call Us">

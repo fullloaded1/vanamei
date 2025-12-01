@@ -101,7 +101,7 @@ const PriceListImage: React.FC = () => {
               ? `مرحباً كوكوبليم، أنا مهتم بقائمة أسعار منتجات الفحم الخاصة بكم. هل يمكنكم تقديم المزيد من المعلومات؟`
               : `Hello CocoBlim, I'm interested in your charcoal product price list. Can you provide more information?`;
             
-            window.open(`https://wa.me/6285144920078?text=${encodeURIComponent(message)}`, '_blank');
+            window.open(`https://wa.me/6285771060462?text=${encodeURIComponent(message)}`, '_blank');
           }}
           className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
         >

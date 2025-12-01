@@ -136,7 +136,7 @@ export default function InteractiveMap({ className = '' }: MapProps) {
                   </button>
 
                   <a
-                    href="https://wa.me/6285144920078?text=Hi, I would like to schedule a factory visit"
+                    href="https://wa.me/6285771060462?text=Hi, I would like to schedule a factory visit"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-gray-600 text-white px-4 py-3 rounded-lg text-sm font-semibold hover:bg-gray-700 transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center space-x-2"
