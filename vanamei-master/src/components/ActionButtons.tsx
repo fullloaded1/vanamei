@@ -96,7 +96,7 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
         
         {/* Sample Request via WhatsApp */}
         <Link 
-          href={`https://wa.me/6285144920078?text=${whatsappMessage}`}
+        href={`https://wa.me/6285771060462?text=${whatsappMessage}`}
           target="_blank"
           className={`${buttonBaseClasses} bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 border-2 border-transparent hover:shadow-xl flex items-center justify-center`}
         >

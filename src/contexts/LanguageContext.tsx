@@ -65,7 +65,7 @@ const translations = {
     mission: 'Mission',
     missionText: 'Always quick in responding to client needs and continue to innovate to meet charcoal market needs.',
     // Contact Info
-    phone: '+62 851 4492 0078 / 0857-7106-0462',
+    phone: '0857-7106-0462',
     email: 'info@cocoblim.com',
     address: 'Depok, West Java, Indonesia',
     // Charcoal Products
@@ -244,7 +244,7 @@ const translations = {
     mission: 'Misi',
     missionText: 'Selalu cepat dalam merespon kebutuhan klien dan terus berinovasi untuk memenuhi kebutuhan pasar arang.',
     // Contact Info
-    phone: '+62 851 4492 0078 / 0857-7106-0462',
+    phone: '0857-7106-0462',
     email: 'info@cocoblim.com',
     address: 'Depok, Jawa Barat, Indonesia',
     // Charcoal Products
@@ -423,7 +423,7 @@ const translations = {
     mission: 'المهمة',
     missionText: 'الاستجابة السريعة دائماً لاحتياجات العملاء والاستمرار في الابتكار لتلبية احتياجات سوق الفحم.',
     // Contact Info
-    phone: '+62 851 4492 0078 / 0857-7106-0462',
+    phone: '0857-7106-0462',
     email: 'info@cocoblim.com',
     address: 'ديبوك، جاوة الغربية، إندونيسيا',
     // Charcoal Products

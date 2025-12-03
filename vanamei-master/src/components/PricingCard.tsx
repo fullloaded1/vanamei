@@ -103,7 +103,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ product }) => {
                 ? `مرحباً كوكوبليم، أنا مهتم بـ ${getProductName()}. هل يمكنكم تقديم المزيد من المعلومات حول هذا المنتج؟`
                 : `Hello CocoBlim, I'm interested in ${getProductName()}. Can you provide more information about this product?`;
               
-              window.open(`https://wa.me/6285144920078?text=${encodeURIComponent(message)}`, '_blank');
+              window.open(`https://wa.me/6285771060462?text=${encodeURIComponent(message)}`, '_blank');
             }}
             className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 text-white py-3 px-4 rounded-lg font-medium hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
           >

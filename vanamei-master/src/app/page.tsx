@@ -382,7 +382,7 @@ export default function Home() {
             <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300">
               <h3 className="font-bold text-gray-900 mb-2">WhatsApp</h3>
               <p className="text-sm text-gray-600 mb-4">Quick questions & instant quotes</p>
-              <Link href="https://wa.me/6285144920078" className="inline-block bg-green-600 text-white px-4 py-2 rounded text-xs font-medium hover:bg-green-700 transition-colors">
+              <Link href="https://wa.me/6285771060462" className="inline-block bg-green-600 text-white px-4 py-2 rounded text-xs font-medium hover:bg-green-700 transition-colors">
                 Chat Now
               </Link>
             </div>

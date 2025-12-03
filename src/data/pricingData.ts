@@ -91,7 +91,7 @@ export const companyInfo = {
   port: 'Tanjung Priok / Suarabaya',
   contact: {
     name: 'Mujahid Mubarok',
-    phone: '+62 851 4492 0078 / 0857-7106-0462',
+    phone: '0857-7106-0462',
     website: 'cocoblim.com'
   }
 };

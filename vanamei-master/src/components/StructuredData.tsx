@@ -17,12 +17,12 @@ export default function StructuredData() {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+62-851-4492-0078",
+      "telephone": "0857-7106-0462",
       "contactType": "customer service",
       "availableLanguage": ["Indonesian", "English"]
     },
     "sameAs": [
-      "https://wa.me/6285144920078"
+      "https://wa.me/6285771060462"
     ],
     "foundingDate": "2024",
     "industry": "Manufacturing",

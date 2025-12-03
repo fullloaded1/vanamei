@@ -111,7 +111,7 @@ const ArticleSection: React.FC<ArticleSectionProps> = ({ article, index }) => {
                         📧 {article.cta.primary}
                       </a>
                       <a 
-                        href="https://wa.me/6285144920078?text=Halo%20CocoBlim,%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20produk%20arang%20kelapa%20Anda."
+                        href="https://wa.me/6285771060462?text=Halo%20CocoBlim,%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20produk%20arang%20kelapa%20Anda."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
