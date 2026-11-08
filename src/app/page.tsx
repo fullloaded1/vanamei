@@ -88,154 +88,109 @@ export default function Home() {
   return (
     <div className="bg-bg text-ink">
       {/* =========================================================================
-          HERO: Indonesian Rotary Kiln Stage (Authoritative Full-Width Header + Split Stage)
+          HERO: High-End Architectural & Panoramic Cinematic Stage
       ========================================================================= */}
-      <section className="pt-28 pb-12 sm:pb-16 bg-bg overflow-hidden">
+      <section className="pt-28 pb-14 sm:pt-36 sm:pb-20 bg-bg overflow-hidden">
         <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
-          
-          {/* Top Monolithic 2-Line Headline across full container: exactly 2 lines on 1440, 768, 390 */}
-          <div className="mb-8">
-            <h1 className="motion-hero-h1 font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight uppercase leading-[0.92] text-ink max-w-5xl">
+
+          {/* Full-Width Monolithic 2-Line Headline */}
+          <div className="mb-8 sm:mb-12">
+            <h1 className="motion-hero-h1 font-display text-3xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight uppercase leading-[0.9] text-ink max-w-6xl">
               Activated Carbon<br />
               From Bogor Kilns.
             </h1>
           </div>
 
-          {/* Split Stage Grid: 7 Columns Left (Narrative & Specs), 5 Columns Right (Rotary Kiln Media Stage) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-            
-            {/* Left 7 Columns */}
-            <div className="lg:col-span-7 flex flex-col justify-between space-y-6">
-              <p className="motion-hero-p font-sans text-base text-ink max-w-xl leading-relaxed">
-                Steam-activated at 900°C from thick-walled Indonesian coconut shells. Engineered for municipal water filtration, gold mining recovery, and global container freight from Tanjungsari Bogor.
+          {/* Editorial Narrative & Direct Actions */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12 sm:mb-16">
+            <div className="lg:col-span-7">
+              <p className="motion-hero-p font-sans text-base text-ink leading-relaxed max-w-xl">
+                Steam-activated at 900°C from thick-walled Indonesian coconut shells. Pure microporous carbon matrix engineered for municipal water filtration, gold CIP mining recovery, and global container freight from Tanjungsari Bogor.
               </p>
-
-              {/* Action Buttons */}
-              <div className="motion-hero-actions flex flex-wrap items-center gap-4">
-                <button
-                  type="button"
-                  onClick={() => handleOpenRfq('Granular Activated Carbon (GAC)')}
-                  className="h-12 px-8 bg-accent hover:bg-accent-hover text-accent-ink font-bold text-sm uppercase tracking-wider button-chamfer flex items-center justify-center transition-colors duration-150"
-                >
-                  Request Export Quote
-                </button>
-                <a
-                  href="/catalog/ACTIVATED_CARBON_CATALOG.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 px-6 bg-surface hover:bg-surface-alt text-ink font-semibold text-sm uppercase tracking-wider flex items-center justify-center transition-colors duration-150"
-                >
-                  Download Catalog (PDF)
-                </a>
-              </div>
-
-              {/* Verified Technical Spec Matrix */}
-              <div className="motion-hero-specs grid grid-cols-2 sm:grid-cols-4 gap-2 bg-surface p-4">
-                <div className="p-2">
-                  <p className="text-muted text-sm uppercase tracking-wide">ASTM Iodine</p>
-                  <p className="text-ink font-display font-bold text-2xl mt-0.5">900–1200</p>
-                  <p className="text-muted text-sm">mg/g capacity</p>
-                </div>
-                <div className="p-2">
-                  <p className="text-muted text-sm uppercase tracking-wide">Hardness</p>
-                  <p className="text-ink font-display font-bold text-2xl mt-0.5">≥ 98.5%</p>
-                  <p className="text-muted text-sm">Ball-Pan index</p>
-                </div>
-                <div className="p-2">
-                  <p className="text-muted text-sm uppercase tracking-wide">Kiln Output</p>
-                  <p className="text-ink font-display font-bold text-2xl mt-0.5">500 MT</p>
-                  <p className="text-muted text-sm">monthly output</p>
-                </div>
-                <div className="p-2">
-                  <p className="text-muted text-sm uppercase tracking-wide">Export MOQ</p>
-                  <p className="text-ink font-display font-bold text-2xl mt-0.5">15 MT</p>
-                  <p className="text-muted text-sm">20ft full container</p>
-                </div>
-              </div>
             </div>
 
-            {/* Right 5 Columns: Rotary Kiln Video Stage (Counted as hero video!) */}
-            <div className="lg:col-span-5 flex flex-col">
-              <div className="motion-hero-media bg-surface p-2 button-chamfer relative overflow-hidden">
-                <div className="aspect-[4/3] bg-bg relative overflow-hidden">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    poster="/images/products/granular-activated-carbon.jpg"
-                    className="w-full h-full object-cover"
-                  >
-                    <source src="/images/factory/threadsdownloader.com_996dfa.mp4" type="video/mp4" />
-                  </video>
-
-                  <div className="absolute inset-0 bg-black/30 pointer-events-none" />
-
-                  <div className="absolute top-3 left-3 bg-bg px-3 py-1.5 flex items-center gap-2">
-                    <span className="w-2 h-2 bg-accent inline-block" />
-                    <span className="font-sans text-sm font-bold text-ink">
-                      Bogor Kiln Facility (&gt;900°C)
-                    </span>
-                  </div>
-
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-sm bg-bg px-3.5 py-2">
-                    <span className="font-sans font-semibold text-ink">Virgin Coconut Matrix</span>
-                    <span className="text-accent font-bold text-sm">ASTM D4607 Standard</span>
-                  </div>
-                </div>
-
-                {/* Grade Quick Preview Bar Under Video */}
-                <div className="mt-2 bg-surface-alt p-3.5">
-                  <div className="flex items-center justify-between text-sm text-muted mb-2">
-                    <span className="font-semibold">Select Product Grade</span>
-                    <span className="text-ink font-bold">ASTM Certified</span>
-                  </div>
-                  
-                  <div className="grid grid-cols-3 gap-1">
-                    <button
-                      type="button"
-                      onClick={() => setShowcaseTab('gac')}
-                      className={`py-2 px-1 text-center text-sm font-bold uppercase tracking-wider transition-colors duration-150 ${
-                        showcaseTab === 'gac'
-                          ? 'bg-accent text-accent-ink'
-                          : 'bg-bg text-ink hover:bg-surface'
-                      }`}
-                    >
-                      GAC Granular
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowcaseTab('pac')}
-                      className={`py-2 px-1 text-center text-sm font-bold uppercase tracking-wider transition-colors duration-150 ${
-                        showcaseTab === 'pac'
-                          ? 'bg-accent text-accent-ink'
-                          : 'bg-bg text-ink hover:bg-surface'
-                      }`}
-                    >
-                      PAC Powder
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowcaseTab('pellet')}
-                      className={`py-2 px-1 text-center text-sm font-bold uppercase tracking-wider transition-colors duration-150 ${
-                        showcaseTab === 'pellet'
-                          ? 'bg-accent text-accent-ink'
-                          : 'bg-bg text-ink hover:bg-surface'
-                      }`}
-                    >
-                      Extruded 4mm
-                    </button>
-                  </div>
-
-                  <div className="mt-2.5 pt-2 flex items-center justify-between text-sm">
-                    <span className="text-ink font-semibold">{showcaseData[showcaseTab].name}</span>
-                    <span className="text-muted">{showcaseData[showcaseTab].iodine}</span>
-                  </div>
-                </div>
-              </div>
+            <div className="lg:col-span-5 flex flex-wrap items-center gap-3 lg:justify-end">
+              <button
+                type="button"
+                onClick={() => handleOpenRfq('Granular Activated Carbon (GAC)')}
+                className="h-12 px-7 bg-accent hover:bg-accent-hover text-accent-ink font-bold text-sm uppercase tracking-wider button-chamfer flex items-center justify-center transition-colors duration-150"
+              >
+                Request FOB Quote
+              </button>
+              <a
+                href="/catalog/ACTIVATED_CARBON_CATALOG.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-12 px-5 bg-surface hover:bg-surface-alt text-ink font-semibold text-sm uppercase tracking-wider flex items-center justify-center transition-colors duration-150"
+              >
+                Download Catalog (PDF)
+              </a>
             </div>
-
           </div>
+
+          {/* Panoramic Cinematic Media Stage (Wide 16:9 / 21:9 Aspect) */}
+          <div className="motion-hero-media bg-surface p-2 sm:p-3 button-chamfer relative overflow-hidden mb-6">
+            <div className="aspect-[16/9] sm:aspect-[21/9] bg-bg relative overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster="/images/products/granular-activated-carbon.jpg"
+                className="w-full h-full object-cover"
+              >
+                <source src="/images/factory/threadsdownloader.com_996dfa.mp4" type="video/mp4" />
+              </video>
+
+              {/* Scrim Overlay */}
+              <div className="absolute inset-0 bg-black/35 pointer-events-none" />
+
+              {/* Top Meta Badges */}
+              <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-bg/90 px-3.5 py-2 flex items-center gap-2">
+                <span className="w-2 h-2 bg-accent inline-block" />
+                <span className="font-sans text-sm font-bold text-ink">
+                  Tanjungsari Rotary Kilns, Bogor
+                </span>
+              </div>
+
+              <div className="hidden sm:flex absolute top-6 right-6 bg-bg/90 px-3.5 py-2 items-center">
+                <span className="font-sans text-sm text-ink font-semibold">
+                  Virgin Coconut Shell Matrix
+                </span>
+              </div>
+
+              {/* Bottom Meta Badges */}
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between text-sm bg-bg/90 px-4 py-2.5">
+                <span className="font-sans font-semibold text-ink">900°C High-Pressure Steam Activation</span>
+                <span className="text-accent font-bold text-sm">ASTM D4607 Laboratory Verified</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Architectural Technical Specification Matrix (Directly Supporting the Stage) */}
+          <div className="motion-hero-specs grid grid-cols-2 md:grid-cols-4 gap-2 bg-surface p-4 sm:p-6 mb-2">
+            <div className="p-3 sm:p-4">
+              <p className="text-muted text-sm uppercase tracking-wide">ASTM Iodine</p>
+              <p className="text-ink font-display font-bold text-2xl mt-1">900–1200</p>
+              <p className="text-muted text-sm">mg/g adsorption</p>
+            </div>
+            <div className="p-3 sm:p-4">
+              <p className="text-muted text-sm uppercase tracking-wide">Hardness</p>
+              <p className="text-ink font-display font-bold text-2xl mt-1">≥ 98.5%</p>
+              <p className="text-muted text-sm">Ball-Pan index</p>
+            </div>
+            <div className="p-3 sm:p-4">
+              <p className="text-muted text-sm uppercase tracking-wide">Kiln Output</p>
+              <p className="text-ink font-display font-bold text-2xl mt-1">500 MT</p>
+              <p className="text-muted text-sm">monthly capacity</p>
+            </div>
+            <div className="p-3 sm:p-4">
+              <p className="text-muted text-sm uppercase tracking-wide">Export MOQ</p>
+              <p className="text-ink font-display font-bold text-2xl mt-1">15 MT</p>
+              <p className="text-muted text-sm">20ft full container</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -279,27 +234,24 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => setShowcaseTab('gac')}
-                  className={`transition-colors duration-150 ${
-                    showcaseTab === 'gac' ? 'text-ink' : 'text-muted hover:text-ink'
-                  }`}
+                  className={`transition-colors duration-150 ${showcaseTab === 'gac' ? 'text-ink' : 'text-muted hover:text-ink'
+                    }`}
                 >
                   Granular GAC
                 </button>
                 <button
                   type="button"
                   onClick={() => setShowcaseTab('pac')}
-                  className={`transition-colors duration-150 ${
-                    showcaseTab === 'pac' ? 'text-ink' : 'text-muted hover:text-ink'
-                  }`}
+                  className={`transition-colors duration-150 ${showcaseTab === 'pac' ? 'text-ink' : 'text-muted hover:text-ink'
+                    }`}
                 >
                   Powdered PAC
                 </button>
                 <button
                   type="button"
                   onClick={() => setShowcaseTab('pellet')}
-                  className={`transition-colors duration-150 ${
-                    showcaseTab === 'pellet' ? 'text-ink' : 'text-muted hover:text-ink'
-                  }`}
+                  className={`transition-colors duration-150 ${showcaseTab === 'pellet' ? 'text-ink' : 'text-muted hover:text-ink'
+                    }`}
                 >
                   Extruded Pellet
                 </button>
@@ -644,11 +596,10 @@ export default function Home() {
                       key={app.id}
                       type="button"
                       onClick={() => setCalcApplication(app.id)}
-                      className={`p-3 text-sm font-bold text-left transition-colors duration-150 ${
-                        calcApplication === app.id
+                      className={`p-3 text-sm font-bold text-left transition-colors duration-150 ${calcApplication === app.id
                           ? 'bg-ink text-bg'
                           : 'bg-surface text-muted hover:text-ink'
-                      }`}
+                        }`}
                     >
                       {app.label}
                     </button>
@@ -666,11 +617,10 @@ export default function Home() {
                       key={val}
                       type="button"
                       onClick={() => setCalcIodine(val)}
-                      className={`p-3 text-center transition-colors duration-150 ${
-                        calcIodine === val
+                      className={`p-3 text-center transition-colors duration-150 ${calcIodine === val
                           ? 'bg-accent text-accent-ink font-bold'
                           : 'bg-surface text-ink hover:bg-surface-alt'
-                      }`}
+                        }`}
                     >
                       <span className="block font-display text-2xl font-bold">
                         {val}
@@ -695,11 +645,10 @@ export default function Home() {
                       key={vol.id}
                       type="button"
                       onClick={() => setCalcVolume(vol.id)}
-                      className={`p-3 text-sm font-bold text-center transition-colors duration-150 ${
-                        calcVolume === vol.id
+                      className={`p-3 text-sm font-bold text-center transition-colors duration-150 ${calcVolume === vol.id
                           ? 'bg-ink text-bg'
                           : 'bg-surface text-muted hover:text-ink'
-                      }`}
+                        }`}
                     >
                       {vol.label}
                     </button>
@@ -725,8 +674,8 @@ export default function Home() {
                     {calcApplication === 'gold'
                       ? '6x12 mesh (≥99% Hardness)'
                       : calcApplication === 'gas'
-                      ? '4.0 mm Extruded Pellet'
-                      : '8x30 / 12x40 mesh Granular'}
+                        ? '4.0 mm Extruded Pellet'
+                        : '8x30 / 12x40 mesh Granular'}
                   </span>
                 </div>
                 <div className="flex justify-between p-3 bg-surface">
