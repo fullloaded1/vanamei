@@ -88,109 +88,115 @@ export default function Home() {
   return (
     <div className="bg-bg text-ink">
       {/* =========================================================================
-          HERO: High-End Architectural & Panoramic Cinematic Stage
+          HERO: High-End Botanical & Mineral Specimen Stage (Above-The-Fold)
       ========================================================================= */}
-      <section className="pt-28 pb-14 sm:pt-36 sm:pb-20 bg-bg overflow-hidden">
-        <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
+      <section className="min-h-[calc(100vh-4.5rem)] flex flex-col justify-center pt-24 pb-10 sm:pt-28 sm:pb-12 bg-bg overflow-hidden relative">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-8 my-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-          {/* Full-Width Monolithic 2-Line Headline */}
-          <div className="mb-8 sm:mb-12">
-            <h1 className="motion-hero-h1 font-display text-3xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight uppercase leading-[0.9] text-ink max-w-6xl">
-              Activated Carbon<br />
-              From Bogor Kilns.
-            </h1>
-          </div>
-
-          {/* Editorial Narrative & Direct Actions */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12 sm:mb-16">
-            <div className="lg:col-span-7">
-              <p className="motion-hero-p font-sans text-base text-ink leading-relaxed max-w-xl">
-                Steam-activated at 900°C from thick-walled Indonesian coconut shells. Pure microporous carbon matrix engineered for municipal water filtration, gold CIP mining recovery, and global container freight from Tanjungsari Bogor.
-              </p>
-            </div>
-
-            <div className="lg:col-span-5 flex flex-wrap items-center gap-3 lg:justify-end">
-              <button
-                type="button"
-                onClick={() => handleOpenRfq('Granular Activated Carbon (GAC)')}
-                className="h-12 px-7 bg-accent hover:bg-accent-hover text-accent-ink font-bold text-sm uppercase tracking-wider button-chamfer flex items-center justify-center transition-colors duration-150"
-              >
-                Request FOB Quote
-              </button>
-              <a
-                href="/catalog/ACTIVATED_CARBON_CATALOG.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-12 px-5 bg-surface hover:bg-surface-alt text-ink font-semibold text-sm uppercase tracking-wider flex items-center justify-center transition-colors duration-150"
-              >
-                Download Catalog (PDF)
-              </a>
-            </div>
-          </div>
-
-          {/* Panoramic Cinematic Media Stage (Wide 16:9 / 21:9 Aspect) */}
-          <div className="motion-hero-media bg-surface p-2 sm:p-3 button-chamfer relative overflow-hidden mb-6">
-            <div className="aspect-[16/9] sm:aspect-[21/9] bg-bg relative overflow-hidden">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                poster="/images/products/granular-activated-carbon.jpg"
-                className="w-full h-full object-cover"
-              >
-                <source src="/images/factory/threadsdownloader.com_996dfa.mp4" type="video/mp4" />
-              </video>
-
-              {/* Scrim Overlay */}
-              <div className="absolute inset-0 bg-black/35 pointer-events-none" />
-
-              {/* Top Meta Badges */}
-              <div className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-bg/90 px-3.5 py-2 flex items-center gap-2">
+            {/* Left 7 Columns: Editorial Headline, Thesis, CTAs, and Specs */}
+            <div className="lg:col-span-7 flex flex-col justify-center">
+              {/* Origin & Quality Eyebrow */}
+              <div className="flex items-center gap-2 mb-4">
                 <span className="w-2 h-2 bg-accent inline-block" />
-                <span className="font-sans text-sm font-bold text-ink">
-                  Tanjungsari Rotary Kilns, Bogor
+                <span className="text-muted text-sm font-semibold">
+                  Tanjungsari Kilns · Indonesian Virgin Coconut Shell Matrix
                 </span>
               </div>
 
-              <div className="hidden sm:flex absolute top-6 right-6 bg-bg/90 px-3.5 py-2 items-center">
-                <span className="font-sans text-sm text-ink font-semibold">
-                  Virgin Coconut Shell Matrix
-                </span>
+              {/* Monolithic 2-Line Headline */}
+              <h1 className="motion-hero-h1 font-display text-4xl sm:text-6xl md:text-7xl lg:text-7xl tracking-tight uppercase leading-[0.92] text-ink mb-6">
+                Activated Carbon<br />
+                From Bogor Kilns.
+              </h1>
+
+              {/* Editorial Narrative */}
+              <p className="motion-hero-p font-sans text-sm sm:text-base text-ink leading-relaxed max-w-xl mb-8">
+                Steam-activated at 900°C from mature Indonesian coconut shells. Pure microporous carbon matrix engineered for municipal water purification, gold recovery (CIP/CIL), and global container freight from Tanjungsari Bogor.
+              </p>
+
+              {/* Direct Actions */}
+              <div className="flex flex-wrap items-center gap-3 mb-8">
+                <button
+                  type="button"
+                  onClick={() => handleOpenRfq('Granular Activated Carbon (GAC)')}
+                  className="h-12 px-7 bg-accent hover:bg-accent-hover text-accent-ink font-bold text-sm uppercase button-chamfer flex items-center justify-center transition-colors duration-150"
+                >
+                  Request FOB Quote
+                </button>
+                <a
+                  href="/catalog/ACTIVATED_CARBON_CATALOG.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-12 px-5 bg-surface hover:bg-surface-alt text-ink font-semibold text-sm flex items-center justify-center transition-colors duration-150"
+                >
+                  Download Catalog (PDF)
+                </a>
               </div>
 
-              {/* Bottom Meta Badges */}
-              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex items-center justify-between text-sm bg-bg/90 px-4 py-2.5">
-                <span className="font-sans font-semibold text-ink">900°C High-Pressure Steam Activation</span>
-                <span className="text-accent font-bold text-sm">ASTM D4607 Laboratory Verified</span>
+              {/* 4-Pillar Architectural Specification Band (Single Cohesive Surface) */}
+              <div data-ui className="motion-hero-specs grid grid-cols-2 sm:grid-cols-4 gap-6 bg-surface p-4 button-chamfer">
+                <div>
+                  <p className="text-muted text-sm">ASTM Iodine</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-0.5">900–1200</p>
+                  <p className="text-muted text-sm">mg/g adsorption</p>
+                </div>
+                <div>
+                  <p className="text-muted text-sm">Hardness</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-0.5">≥ 98.5%</p>
+                  <p className="text-muted text-sm">Ball-Pan index</p>
+                </div>
+                <div>
+                  <p className="text-muted text-sm">Kiln Output</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-0.5">500 MT</p>
+                  <p className="text-muted text-sm">monthly capacity</p>
+                </div>
+                <div>
+                  <p className="text-muted text-sm">Export MOQ</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-0.5">15 MT</p>
+                  <p className="text-muted text-sm">20ft full container</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Architectural Technical Specification Matrix (Directly Supporting the Stage) */}
-          <div className="motion-hero-specs grid grid-cols-2 md:grid-cols-4 gap-2 bg-surface p-4 sm:p-6 mb-2">
-            <div className="p-3 sm:p-4">
-              <p className="text-muted text-sm uppercase tracking-wide">ASTM Iodine</p>
-              <p className="text-ink font-display font-bold text-2xl mt-1">900–1200</p>
-              <p className="text-muted text-sm">mg/g adsorption</p>
-            </div>
-            <div className="p-3 sm:p-4">
-              <p className="text-muted text-sm uppercase tracking-wide">Hardness</p>
-              <p className="text-ink font-display font-bold text-2xl mt-1">≥ 98.5%</p>
-              <p className="text-muted text-sm">Ball-Pan index</p>
-            </div>
-            <div className="p-3 sm:p-4">
-              <p className="text-muted text-sm uppercase tracking-wide">Kiln Output</p>
-              <p className="text-ink font-display font-bold text-2xl mt-1">500 MT</p>
-              <p className="text-muted text-sm">monthly capacity</p>
-            </div>
-            <div className="p-3 sm:p-4">
-              <p className="text-muted text-sm uppercase tracking-wide">Export MOQ</p>
-              <p className="text-ink font-display font-bold text-2xl mt-1">15 MT</p>
-              <p className="text-muted text-sm">20ft full container</p>
-            </div>
-          </div>
+            {/* Right 5 Columns: Botanical & Mineral Specimen Gallery Plate */}
+            <div className="lg:col-span-5">
+              <div className="motion-hero-media relative bg-surface p-3 button-chamfer overflow-hidden">
+                <div className="aspect-[4/5] sm:aspect-square bg-bg relative overflow-hidden">
+                  <Image
+                    src="/images/hero gambar.jpg"
+                    alt="900°C Coconut Charcoal Steam Activation Combustion"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    className="object-cover"
+                  />
+                  {/* Subtle Scrim for Depth */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
 
+                  {/* Top Quality Badge */}
+                  <div className="absolute top-4 left-4 bg-bg/90 px-3 py-1.5 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-accent inline-block" />
+                    <span className="font-sans text-sm font-bold text-ink">
+                      900°C Rotary Kiln Activation
+                    </span>
+                  </div>
+
+                  {/* Bottom Specimen Inset */}
+                  <div className="absolute bottom-4 left-4 right-4 bg-bg/90 p-3 sm:p-4">
+                    <div className="flex items-center justify-between text-sm mb-1">
+                      <span className="text-ink font-semibold">Virgin Coconut Matrix</span>
+                      <span className="text-accent font-bold">ASTM D4607</span>
+                    </div>
+                    <p className="text-muted text-sm">
+                      Kiln-fired hardwood & thick coconut shell carbonized in Tanjungsari Bogor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -427,114 +433,75 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 4-Column Grid marked data-ui as technical specimen sheet */}
-          <div data-ui className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="aspect-square bg-surface p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                1200
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Max Iodine mg/g
-              </p>
+          {/* Asymmetric Technical Showcase & Rotary Kiln Stage */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            {/* Left 4 Cols: Certified Lab Metrics Callout */}
+            <div className="lg:col-span-4 bg-surface p-6 sm:p-8 flex flex-col justify-between">
+              <div>
+                <p className="font-display text-5xl font-bold text-accent">
+                  1200
+                </p>
+                <p className="text-ink text-base font-bold mt-1">
+                  Max Iodine Adsorption (mg/g)
+                </p>
+                <p className="text-muted text-sm mt-4 leading-relaxed">
+                  Every production lot from our Tanjungsari rotary steam kilns is tested in accordance with ASTM D4607 for iodine number and ASTM D3802 for ball-pan hardness index.
+                </p>
+              </div>
+
+              <div className="pt-8 mt-6">
+                <p className="font-display text-5xl font-bold text-ink">
+                  ≥98.5%
+                </p>
+                <p className="text-sm font-semibold text-muted mt-1">
+                  Ball-Pan Hardness Retention
+                </p>
+              </div>
             </div>
 
-            <div className="aspect-square bg-surface-alt p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-accent">
-                ≥98%
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Ball-Pan Hardness
-              </p>
-            </div>
+            {/* Right 8 Cols: Rotary Steam Kiln Video Stage + 4 Metric Pillars */}
+            <div className="lg:col-span-8 flex flex-col justify-between space-y-4">
+              <div className="aspect-[16/9] bg-surface relative overflow-hidden button-chamfer">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster="/images/factory/Untitled.jpg"
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/images/factory/threadsdownloader.com_996dfa.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute top-4 left-4 bg-bg/90 px-3 py-1.5 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-accent inline-block" />
+                  <span className="font-sans text-sm font-bold text-ink">
+                    Tanjungsari Facility · Rotary Kiln at 900°C
+                  </span>
+                </div>
+              </div>
 
-            <div className="aspect-square bg-surface p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                15 MT
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                MOQ 20ft Container
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface relative overflow-hidden">
-              <Image
-                src="/images/factory/Untitled.jpg"
-                alt="Bogor Factory Kiln"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="aspect-square bg-surface-alt p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                &gt;900°C
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Steam Activation
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                4.0mm
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Extruded Pellet Mesh
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface relative overflow-hidden">
-              <Image
-                src="/images/products/water-treatment-carbon.jpg"
-                alt="Water Filter Carbon"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="aspect-square bg-surface-alt p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-accent">
-                FOB
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Tanjung Priok Jakarta
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                &lt;2nm
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Micropore Dominance
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface-alt p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                25 kg
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Woven Bag or Jumbo
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface p-6 flex flex-col justify-between">
-              <p className="font-display text-5xl font-bold text-ink">
-                100%
-              </p>
-              <p className="text-sm font-semibold text-muted">
-                Virgin Coconut Shell
-              </p>
-            </div>
-
-            <div className="aspect-square bg-surface relative overflow-hidden">
-              <Image
-                src="/images/factory/2123.jpg"
-                alt="ASTM Quality Control"
-                fill
-                className="object-cover"
-              />
+              <div data-ui className="grid grid-cols-2 sm:grid-cols-4 gap-6 bg-surface p-4">
+                <div>
+                  <p className="text-muted text-sm">Steam Temp</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-1">&gt;900°C</p>
+                  <p className="text-muted text-sm">High pressure</p>
+                </div>
+                <div>
+                  <p className="text-muted text-sm">Pellet Mesh</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-1">4.0mm</p>
+                  <p className="text-muted text-sm">Extruded GAC/PAC</p>
+                </div>
+                <div>
+                  <p className="text-muted text-sm">Pore Radius</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-1">&lt;2nm</p>
+                  <p className="text-muted text-sm">Micropore dominant</p>
+                </div>
+                <div>
+                  <p className="text-muted text-sm">Export Terminal</p>
+                  <p className="text-ink font-display font-bold text-2xl mt-1">FOB</p>
+                  <p className="text-muted text-sm">Port Tanjung Priok</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
