@@ -5,26 +5,26 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { pricingProducts, companyInfo } from '@/data/pricingData';
 
 const PriceListDownload: React.FC = () => {
-  const { language, t } = useLanguage();
+    const { language, t } = useLanguage();
 
-  const generatePriceListHTML = () => {
-    const getProductName = (product: any) => {
-      switch (language) {
-        case 'id': return product.nameId;
-        case 'ar': return product.nameAr;
-        default: return product.name;
-      }
-    };
+    const generatePriceListHTML = () => {
+        const getProductName = (product: any) => {
+            switch (language) {
+                case 'id': return product.nameId;
+                case 'ar': return product.nameAr;
+                default: return product.name;
+            }
+        };
 
-    const getProductDescription = (product: any) => {
-      switch (language) {
-        case 'id': return product.descriptionId;
-        case 'ar': return product.descriptionAr;
-        default: return product.description;
-      }
-    };
+        const getProductDescription = (product: any) => {
+            switch (language) {
+                case 'id': return product.descriptionId;
+                case 'ar': return product.descriptionAr;
+                default: return product.description;
+            }
+        };
 
-    return `
+        return `
 <!DOCTYPE html>
 <html lang="${language}">
 <head>
@@ -175,7 +175,7 @@ const PriceListDownload: React.FC = () => {
                     <div class="product-name">${getProductName(product)}</div>
                     <div class="product-description">${getProductDescription(product)}</div>
                     <div class="price-info">
-                        <div class="price">FOB PRICE: ${product.currency} ${product.fobPrice.toLocaleString()} / ${product.unit}</div>
+                        <div class="price">FOB PRICE: ${product.currency} ${product.fobPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} / ${product.unit}</div>
                         <div class="moq">MOQ: ${product.moq} ${product.moqUnit}</div>
                     </div>
                 </div>
@@ -202,57 +202,57 @@ const PriceListDownload: React.FC = () => {
     </div>
 </body>
 </html>`;
-  };
+    };
 
-  const downloadPriceList = () => {
-    const htmlContent = generatePriceListHTML();
-    const blob = new Blob([htmlContent], { type: 'text/html' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `CocoBlim-Price-List-${new Date().toISOString().split('T')[0]}.html`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-  };
+    const downloadPriceList = () => {
+        const htmlContent = generatePriceListHTML();
+        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `CocoBlim-Price-List-${new Date().toISOString().split('T')[0]}.html`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    };
 
-  const printPriceList = () => {
-    const htmlContent = generatePriceListHTML();
-    const printWindow = window.open('', '_blank');
-    if (printWindow) {
-      printWindow.document.write(htmlContent);
-      printWindow.document.close();
-      printWindow.focus();
-      setTimeout(() => {
-        printWindow.print();
-      }, 500);
-    }
-  };
+    const printPriceList = () => {
+        const htmlContent = generatePriceListHTML();
+        const printWindow = window.open('', '_blank');
+        if (printWindow) {
+            printWindow.document.write(htmlContent);
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => {
+                printWindow.print();
+            }, 500);
+        }
+    };
 
-  return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-      <button
-        onClick={downloadPriceList}
-        className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
-      >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        {language === 'id' ? 'Unduh Daftar Harga' : language === 'ar' ? 'تحميل قائمة الأسعار' : 'Download Price List'}
-      </button>
-      
-      <button
-        onClick={printPriceList}
-        className="flex items-center justify-center gap-2 bg-gradient-to-r from-gray-600 to-gray-700 text-white px-6 py-3 rounded-lg font-medium hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
-      >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
-        </svg>
-        {language === 'id' ? 'Cetak Daftar Harga' : language === 'ar' ? 'طباعة قائمة الأسعار' : 'Print Price List'}
-      </button>
-    </div>
-  );
+    return (
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+                onClick={downloadPriceList}
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                {language === 'id' ? 'Unduh Daftar Harga' : language === 'ar' ? 'تحميل قائمة الأسعار' : 'Download Price List'}
+            </button>
+
+            <button
+                onClick={printPriceList}
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-gray-600 to-gray-700 text-white px-6 py-3 rounded-lg font-medium hover:from-gray-700 hover:to-gray-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                {language === 'id' ? 'Cetak Daftar Harga' : language === 'ar' ? 'طباعة قائمة الأسعار' : 'Print Price List'}
+            </button>
+        </div>
+    );
 };
 
 export default PriceListDownload;

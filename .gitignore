@@ -56,3 +56,10 @@ logs
 # Temporary folders
 tmp/
 temp/
+
+# Large local raw videos (>100MB exceeds GitHub push limit)
+*20260610_105408.mp4
+
+# Taste-skill inspection run output
+.taste-skill/inspect/
+

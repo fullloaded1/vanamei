@@ -1,115 +1,150 @@
 import Link from 'next/link';
 
 export default function Footer() {
+  const letters = [
+    { char: 'C', height: 'h-[18vw] max-h-40 min-h-24', bg: 'bg-surface' },
+    { char: 'O', height: 'h-[22vw] max-h-48 min-h-28', bg: 'bg-surface-alt' },
+    { char: 'C', height: 'h-[16vw] max-h-36 min-h-20', bg: 'bg-surface' },
+    { char: 'O', height: 'h-[24vw] max-h-52 min-h-32', bg: 'bg-surface-alt' },
+    { char: 'B', height: 'h-[20vw] max-h-44 min-h-26', bg: 'bg-accent text-accent-ink' },
+    { char: 'L', height: 'h-[15vw] max-h-32 min-h-20', bg: 'bg-surface' },
+    { char: 'I', height: 'h-[26vw] max-h-56 min-h-36', bg: 'bg-surface-alt' },
+    { char: 'M', height: 'h-[19vw] max-h-40 min-h-24', bg: 'bg-surface' },
+  ];
+
   return (
-    <footer className="bg-gray-200 text-gray-800 py-12">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          
-          {/* Company Info */}
-          <div>
-            <h3 className="text-lg font-bold mb-2 text-black">CocoBlim</h3>
-            <p className="text-sm text-gray-600 mb-6">Premium Indonesian Coconut Products</p>
-            
-            <div>
-              <h4 className="text-base font-semibold mb-3 text-black">Newsletter</h4>
-              <div className="flex flex-col space-y-2">
-                <input 
-                  type="email" 
-                  placeholder="Enter your Email" 
-                  className="px-3 py-2 text-sm border border-gray-300 rounded focus:outline-none focus:border-gray-500"
-                />
-                <button className="bg-black text-white px-4 py-2 text-sm rounded hover:bg-gray-800 transition-colors">
-                  Subscribe
-                </button>
-              </div>
+    <footer className="bg-bg text-ink pt-8 pb-12">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
+        {/* The Mark, built large from architectural blocks */}
+        <div className="w-full flex items-end gap-1 md:gap-2 mb-12 overflow-hidden">
+          {letters.map((item, idx) => (
+            <div
+              key={idx}
+              className={`flex-1 ${item.height} ${item.bg} flex items-center justify-center`}
+            >
+              <span className="font-display font-bold text-4xl sm:text-6xl md:text-8xl select-none">
+                {item.char}
+              </span>
             </div>
-          </div>
+          ))}
+        </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-base font-semibold mb-4 text-black">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/" className="text-gray-600 hover:text-black transition-colors">Home</Link></li>
-              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">About Us</Link></li>
-              <li><Link href="/products" className="text-gray-600 hover:text-black transition-colors">Our Products</Link></li>
-              <li><Link href="/blog" className="text-gray-600 hover:text-black transition-colors">Blog</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-black transition-colors">Contact</Link></li>
+        {/* 4 Columns of Links & Contact Lines */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16 text-sm">
+          {/* Col 1-3: Products */}
+          <div className="md:col-span-3 space-y-3">
+            <p className="font-bold text-ink text-base">Carbon Products</p>
+            <ul className="space-y-2 text-muted">
+              <li>
+                <Link href="/products/granular-activated-carbon" className="hover:text-ink transition-colors duration-150">
+                  Granular Carbon (GAC)
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/powdered-activated-carbon" className="hover:text-ink transition-colors duration-150">
+                  Powdered Carbon (PAC)
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/pelletized-activated-carbon" className="hover:text-ink transition-colors duration-150">
+                  Pelletized Extruded
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/industrial-grade-gold-recovery-carbon" className="hover:text-ink transition-colors duration-150">
+                  Gold CIP/CIL Leaching
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/water-treatment-air-gas-purification" className="hover:text-ink transition-colors duration-150">
+                  Water & Gas Treatment
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Charcoal Products */}
-          <div>
-            <h4 className="text-base font-semibold mb-4 text-black">Charcoal Products</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/products/charcoal/arang-briket-shisha" className="text-gray-600 hover:text-black transition-colors">Briket Shisha</Link></li>
-              <li><Link href="/products/charcoal/arang-kayu-keras" className="text-gray-600 hover:text-black transition-colors">Kayu Keras</Link></li>
-              <li><Link href="/products/charcoal/arang-tempurung-kelapa" className="text-gray-600 hover:text-black transition-colors">Tempurung Kelapa</Link></li>
-              <li><Link href="/products/charcoal/arang-sawdust-briquette" className="text-gray-600 hover:text-black transition-colors">Sawdust Briquette</Link></li>
+          {/* Col 4-6: Specifications & Export */}
+          <div className="md:col-span-3 space-y-3">
+            <p className="font-bold text-ink text-base">Export Standards</p>
+            <ul className="space-y-2 text-muted">
+              <li>
+                <a href="/#pricing" className="hover:text-ink transition-colors duration-150">
+                  FOB Price List (Tanjung Priok)
+                </a>
+              </li>
+              <li>
+                <a href="/#pricing" className="hover:text-ink transition-colors duration-150">
+                  ASTM Iodine Range (900–1200)
+                </a>
+              </li>
+              <li>
+                <a href="/#pricing" className="hover:text-ink transition-colors duration-150">
+                  MOQ 15 MT (1x20ft Container)
+                </a>
+              </li>
+              <li>
+                <a href="/#faq" className="hover:text-ink transition-colors duration-150">
+                  Free Laboratory Sample Policy
+                </a>
+              </li>
+              <li>
+                <a href="/catalog/ACTIVATED_CARBON_CATALOG.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-ink transition-colors duration-150">
+                  Official Technical Brochure (PDF)
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Company Info */}
-          <div>
-            <h4 className="text-base font-semibold mb-4 text-black">Company</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="text-gray-600 hover:text-black transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-black transition-colors">Get Sample</Link></li>
-              <li><Link href="/blog" className="text-gray-600 hover:text-black transition-colors">Latest Insights</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-black transition-colors">Visit Factory</Link></li>
+          {/* Col 7-8: Production & Articles */}
+          <div className="md:col-span-2 space-y-3">
+            <p className="font-bold text-ink text-base">Manufacturing</p>
+            <ul className="space-y-2 text-muted">
+              <li>
+                <Link href="/about" className="hover:text-ink transition-colors duration-150">
+                  Bogor Rotary Kiln Facility
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-ink transition-colors duration-150">
+                  Technical Articles
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-ink transition-colors duration-150">
+                  Direct Kiln Visit
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact Us */}
-          <div>
-            <h4 className="text-base font-semibold mb-4 text-black">Contact Us</h4>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center">
-                <span className="text-gray-600">📞</span>
-                <div className="ml-2 text-gray-600">
-                  <div>0857-7106-0462 (WhatsApp)</div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <span className="text-gray-600">✉️</span>
-                <span className="ml-2 text-gray-600">info@cocoblim.com</span>
-              </div>
-              <div className="flex items-start">
-                <span className="text-gray-600 mt-0.5">📍</span>
-                <span className="ml-2 text-gray-600 text-xs leading-relaxed">Jl. Mangga Bolong, RT.1/RW.18,<br />Srengseng Sawah, Jagakarsa,<br />Jakarta Selatan 12630</span>
-              </div>
-              
-              {/* Business Hours */}
-              <div className="mt-4 p-3 bg-gray-100 rounded-lg">
-                <p className="text-xs font-medium text-gray-700 mb-1">Business Hours:</p>
-                <p className="text-xs text-gray-600">Mon-Fri: 8AM-6PM (GMT+7)</p>
-                <p className="text-xs text-gray-600">Factory visits by appointment</p>
-              </div>
-              
-              {/* Social Media Icons */}
-              <div className="flex space-x-3 mt-4">
-                <a href="https://wa.me/6285771060462" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition-colors" title="WhatsApp">
-                  <span className="text-xs">WA</span>
-                </a>
-                <a href="tel:+6285771060462" className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors" title="Call Us">
-                  <span className="text-xs">📞</span>
-                </a>
-                <a href="mailto:info@cocoblim.com" className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors" title="Email">
-                  <span className="text-xs">@</span>
-                </a>
-              </div>
-            </div>
+          {/* Col 9-12: Contact Lines */}
+          <div className="md:col-span-4 space-y-3">
+            <p className="font-bold text-ink text-base">Factory & Direct Inquiries</p>
+            <p className="text-muted leading-relaxed">
+              C552+685, Tanjungrasa, Kec. Tanjungsari, Kabupaten Bogor, Jawa Barat 16840, Indonesia
+            </p>
+            <p className="text-muted">
+              Email: <span className="text-ink">blim00coco@gmail.com</span>
+            </p>
+            <p className="text-muted">
+              WhatsApp: <span className="text-accent font-bold">+62 857-7106-0462</span>
+            </p>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-300 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-          <p>2025 © CocoBlim | All Right reserved</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/faq" className="hover:text-black transition-colors">FAQ</Link>
-            <Link href="/privacy" className="hover:text-black transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-black transition-colors">Terms & Condition</Link>
+        {/* Last Row: Copyright & Download Action Button */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-muted">
+          <div>
+            © 2026 CocoBlim Activated Carbon. Manufactured in Tanjungsari Bogor, Indonesia.
           </div>
+          <a
+            href="/catalog/ACTIVATED_CARBON_CATALOG.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center h-10 px-5 bg-surface text-ink hover:bg-surface-alt font-semibold text-sm transition-colors duration-150"
+          >
+            Download Catalog (PDF)
+          </a>
         </div>
       </div>
     </footer>

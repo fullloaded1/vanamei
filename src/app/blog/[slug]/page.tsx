@@ -3,13 +3,14 @@ import { posts, Post } from '@/data/posts';
 import BlogDetailClient from '@/components/BlogDetailClient';
 
 interface BlogDetailProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function BlogDetail({ params }: BlogDetailProps) {
-  const post: Post | undefined = posts.find(p => p.slug === params.slug);
+export default async function BlogDetail({ params }: BlogDetailProps) {
+  const { slug } = await params;
+  const post: Post | undefined = posts.find(p => p.slug === slug);
 
   if (!post) {
     notFound();

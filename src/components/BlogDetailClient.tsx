@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Post, getPostContent } from '@/data/posts';
-import Button from '@/components/Button';
 import Link from 'next/link';
 
 interface BlogDetailClientProps {
@@ -15,86 +14,80 @@ export default function BlogDetailClient({ post }: BlogDetailClientProps) {
   const postContent = getPostContent(post, language);
 
   return (
-    <>
-      {/* Blog Post Detail */}
-      <article className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            {/* Back to Blog Button */}
-            <div className="mb-8">
-              <Link href="/blog">
-                <Button variant="outline" size="sm">
-                  ← {t('backToBlog')}
-                </Button>
-              </Link>
-            </div>
-            
-            {/* Featured Image */}
-            <div className="relative h-64 md:h-96 overflow-hidden rounded-lg mb-8">
-              <Image
-                src={post.thumbnail}
-                alt={postContent.title}
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-            
-            {/* Article Header */}
-            <div className="mb-8">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="px-3 py-1 bg-emerald-100 text-emerald-800 text-sm font-medium rounded">
-                  {t(post.category.toLowerCase().replace(' ', ''))}
-                </span>
-                <span className="text-sm text-gray-500">{post.readTime}</span>
-              </div>
-              
-              <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                {postContent.title}
-              </h1>
-              
-              <div className="flex items-center gap-6 text-sm text-gray-500 mb-6">
-                <span>{t('publishedOn')} {post.publishedDate}</span>
-                <span>{post.views}</span>
-                <span>{post.comments}</span>
-              </div>
-              
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {postContent.summary}
-              </p>
-            </div>
-            
-            {/* Article Content */}
-            <div className="prose prose-lg max-w-none text-secondary">
-              <div className="whitespace-pre-line leading-relaxed">
-                {postContent.content}
-              </div>
-            </div>
-            
-            {/* Article Footer */}
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <div className="flex flex-col sm:flex-row gap-4 justify-between items-center">
-                <Link href="/blog">
-                  <Button variant="outline">
-                    ← {t('backToBlog')}
-                  </Button>
-                </Link>
-                <div className="flex gap-4">
-                  <Link href="/contact">
-                    <Button variant="default">
-                      {t('contactUs')}
-                    </Button>
-                  </Link>
-                  <Link href="/">
-                    <Button variant="outline">
-                      {t('requestSample')}
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+    <article className="bg-bg text-ink pt-28 pb-20">
+      <div className="w-full max-w-4xl mx-auto px-4 md:px-8">
+        {/* Back Link */}
+        <div className="pt-8 pb-8">
+          <Link
+            href="/blog"
+            className="text-sm font-bold uppercase tracking-wider text-muted hover:text-ink transition-colors duration-150"
+          >
+            ← Back to Articles
+          </Link>
+        </div>
+
+        {/* Featured Image */}
+        <div className="w-full aspect-[16/9] bg-surface relative overflow-hidden mb-8">
+          <Image
+            src={post.thumbnail}
+            alt={postContent.title}
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+
+        {/* Article Header */}
+        <div className="space-y-4 mb-10 pb-8 ">
+          <div className="flex items-center gap-3 text-sm font-semibold text-accent">
+            <span>{post.category}</span>
+            <span>·</span>
+            <span className="text-muted">{post.readTime}</span>
+            <span>·</span>
+            <span className="text-muted">{post.publishedDate}</span>
+          </div>
+
+          <h1 className="font-display text-3xl sm:text-5xl uppercase tracking-tight text-ink leading-tight">
+            {postContent.title}
+          </h1>
+
+          <p className="font-sans text-lg md:text-xl text-muted leading-relaxed">
+            {postContent.summary}
+          </p>
+        </div>
+
+        {/* Article Body */}
+        <div className="text-ink text-base md:text-lg leading-relaxed whitespace-pre-line space-y-4 font-sans">
+          {postContent.content}
+        </div>
+
+        {/* Article Bottom Actions */}
+        <div className="mt-16 pt-8  flex flex-col sm:flex-row justify-between items-center gap-4">
+          <Link
+            href="/blog"
+            className="h-12 px-6 bg-surface hover:bg-surface-alt text-ink font-bold text-sm uppercase tracking-wide flex items-center justify-center transition-colors duration-150"
+          >
+            ← Back to Articles
+          </Link>
+
+          <div className="flex gap-3">
+            <Link
+              href="/contact"
+              className="h-12 px-6 bg-accent hover:bg-accent-hover text-accent-ink font-bold text-sm uppercase tracking-wide flex items-center justify-center transition-colors duration-150"
+            >
+              Contact Sales
+            </Link>
+            <a
+              href="https://wa.me/6285771060462?text=Halo%20CocoBlim,%20saya%20ingin%20meminta%20sampel%20karbon%20aktif"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-12 px-6 bg-surface hover:bg-surface-alt text-ink font-bold text-sm uppercase tracking-wide flex items-center justify-center transition-colors duration-150"
+            >
+              Request Sample
+            </a>
           </div>
         </div>
-      </article>
-    </>
+      </div>
+    </article>
   );
 }

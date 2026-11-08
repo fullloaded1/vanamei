@@ -1,3 +1,67 @@
+export interface IodinePricing {
+  id: string;
+  iodine: number;
+  grade: string;
+  priceUSD: number;
+  priceFormatted: string;
+  unit: string;
+  rawMaterialId: string;
+  rawMaterialEn: string;
+  bestForId: string;
+  bestForEn: string;
+}
+
+export const iodinePricingList: IodinePricing[] = [
+  {
+    id: 'iodine-900',
+    iodine: 900,
+    grade: 'Iodine 900',
+    priceUSD: 1750,
+    priceFormatted: '1,750',
+    unit: 'Per MT (Metric Ton)',
+    rawMaterialId: 'Tempurung Kelapa / Sawit',
+    rawMaterialEn: 'Coconut Shell / Palm Shell',
+    bestForId: 'Pengolahan air limbah, filter bau umum, dekolorisasi standar',
+    bestForEn: 'Wastewater treatment, general odor filtration, standard decolorization'
+  },
+  {
+    id: 'iodine-1000',
+    iodine: 1000,
+    grade: 'Iodine 1000',
+    priceUSD: 1900,
+    priceFormatted: '1,900',
+    unit: 'Per MT (Metric Ton)',
+    rawMaterialId: '100% Tempurung Kelapa Pilihan',
+    rawMaterialEn: '100% Selected Coconut Shell',
+    bestForId: 'Filtrasi air minum, VOC gas scrubber, industri minuman',
+    bestForEn: 'Drinking water filtration, VOC gas scrubber, beverage industry'
+  },
+  {
+    id: 'iodine-1100',
+    iodine: 1100,
+    grade: 'Iodine 1100',
+    priceUSD: 2000,
+    priceFormatted: '2,000',
+    unit: 'Per MT (Metric Ton)',
+    rawMaterialId: '100% Tempurung Kelapa Premium',
+    rawMaterialEn: '100% Premium Coconut Shell',
+    bestForId: 'Pemurnian udara tinggi, recovery pelarut, food grade',
+    bestForEn: 'High-purity air purification, solvent recovery, food grade'
+  },
+  {
+    id: 'iodine-1200',
+    iodine: 1200,
+    grade: 'Iodine 1200',
+    priceUSD: 2100,
+    priceFormatted: '2,100',
+    unit: 'Per MT (Metric Ton)',
+    rawMaterialId: 'Tempurung Kelapa Tua Terpilih',
+    rawMaterialEn: 'Mature High-Density Coconut Shell',
+    bestForId: 'Ekstraksi emas (CIP/CIL), farmasi, dekolorisasi ultra-murni',
+    bestForEn: 'Gold recovery (CIP/CIL), pharmaceutical, ultra-pure decolorization'
+  }
+];
+
 export interface PricingProduct {
   id: string;
   name: string;
@@ -16,82 +80,34 @@ export interface PricingProduct {
   grade?: string;
 }
 
-export const pricingProducts: PricingProduct[] = [
-  {
-    id: '1',
-    name: 'Coconut Charcoal Briquette',
-    nameId: 'Briket Arang Tempurung Kelapa',
-    nameAr: 'فحم جوز الهند المضغوط',
-    description: 'Grade A (100% Coconut Charcoal)',
-    descriptionId: 'Grade A (100% Arang Tempurung Kelapa)',
-    descriptionAr: 'درجة أ (100% فحم جوز الهند)',
-    fobPrice: 1800,
-    currency: 'USD',
-    unit: 'Ton',
-    moq: 18,
-    moqUnit: 'MT',
-    image: '/images/charcoal/ARANG BRIKET SHISHA.jpg',
-    category: 'Briquette',
-    grade: 'Grade A'
-  },
-  {
-    id: '2',
-    name: 'Sawdust Charcoal',
-    nameId: 'Arang Serbuk Gergaji',
-    nameAr: 'فحم نشارة الخشب',
-    description: 'Premium quality sawdust charcoal briquettes',
-    descriptionId: 'Briket arang serbuk gergaji kualitas premium',
-    descriptionAr: 'قوالب فحم نشارة الخشب عالية الجودة',
-    fobPrice: 1100,
-    currency: 'USD',
-    unit: 'Ton',
-    moq: 18,
-    moqUnit: 'MT',
-    image: '/images/charcoal/SAWDUST.jpeg',
-    category: 'Briquette'
-  },
-  {
-    id: '3',
-    name: 'Coconut Shell Charcoal',
-    nameId: 'Arang Tempurung Kelapa',
-    nameAr: 'فحم قشر جوز الهند',
-    description: 'Natural coconut shell charcoal',
-    descriptionId: 'Arang tempurung kelapa alami',
-    descriptionAr: 'فحم قشر جوز الهند الطبيعي',
-    fobPrice: 850,
-    currency: 'USD',
-    unit: 'Ton',
-    moq: 18,
-    moqUnit: 'MT',
-    image: '/images/charcoal/ARANG TEMPURUNG KELAPA.jpg',
-    category: 'Coconut Shell'
-  },
-  {
-    id: '4',
-    name: 'Hardwood Charcoal',
-    nameId: 'Arang Kayu Keras',
-    nameAr: 'فحم الخشب الصلب',
-    description: 'Premium hardwood charcoal',
-    descriptionId: 'Arang kayu keras premium',
-    descriptionAr: 'فحم الخشب الصلب المتميز',
-    fobPrice: 1000,
-    currency: 'USD',
-    unit: 'Ton',
-    moq: 18,
-    moqUnit: 'MT',
-    image: '/images/charcoal/ARANG KAYU KERAS.jpg',
-    category: 'Hardwood'
-  }
-];
+export const pricingProducts: PricingProduct[] = iodinePricingList.map(item => ({
+  id: item.id,
+  name: `Activated Carbon ${item.grade}`,
+  nameId: `Karbon Aktif ${item.grade}`,
+  nameAr: `كربون منشط ${item.grade}`,
+  description: `FOB Price: $${item.priceUSD} USD / MT. Suitable for: ${item.bestForEn}`,
+  descriptionId: `Harga FOB: $${item.priceUSD} USD / MT. Aplikasi: ${item.bestForId}`,
+  descriptionAr: `السعر فوب: ${item.priceUSD}$ لكل طن متري`,
+  fobPrice: item.priceUSD,
+  currency: 'USD',
+  unit: 'MT',
+  moq: 15,
+  moqUnit: 'MT (1x20ft Container)',
+  image: '/images/products/granular-activated-carbon.jpg',
+  category: 'Activated Carbon',
+  grade: item.grade
+}));
 
 export const companyInfo = {
-  name: 'CocoBlim',
-  tagline: 'Cleaner Heat, Greener Growth',
-  description: 'Premium Indonesian Charcoal Exporter',
-  port: 'Tanjung Priok / Suarabaya',
+  name: 'CocoBlim Activated Carbon',
+  tagline: 'Premium Indonesian Activated Carbon Manufacturer & Exporter',
+  description: 'Manufactured from 100% Selected Coconut Shell & Palm Shell',
+  port: 'FOB Tanjung Priok, Jakarta / Port Indonesia',
   contact: {
-    name: 'Mujahid Mubarok',
-    phone: '0857-7106-0462',
-    website: 'cocoblim.com'
+    name: 'CocoBlim Export & Sales Team',
+    phone: '+62 857-7106-0462',
+    email: 'blim00coco@gmail.com',
+    website: 'https://cocoblim.com',
+    address: 'C552+685, Tanjungrasa, Kec. Tanjungsari, Kabupaten Bogor, Jawa Barat 16840'
   }
 };

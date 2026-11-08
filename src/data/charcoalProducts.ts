@@ -1,3 +1,5 @@
+import { activatedCarbonProducts } from './activatedCarbonProducts';
+
 export interface CharcoalProduct {
   id: string;
   name: string;
@@ -6,43 +8,18 @@ export interface CharcoalProduct {
   features: string[];
   image: string;
   category: string;
+  iodine?: string;
+  rawMaterial?: string;
 }
 
-export const charcoalProducts: CharcoalProduct[] = [
-  {
-    id: '1',
-    name: 'charcoalBriketShisha',
-    slug: 'arang-briket-shisha',
-    description: 'descBriketShisha',
-    features: ['kualitasPremium', 'tanpaBahanKimia', 'terbakarLebihLama'],
-    image: '/images/charcoal/ARANG BRIKET SHISHA.jpg',
-    category: 'Briquette'
-  },
-  {
-    id: '2',
-    name: 'charcoalKayuKeras',
-    slug: 'arang-kayu-keras',
-    description: 'descKayuKeras',
-    features: ['rasaSmoky', 'bahanBakuTerbaik', 'semuaUkuranSiap'],
-    image: '/images/charcoal/ARANG KAYU KERAS.jpg',
-    category: 'Hardwood'
-  },
-  {
-    id: '3',
-    name: 'charcoalTempurungKelapa',
-    slug: 'arang-tempurung-kelapa',
-    description: 'descTempurungKelapa',
-    features: ['bahanBakuTerbaik', 'semuaUkuranSiap'],
-    image: '/images/charcoal/ARANG TEMPURUNG KELAPA.jpg',
-    category: 'Coconut Shell'
-  },
-  {
-    id: '4',
-    name: 'charcoalSawdustBriquette',
-    slug: 'arang-sawdust-briquette',
-    description: 'descSawdustBriquette',
-    features: ['bahanBakuTerbaik', 'tahanLama'],
-    image: '/images/charcoal/SAWDUST.jpeg',
-    category: 'Briquette'
-  }
-];
+export const charcoalProducts: CharcoalProduct[] = activatedCarbonProducts.map(p => ({
+  id: p.id,
+  name: p.name,
+  slug: p.slug,
+  description: p.shortDesc,
+  features: p.meshSizes.slice(0, 3),
+  image: p.image,
+  category: p.category,
+  iodine: p.iodineRange,
+  rawMaterial: p.rawMaterial
+}));

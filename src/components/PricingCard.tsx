@@ -46,7 +46,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ product }) => {
           className="group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        
+
         {/* Category Badge */}
         <div className="absolute top-3 left-3">
           <span className="bg-emerald-600/90 text-white px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm">
@@ -69,7 +69,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ product }) => {
         <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
           {getProductName()}
         </h3>
-        
+
         <p className="text-sm text-gray-600 mb-4 line-clamp-2">
           {getProductDescription()}
         </p>
@@ -80,7 +80,9 @@ const PricingCard: React.FC<PricingCardProps> = ({ product }) => {
           <div className="flex items-center justify-between p-3 bg-emerald-50 rounded-lg">
             <span className="text-sm font-medium text-emerald-800">FOB PRICE</span>
             <span className="text-lg font-bold text-emerald-900">
-              {product.currency} {product.fobPrice.toLocaleString()} / {product.unit}
+              <span suppressHydrationWarning>
+                {product.currency} {product.fobPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')} / {product.unit}
+              </span>
             </span>
           </div>
 
@@ -95,14 +97,14 @@ const PricingCard: React.FC<PricingCardProps> = ({ product }) => {
 
         {/* Action Button */}
         <div className="mt-6">
-          <button 
+          <button
             onClick={() => {
-              const message = language === 'id' 
+              const message = language === 'id'
                 ? `Halo CocoBlim, saya tertarik dengan ${getProductName()}. Bisakah Anda memberikan informasi lebih lanjut tentang produk ini?`
                 : language === 'ar'
-                ? `مرحباً كوكوبليم، أنا مهتم بـ ${getProductName()}. هل يمكنكم تقديم المزيد من المعلومات حول هذا المنتج؟`
-                : `Hello CocoBlim, I'm interested in ${getProductName()}. Can you provide more information about this product?`;
-              
+                  ? `مرحباً كوكوبليم، أنا مهتم بـ ${getProductName()}. هل يمكنكم تقديم المزيد من المعلومات حول هذا المنتج؟`
+                  : `Hello CocoBlim, I'm interested in ${getProductName()}. Can you provide more information about this product?`;
+
               window.open(`https://wa.me/6285771060462?text=${encodeURIComponent(message)}`, '_blank');
             }}
             className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 text-white py-3 px-4 rounded-lg font-medium hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
