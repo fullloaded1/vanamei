@@ -506,8 +506,8 @@ export default function Home() {
 
             <div className="aspect-square bg-surface relative overflow-hidden">
               <Image
-                src="/images/factory/2123.jpg"
-                alt="ASTM Quality Control"
+                src="/images/products/food-grade-carbon.jpg"
+                alt="Food and Pharmaceutical Grade Activated Carbon"
                 fill
                 className="object-cover"
               />
@@ -517,24 +517,12 @@ export default function Home() {
       </section>
 
       {/* =========================================================================
-          SECTION 5: INTRO (Statement with inline thumbnails)
+          SECTION 5: Editorial Manifesto (Pure Typography Statement)
       ========================================================================= */}
       <section className="py-16 sm:py-20 bg-bg text-center">
         <div className="w-full max-w-4xl mx-auto px-4 md:px-8">
-          <p className="font-sans text-2xl font-semibold text-ink leading-snug">
-            We convert mature Indonesian coconut shells{' '}
-            <span className="inline-block align-middle w-14 h-8 mx-1.5 relative overflow-hidden bg-surface">
-              <Image src="/images/products/granular-activated-carbon.jpg" alt="Shell" fill className="object-cover" />
-            </span>{' '}
-            into dense activated carbon through continuous rotary steam kilns{' '}
-            <span className="inline-block align-middle w-14 h-8 mx-1.5 relative overflow-hidden bg-surface">
-              <Image src="/images/factory/Untitled.jpg" alt="Kiln" fill className="object-cover" />
-            </span>{' '}
-            for municipal water filtration{' '}
-            <span className="inline-block align-middle w-14 h-8 mx-1.5 relative overflow-hidden bg-surface">
-              <Image src="/images/products/water-treatment-carbon.jpg" alt="Water" fill className="object-cover" />
-            </span>{' '}
-            and gold mining recovery worldwide.
+          <p className="font-sans text-2xl font-semibold text-ink leading-relaxed max-w-3xl mx-auto">
+            We convert mature Indonesian coconut shells into dense activated carbon through continuous rotary steam kilns for municipal water filtration and gold mining recovery worldwide.
           </p>
         </div>
       </section>
